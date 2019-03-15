@@ -1,0 +1,544 @@
+---
+title: "World-map-Varroa-review"
+author: "Maeva A. Techer"
+date: "2019-03-13"
+output:
+  html_document:
+    toc: true 
+    toc_float: true # make 
+    depth: 3  
+    number_sections: false 
+    theme: yeti 
+    code_folding: hide #
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This document was written in R Markdown, and translated into html using the R package `knitr`. Press the buttons labelled **Code** to show the R code used to produce each interactive map created with `leaflet package`.
+
+# Distribution map of the honey bee Varroa mites strains
+
+**Background:** Varroa mites are specialist ectoparasites of _Apis_ honey bees, native from Asia . Four species have been described using meta-approach (morphometrics + molecular) and additional unresolved one may be recognized in the near future. Among them, _Varroa destructor_ and its sister species _V. jacobsoni_ have repeatedly and independently switch host from _A. cerana_ to the varroa-naive Western honey bee _A. mellifera_. While _V. jacobsoni_ is for now restricted to the Guinean region following its recent jump (2008), _V. destructor_ has spread nearly worldwide in less than a century. Only remote islands such as Seychelles archipelago and country with high biosecurity standard like Australia remain to date Varroa-free.
+
+Two _V. destructor_ haplogroups, referred as the Korean K and the Japanese J, have been able to switch host. However, only the K strain is reported cosmopolite and assumed to be more virulent and displacing the J strain in co-introduced areas. Although Varroa presence has been reported in many countries as a notifiable disease (OIE), strain identification is not always available.
+
+Given this dynamic invasion, the aim was to report the exact or approximate locations where both strains have been reported over the invasion years. Given that Varroa genus is cryptic, the decision was made to collect distribution data from studies using various molecular approaches to describe Varroa invasive or native populations (RAPD, PCR-RFLP, sequencing, microsatellites genotyping). The current dataset was collected by reviewing litterature on Varroa mites since 1997 to 2019 and NCBI database.
+
+### Load R libraries 
+```{r message=FALSE, warning=FALSE, results="hide"}
+library(maps)
+library(ggplot2)
+library(tidyverse)
+library(leaflet)
+library(htmltools)
+library(rgdal)
+library(knitr)
+library(kableExtra)
+
+# Download the country borders layer
+#download.file("http://thematicmapping.org/downloads/TM_WORLD_BORDERS_SIMPL-0.3.zip" , destfile="world_shape_file.zip")
+#system("unzip world_shape_file.zip")
+world_spdf=readOGR(dsn= getwd() , layer="TM_WORLD_BORDERS_SIMPL-0.3")
+```
+
+The table generated below reference all information available or inferred on :  
+1) Varroa species  
+2) honey bee host: *A. cerana* (Eastern honey bee ), *A. mellifera* (Western honey bee), ...  
+3) year of report (if ? is inserted, it means the sampling date is uncertain and was associated with paper/NCBI submission date)  
+4) Country and region of report  
+5) Haplogroup determined by Anderson and Trueman (2000) and Navajas et al. (2010) studies  
+_As a rule, I included all sequences or mtDNA haplotypes sharing more than 98% identity with K1-1/K1-2 to be in the Korean group (ex: Peshter 1 and Serbia 1 are considered in the K1). Same applies for other haplogroup._  
+6) Coordinates used for mapping purpose (exact = available from reference, approximate = associated with a locality center on google map or inferred near an academic/scientific institution from the region)  
+7) Reference 
+
+### Data collected from references to create map points
+``` {r layersmap}
+#Data with exact or approximate GPS coordinates obtained from references
+coordvarroa <- read.csv("mappingpoints_Varroareview14032019.csv", header = TRUE)
+coord.vdac <- coordvarroa %>% filter(Species == "Vdestructor") %>% filter(Host == "Acerana") 
+coord.vjac <- coordvarroa %>% filter(Species == "Vjacobsoni") %>% filter(Host == "Acerana")
+
+kable(cbind(coordvarroa)) %>%
+  kable_styling(bootstrap_options = "striped", font_size = 10) %>%
+  scroll_box(width = "100%", height = "400px")
+
+
+```
+  
+  
+In some cases, no other information than the country of sampling was reported. I build here a layer for which all countries in which one haplogroup was reported will be highlighted with the same color.  
+  
+_For example, I found no other mtDNA identification than Solignac et al. (2005) for Chile, so the country will be highlighted for V. destructor Korea presence._
+
+### Data collected from references to create country polygons
+```{r layercountry}
+#Data with only the country name when no GPS data was available
+paysvarroa <- read.csv("mappingcountry_Varroareview14032019.csv", header = TRUE)
+kable(cbind(paysvarroa)) %>%
+  kable_styling(bootstrap_options = "striped", font_size = 10) %>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+  
+  
+The following interactive map allows to plot the destribution of both invasive lineage for V. destructor on its novel host A. mellifera in regards with the recent expansion of its simili, *V. jacobsoni* in Papua New Guinea.  
+
+It is possible to zoom in and out, and passing the cursor on one point will give basic information on the year and reporter. On the top right corner of the map, a control button allow to select specific points/country layers.  
+
+Points and country are colored as following:  
+<span style="color:red"> V. destructor **K lineage** </span>  
+<span style="color:blue"> V. destructor **J lineage** </span>  
+<span style="color:purple"> V. destructor **K and J lineages** coexist(ed) </span>  
+<span style="color:green"> V. jacobsoni **Java lineage**</span>  
+<span style="color:black"> Varroa sp. **Luzon lineage**</span>  
+
+## Distribution of Varroa spp. mtDNA lineages on Apis mellifera
+```{r vdamsubset}
+
+### Subset the data for only Varroa destructor on the Western honey bee
+coord.vdamK <- coordvarroa %>% filter(Species == "Vdestructor") %>% filter(Host == "Amellifera") %>% filter(Haplogroup == "Korea")
+
+pays.vdamK <- paysvarroa %>% filter(Species == "Vdestructor") %>% filter(Host == "Amellifera") %>% filter(Haplogroup == "Korea")
+loc.vdamK <- pays.vdamK$Location
+map.vdamK <- subset(world_spdf,world_spdf@data$NAME %in% loc.vdamK)
+
+coord.vdamJ <- coordvarroa %>% filter(Species == "Vdestructor") %>% filter(Host == "Amellifera") %>% filter(Haplogroup == "Japan")
+
+pays.vdamJ <- paysvarroa %>% filter(Species == "Vdestructor") %>% filter(Host == "Amellifera") %>% filter(Haplogroup == "Japan")
+loc.vdamJ <- pays.vdamJ$Location
+map.vdamJ <- subset(world_spdf,world_spdf@data$NAME %in% loc.vdamJ)
+
+coord.vdamKJ <- coordvarroa %>% filter(Species == "Vdestructor") %>% filter(Host == "Amellifera") %>% filter(Haplogroup == "Korea & Japan")
+
+pays.vdamKJ <- paysvarroa %>% filter(Species == "Vdestructor") %>% filter(Host == "Amellifera") %>% filter(Haplogroup == "Korea & Japan")
+loc.vdamKJ <- pays.vdamKJ$Location
+map.vdamKJ <- subset(world_spdf,world_spdf@data$NAME %in% loc.vdamKJ)
+
+### Subset the data for only Varroa jacobsoni on the Western honey bee
+coord.vjam <- coordvarroa %>% filter(Species == "Vjacobsoni") %>% filter(Host == "Amellifera")
+
+pays.vjam <- paysvarroa %>% filter(Species == "Vjacobsoni") %>% filter(Host == "Amellifera")
+loc.vjam <- pays.vjam$Location
+map.vjam <- subset(world_spdf,world_spdf@data$NAME %in% loc.vjam)
+
+### Subset the data for only Varroa sp. on the Western honey bee
+coord.vspam <- coordvarroa %>% filter(Species == "Vsp.") %>% filter(Host == "Amellifera")
+
+pays.vspam <- paysvarroa %>% filter(Species == "Vsp.") %>% filter(Host == "Amellifera")
+loc.vspam <- pays.vspam$Location
+map.vspam <- subset(world_spdf,world_spdf@data$NAME %in% loc.vspam)
+
+# Prepare the map title
+tag.map.title <- tags$style(HTML("
+  .leaflet-control.map-title { 
+    transform: translate(-50%,20%);
+    text-align: center;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    background: rgba(255,255,255,0.75);
+    font-weight: bold;
+    font-size: 20px;
+  }
+"))
+
+title <- tags$div(
+  tag.map.title, HTML("Reported distribution of Varroa mite strains on A. mellifera")
+)  
+
+## Create the interactive map with leaflet
+leaflet(coordvarroa) %>% 
+  addTiles(group = "OSM (default)") %>%
+  ## add the layer other than default we would like to use for background
+  addProviderTiles(providers$CartoDB.PositronNoLabels, group = "Positron NoLabels") %>%
+  ## add the three layers coloring the countries in which K, J or both were described
+  addPolygons(data = map.vdamK, fillColor = "red", stroke=FALSE, group = "Country with K strain") %>%
+  addPolygons(data = map.vdamJ, fillColor = "blue", stroke=FALSE, group = "Country with J strain") %>%
+  addPolygons(data = map.vdamKJ, fillColor = "#A04DCD", stroke=FALSE, group = "Country co-infected") %>%
+  ## adding Varroa jacosboni country layer
+    addPolygons(data = map.vjam, fillColor = "green", stroke=FALSE, group = "Country with V. jacobsoni") %>%
+    ## adding Varroa sp. country layer
+    addPolygons(data = map.vspam, fillColor = "black", stroke=FALSE, group = "Country with Varroa sp.") %>%
+  ## adding the three layers with GPS points for each jumping parasite strains
+  addCircleMarkers(data = coord.vdamK, coord.vdamK$coord.Y, coord.vdamK$coord.X,
+                   weight = 0.5,
+                   col = "#FB0000", 
+                   radius = 3, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. destructor Korean lineage') %>%
+  addCircleMarkers(data = coord.vdamJ, coord.vdamJ$coord.Y, coord.vdamJ$coord.X,
+                   weight = 0.5,
+                   col = "#068FF9", 
+                   radius = 3, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. destructor Japan lineage') %>%
+  addCircleMarkers(data = coord.vdamKJ, coord.vdamKJ$coord.Y, coord.vdamKJ$coord.X,
+                   weight = 0.5,
+                   col = "#9707E7", 
+                   radius = 3, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'Co-infection by K & J') %>%
+  ## adding Varro jacobsoni layer to show parapatry
+    addCircleMarkers(data = coord.vjam, coord.vjam$coord.Y, coord.vjam$coord.X,
+                   weight = 0.5,
+                   col = "#0F933C", 
+                   radius = 3, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni Java lineage') %>%
+    ## adding Varroa sp. layer to show allopatry
+    addCircleMarkers(data = coord.vspam, coord.vspam$coord.Y, coord.vspam$coord.X,
+                   weight = 0.5,
+                   col = "black", 
+                   radius = 3, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'Varroa sp. Luzon lineage') %>%
+  ## adding the control button to remove or add layers of points or country
+  addLayersControl(position = "topright",
+    baseGroups = c("OSM (default)", "Positron NoLabels"),
+    overlayGroups = c("V. destructor Korean lineage", 
+                      "Country with K strain", 
+                      "V. destructor Japan lineage", 
+                      "Country with J strain", 
+                      "Co-infection by K & J", 
+                      "Country co-infected", 
+                      "V. jacobsoni Java lineage", 
+                      "Country with V. jacobsoni", 
+                      "Varroa sp. Luzon lineage", "Country with Varroa sp."),
+    options = layersControlOptions(collapsed = TRUE)
+  )  %>%
+  ## adding a title for the map
+  addControl(title, position = "bottomright", className="map-title") %>% 
+  ## show the positron background prerably to the OSM layer
+  showGroup("Positron NoLabels")
+```
+  
+This map now focus on the diversity within *V. destructor* on its native host *A. cerana*.  
+
+Here **7 haplogroups** are present with the idea that K1-1/K1-2, K1-3, K1-4 are all part of the Korean lineage. In order to better visualize how the distribution on *V. destructor* on *A. cerana* appears in respect to *V. jacobsoni* on *A. cerana*, an additional layer is available on the control panel.
+  
+## Distribution of Varroa destructor mtDNA lineages on Apis cerana
+```{r destructor}
+
+vdac.K <- coord.vdac[coord.vdac$Haplogroup =="Korea",]
+vdac.J <- coord.vdac[coord.vdac$Haplogroup =="Japan",]
+vdac.KJ <- coord.vdac[coord.vdac$Haplogroup =="Korea & Japan",]
+vdac.V <- coord.vdac[coord.vdac$Haplogroup =="Vietnam",]
+vdac.KV <- coord.vdac[coord.vdac$Haplogroup =="Korea & Vietnam",]
+vdac.C1 <- coord.vdac[coord.vdac$Haplogroup =="China C1",]
+vdac.C2 <- coord.vdac[coord.vdac$Haplogroup =="China C2",]
+vdac.C2C3 <- coord.vdac[coord.vdac$Haplogroup =="China C2 & C3",]
+vdac.N <- coord.vdac[coord.vdac$Haplogroup =="Nepal",]
+
+# Prepare the map title
+tag.map.title2 <- tags$style(HTML("
+  .leaflet-control.map-title2 { 
+    transform: translate(-50%,20%);
+    text-align: center;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    background: rgba(255,255,255,0.75);
+    font-weight: bold;
+    font-size: 20px;
+  }
+"))
+
+title <- tags$div(
+  tag.map.title2, HTML("Reported distribution of V. destructor strains on A. cerana")
+)  
+
+leaflet(coord.vdac) %>% 
+  addTiles(group = "OSM (default)") %>%
+  ## add the layer other than default we would like to use for background
+  addProviderTiles(providers$CartoDB.PositronNoLabels, group = "Positron NoLabels") %>%
+  ## adding each lineage group as a layer for V. destructor on cerana
+  addCircleMarkers(data = vdac.K, vdac.K$coord.Y, vdac.K$coord.X,
+                   weight = 0.5,
+                   col = "#FB0000", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. destructor K1 lineage') %>%
+  addCircleMarkers(data = vdac.J, vdac.J$coord.Y, vdac.J$coord.X,
+                   weight = 0.5,
+                   col = "#9707E7", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. destructor J1 lineage') %>%
+  addCircleMarkers(data = vdac.KJ, vdac.KJ$coord.Y, vdac.KJ$coord.X,
+                   weight = 0.5,
+                   col = "#9005DC", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'K1 & J1 co-infection') %>%
+  addCircleMarkers(data = vdac.V, vdac.V$coord.Y, vdac.V$coord.X,
+                   weight = 0.5,
+                   col = "#FFAA00", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. destructor V1 lineage') %>%
+  addCircleMarkers(data = vdac.C1, vdac.C1$coord.Y, vdac.C1$coord.X,
+                   weight = 0.5,
+                   col = "#920053", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. destructor C1 lineage') %>%
+  addCircleMarkers(data = vdac.C2, vdac.C2$coord.Y, vdac.C2$coord.X,
+                   weight = 0.5,
+                   col = "#B53A80", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. destructor C2 lineage') %>%
+  addCircleMarkers(data = vdac.C2C3, vdac.C2C3$coord.Y, vdac.C2C3$coord.X,
+                   weight = 0.5,
+                   col = "#CE97B6", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'C2 & C3 co-infection') %>%
+  addCircleMarkers(data = vdac.N, vdac.N$coord.Y, vdac.N$coord.X,
+                   weight = 0.5,
+                   col = "#4A4A4A", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. destructor? Nepal lineage') %>%
+  addCircleMarkers(data = vdac.KV, vdac.KV$coord.Y, vdac.KV$coord.X,
+                   weight = 0.5,
+                   col = "#FFDD00", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'K1 & V1 co-infection') %>%
+  ## adding distribution of V. jacobsoni on original host A. cerana
+  addCircleMarkers(data = coord.vjac, coord.vjac$coord.Y, coord.vjac$coord.X,
+                   weight = 0.5,
+                   col = "black", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni') %>%
+  addLayersControl(position = "topright",
+    baseGroups = c("OSM (default)", "Positron NoLabels"),
+    overlayGroups = c("V. destructor K1 lineage", 
+                      "V. destructor J1 lineage", 
+                      "K1 & J1 co-infection", 
+                      "V. destructor V1 lineage", 
+                      "K1 & V1 co-infection", 
+                      "V. destructor C1 lineage", 
+                      "V. destructor C2 lineage", 
+                      "C2 & C3 co-infection", 
+                      "V. destructor? Nepal lineage",    
+                      "V. jacobsoni"),
+    options = layersControlOptions(collapsed = TRUE))  %>%
+  ## adding a title for the map
+  addControl(title, position = "bottomright", className="map-title2") %>% 
+  ## show the positron background prerably to the OSM layer
+  showGroup("Positron NoLabels") %>% 
+  hideGroup("V. jacobsoni")
+
+```
+
+This third map now focus on the diversity within *V. jacobsoni* on its native host *A. cerana*. Although, *V. jacobsoni* has only jumped ~10 years ago, concerns arise on its invasion potential as it could follow the steps of its sister species.
+
+Here **12 haplogroups** are present with the idea that NorthThai1 and NorthThai2 are all part of the NorthThai lineage. In order to better see how *V. jacobsoni* on *A. cerana* is seemingly parapatric with *V. destructor* on *A. cerana*, an additional layer is available on the control panel.
+
+## Distribution of Varroa jacobsoni mtDNA lineages on Apis cerana
+```{r jacobsoni, warning=FALSE}
+
+vjac.Mal <- coord.vjac[coord.vjac$Haplogroup =="Malaysia",]
+vjac.Jav <- coord.vjac[coord.vjac$Haplogroup =="Java",]
+vjac.Amb <- coord.vjac[coord.vjac$Haplogroup =="Ambon",]
+vjac.Lom <- coord.vjac[coord.vjac$Haplogroup =="Lombok",]
+vjac.Bal <- coord.vjac[coord.vjac$Haplogroup =="Bali",]
+vjac.Sbw <- coord.vjac[coord.vjac$Haplogroup =="Sumbawa",]
+vjac.Sum <- coord.vjac[coord.vjac$Haplogroup =="Sumatra",]
+vjac.Flo <- coord.vjac[coord.vjac$Haplogroup =="Flores",]
+vjac.Sam <- coord.vjac[coord.vjac$Haplogroup =="Samui",]
+vjac.Bor <- coord.vjac[coord.vjac$Haplogroup =="Borneo",]
+vjac.NT <- coord.vjac[coord.vjac$Haplogroup =="NorthThai",]
+vjac.NTM <- coord.vjac[coord.vjac$Haplogroup =="Malaysia & NorthThai",]
+
+# Prepare the map title
+tag.map.title3 <- tags$style(HTML("
+  .leaflet-control.map-title3 { 
+    transform: translate(-50%,20%);
+    text-align: center;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    background: rgba(255,255,255,0.75);
+    font-weight: bold;
+    font-size: 20px;
+  }
+"))
+
+title <- tags$div(
+  tag.map.title3, HTML("Reported distribution of V. jacobsoni strains on A. cerana")
+)  
+
+leaflet(coord.vjac) %>% 
+  addTiles(group = "OSM (default)") %>%
+  ## add the layer other than default we would like to use for background
+  addProviderTiles(providers$CartoDB.PositronNoLabels, group = "Positron NoLabels") %>%  
+  ## adding each lineage of V. jacobsoni as a layer
+  addCircleMarkers(data = vjac.NT, vjac.NT$coord.Y, vjac.NT$coord.X,
+                   weight = 0.5,
+                   col = "#5A0DC1", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni NorthThai') %>%
+  addCircleMarkers(data = vjac.Mal, vjac.Mal$coord.Y, vjac.Mal$coord.X,
+                   weight = 0.5,
+                   col = "#0F4ABF", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni Malaysia') %>%
+  addCircleMarkers(data = vjac.Sam, vjac.Sam$coord.Y, vjac.Sam$coord.X,
+                   weight = 0.5,
+                   col = "#5A7BBC", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni Samui') %>%
+  addCircleMarkers(data = vjac.NTM, vjac.NTM$coord.Y, vjac.NTM$coord.X,
+                   weight = 0.5,
+                   col = "#137575", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni Malaysia & NorthThai') %>%
+  addCircleMarkers(data = vjac.Bor, vjac.Bor$coord.Y, vjac.Bor$coord.X,
+                   weight = 0.5,
+                   col = "#6AB28D", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni Borneo') %>%
+  addCircleMarkers(data = vjac.Jav, vjac.Jav$coord.Y, vjac.Jav$coord.X,
+                   weight = 0.5,
+                   col = "#0F933C", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni Java') %>%
+  addCircleMarkers(data = vjac.Sum, vjac.Sum$coord.Y, vjac.Sum$coord.X,
+                   weight = 0.5,
+                   col = "#A4CE01", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni Sumatra') %>%
+  addCircleMarkers(data = vjac.Bal, vjac.Bal$coord.Y, vjac.Bal$coord.X,
+                   weight = 0.5,
+                   col = "#D6D601", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni Bali') %>%
+  addCircleMarkers(data = vjac.Lom, vjac.Lom$coord.Y, vjac.Lom$coord.X,
+                   weight = 0.5,
+                   col = "#FFFC56", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni Lombok') %>%
+  addCircleMarkers(data = vjac.Sbw, vjac.Sbw$coord.Y, vjac.Sbw$coord.X,
+                   weight = 0.5,
+                   col = "#FFDD00", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni Sumbawa') %>%
+  addCircleMarkers(data = vjac.Flo, vjac.Flo$coord.Y, vjac.Flo$coord.X,
+                   weight = 0.5,
+                   col = "#FFE9A7", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni Flores') %>%
+  addCircleMarkers(data = vjac.Amb, vjac.Amb$coord.Y, vjac.Amb$coord.X,
+                   weight = 0.5,
+                   col = "#3A3831", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni Ambon') %>%
+  ## adding distribution of V. destructor on original host A. cerana
+  addCircleMarkers(data = coord.vdac, coord.vdac$coord.Y, coord.vdac$coord.X,
+                   weight = 0.5,
+                   col = "black", 
+                   radius = 4, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. destructor') %>%
+  ## adding Varroa sp. layer
+  addCircleMarkers(data = coord.vspam, coord.vspam$coord.Y, coord.vspam$coord.X,
+                   weight = 0.5,
+                   col = "black", 
+                   radius = 3, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'Varroa sp. Luzon lineage') %>%
+  addLayersControl(position = "topright",
+    baseGroups = c("OSM (default)", "Positron NoLabels"),
+    overlayGroups = c("V. jacobsoni NorthThai", 
+                      "V. jacobsoni Malaysia", 
+                      "V. jacobsoni Malaysia & NorthThai",
+                      "V. jacobsoni Samui", "V. jacobsoni Sumatra",
+                      "V. jacobsoni Borneo",
+                      "V. jacobsoni Java",  
+                      "V. jacobsoni Bali", 
+                      "V. jacobsoni Lombok",  
+                      "V. jacobsoni Sumbawa",  
+                      "V. jacobsoni Flores", 
+                      "V. jacobsoni Ambon", 
+                      "V. destructor", 
+                      "Varroa sp. Luzon lineage"),
+    options = layersControlOptions(collapsed = TRUE))  %>%
+  ## adding a title for the map
+  addControl(title, position = "bottomright", className="map-title3") %>% 
+  ## show the positron background prerably to the OSM layer
+  showGroup("Positron NoLabels") %>% 
+  hideGroup("V. destructor")
+
+```
