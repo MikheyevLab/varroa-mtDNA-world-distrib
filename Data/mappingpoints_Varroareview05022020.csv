@@ -1,0 +1,597 @@
+﻿Species,Host,Year,Location,Region,Haplogroup,GROUP,coord.X,coord.Y,Coord.type,Description,Source
+V. destructor,A. cerana,2002,China,Dayao Co. Yunnan Prov.,VD_China_C3,VD_China_C3,25.49165,100.28198,approximate,Year:2002 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. cerana,2002,China,"Dayao Co., Yunnan Prov.",VD_China_C4,VD_China_C4,25.49165,100.28198,approximate,Year:2002 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. cerana,1996,China,Guangzhou,VD_China_C1,VD_China_C1,23.12911,113.26438,approximate,Year:1996 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. cerana,2004,China,Hunan Prov.,VD_Korea_K1,VD_K_type,28.21266,113.01059,approximate,Year:2004 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. cerana,2002,China,"Kunming, Yunnan Prov.",VD_China_C2,VD_China_C2,25.12565,102.74318,approximate,Year:2002 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. cerana,2002,China,"Mongzi Co., Yunnan Prov.",VD_China_C4,VD_China_C4,24.28891,100.94184,approximate,Year:2002 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. cerana,2019,China,NA,VD_China_C1,VD_China_C1,23.13,113.29,exact,Year: 2019 Accession: MN551179,NCBI
+V. destructor,A. cerana,2004,China,"Nanchang, Jiangxi Prov.",VD_Korea_K1,VD_K_type,28.68289,115.85819,approximate,Year:2004 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. cerana,2002,China,"Xishuanbanna, Yunnan Prov.",VD_Viet_Nam_V1,VD_Viet_Nam_V1,25.1014,102.35185,approximate,Year:2002 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. cerana,2001,China,"Xishuangbann, Yunnan Prov.",VD_Viet_Nam_V1,VD_Viet_Nam_V1,24.16863,103.84371,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. cerana,2002,China,"Xishuangbanna, Yunnan Prov.",VD_Viet_Nam_V1,VD_Viet_Nam_V1,25.1014,102.35185,approximate,Year:2002 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. cerana,2002,China,"Zhongshan, Guangdong",VD_China_C1,VD_China_C1,24.03474,113.07061,approximate,Year:2002 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. cerana,2002,China,"Zhongshan, Guangdong Prov.",VD_China_C1,VD_China_C1,23.94609,114.69726,approximate,Year:2002 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. cerana,2001,China,"Zhuhai, Guangdong Prov",VD_China_C1,VD_China_C1,22.61401,112.63183,approximate,Year:2001 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. cerana,2001,China,"Zhuhai, Guangdong Prov.",VD_China_C1,VD_China_C1,22.61401,112.63183,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. cerana,2019,China ,"apiary of Guangdong Institute of Applied Biological Resources, Guangzhou",VD_China_C1,VD_China_C1,23.13,113.29,exact,Year:2019 Ref:Li et al. (2019),Litterature
+V. destructor,A. cerana,2014,India,Bengaluru,VD_South_India_1,VD_South_India_1,13.078379,77.579302,approximate,Year:2014 Ref:Bhatta et al. (2019),Litterature
+V. destructor,A. cerana,2018,Japan,Aichi,VD_Korea_K1,VD_K_type,34.741276,137.388327,approximate,Year:2018 Ref:Ogihara et al. (2020),Litterature
+V. destructor,A. cerana,1994,Japan,"Honshu, Tamagawa",VD_Japan_J1,VD_Japan_J1,35.56704,139.46836,approximate,Year:1994 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. cerana,2018,Japan,Ibaraki,VD_Korea_K1,VD_K_type,36.399891,140.444565,approximate,Year:2018 Ref:Ogihara et al. (2020),Litterature
+V. destructor,A. cerana,1998,Japan,Machida,VD_Japan_J1,VD_Japan_J1,35.54663,139.43861,approximate,Year:1998 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. cerana,2005?,Japan,Machida,VD_Japan_J1,VD_Japan_J1,35.54663,139.43861,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. cerana,2005?,Japan,Machida,VD_Korea_K1,VD_K_type,35.54663,139.43861,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. cerana,2018,Japan,Nagano,VD_Korea_K1,VD_K_type,36.369431,138.224082,approximate,Year:2018 Ref:Ogihara et al. (2020),Litterature
+V. destructor,A. cerana,1996,Japan,Shikoku,VD_Japan_J1,VD_Japan_J1,33.74322,133.63753,approximate,Year:1996 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. cerana,2018,Japan,Shimane,VD_Japan_J1,VD_Japan_J1,35.486496,133.06871,approximate,Year:2018 Ref:Ogihara et al. (2020),Litterature
+V. destructor,A. cerana,1994,Japan,Tokyo (Tamagawa Uni),VD_Japan_J1,VD_Japan_J1,35.56704,139.46835,approximate,Year:1994 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. cerana,2005?,Japan,Yatsuhiro,VD_Japan_J1,VD_Japan_J1,32.475797,130.607262,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. cerana,1996,"Korea, Republic of",Kwangju,VD_Korea_K1,VD_K_type,35.15954,126.8526,approximate,Year:1996 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. cerana,1996;1997,"Korea, Republic of",Suwon,VD_Korea_K1,VD_K_type,37.26357,127.0286,approximate,Year:1996;1997 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. cerana,1997,Nepal,Katmandu,VD_Nepal_1,VD_Nepal_1,27.71724,85.32396,approximate,Year:1997 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. cerana,1997,Sri Lanka,Horana,VD_Sri_Lanka_1,VD_Sri_Lanka_1,6.72298,80.06466,approximate,Year:1997 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. cerana,2003,Thailand,Bang Changtay,VD_Viet_Nam_V1,VD_Viet_Nam_V1,13.7137,100.204369,approximate,Year:2003 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. cerana,1997,Thailand,Bangkok,VD_Japan_J1,VD_Japan_J1,13.77083,100.79417,approximate,Year:1997 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. cerana,2013-2015,Thailand,Chiang Mai,VD_China_C2-like,VD_China_C2,18.7956,98.952287,approximate,Year:2013-2015 Ref:Dietemann et al. (2019),Litterature
+V. destructor,A. cerana,2013-2015,Thailand,Chiang Mai,VD_Chiang_Mai_1,VD_K_type,18.7956,98.952287,approximate,Year:2013-2015 Ref:Dietemann et al. (2019),Litterature
+V. destructor,A. cerana,2003,Thailand,Chiang Mai,VD_Viet_Nam_V1,VD_Viet_Nam_V1,18.80596,98.95336,approximate,Year:2003 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. cerana,2001,Thailand,"Chiang San, Chiang Rai",VD_Viet_Nam_V1,VD_Viet_Nam_V1,20.2666667,100,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. destructor,A. cerana,2001,Thailand,"Mae Sruy, Chiang Rai",VD_Viet_Nam_V1,VD_Viet_Nam_V1,19.5833333,99.46666667,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. destructor,A. cerana,2001,Thailand,"Mueang, Chiang Rai",VD_Viet_Nam_V1,VD_Viet_Nam_V1,20,99.95,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. destructor,A. cerana,2013,Viet Nam,Cat Ba,VD_China_C1,VD_China_C1,20.793859,106.989642,approximate,Year:2013 Ref:Beaurepaire et al. (2015),Litterature
+V. destructor,A. cerana,2013,Viet Nam,Dien Bien,VD_Viet_Nam_V1,VD_Viet_Nam_V1,21.23,103.01,exact,Year:2013 Ref:Beaurepaire et al. (2015),Litterature
+V. destructor,A. cerana,2013,Viet Nam,Dien Bien,VD_Viet_Nam_V1,VD_Viet_Nam_V1,21.23,103.01,exact,Year:2013 Ref:Beaurepaire et al. (2015),Litterature
+V. destructor,A. cerana,1996,Viet Nam,Hanoi,VD_Viet_Nam_V1,VD_Viet_Nam_V1,21.00555,105.84346,approximate,Year:1996 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. cerana,1999?,Viet Nam,Hanoi,VD_Viet_Nam_V1,VD_Viet_Nam_V1,21.00555,105.84346,approximate,Year:1999? Ref:Fuchs et al. (2000) ,Litterature
+V. destructor,A. cerana,1999?,Viet Nam,Moc Chau,VD_Korea_K1,VD_K_type,20.92208,104.75209,approximate,Year:1999? Ref:Fuchs et al. (2000) ,Litterature
+V. destructor,A. cerana,1999?,Viet Nam,Moc Chau,VD_Viet_Nam_V1,VD_Viet_Nam_V1,20.92208,104.75209,approximate,Year:1999? Ref:Fuchs et al. (2000) ,Litterature
+V. destructor,A. cerana,2013,Viet Nam,NA,VD_Viet_Nam_V1,VD_Viet_Nam_V1,21.19,103.54,exact,Year: 2013 Accession: KR528382,NCBI
+V. destructor,A. cerana,2013,Viet Nam,NA,VD_Viet_Nam_V1,VD_Viet_Nam_V1,21.19,103.54,exact,Year: 2013 Accession: KR528383,NCBI
+V. destructor,A. cerana,2013,Viet Nam,NA,VD_Viet_Nam_V1,VD_Viet_Nam_V1,21.23,103.01,exact,Year: 2013 Accession: KR528379,NCBI
+V. destructor,A. cerana,2013,Viet Nam,NA,VD_Viet_Nam_V1,VD_Viet_Nam_V1,21.23,103.01,exact,Year: 2013 Accession: KR528380,NCBI
+V. destructor,A. cerana,1996,Viet Nam,"Phjong, Ninh Binh Prov.",VD_Viet_Nam_V1,VD_Viet_Nam_V1,20.30896,105.64215,approximate,Year:1996 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. cerana,2013,Viet Nam,Son La,VD_Viet_Nam_V1,VD_Viet_Nam_V1,21.19,103.54,exact,Year:2013 Ref:Beaurepaire et al. (2015),Litterature
+V. destructor,A. cerana,2013,Viet Nam,Son La,VD_Viet_Nam_V1,VD_Viet_Nam_V1,21.19,103.54,exact,Year:2013 Ref:Beaurepaire et al. (2015),Litterature
+V. destructor,A. cerana,1999?,Viet Nam,Vu Quang,VD_Viet_Nam_V1,VD_Viet_Nam_V1,18.387901,105.486822,approximate,Year:1999? Ref:Fuchs et al. (2000) ,Litterature
+V. destructor,A. mellifera,2005?,Argentina,A,VD_Korea_K1,VD_K_type,-34.599126,-58.373067,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,NA,Argentina,"Ascasubi, Buenos Aires",VD_Korea_K1,VD_K_type,-39.3666667,-62.63333333,exact,Year: Ref:Muntaabski et al. (2020),Litterature
+V. destructor,A. mellifera,2005?,Argentina,B,VD_Korea_K1,VD_K_type,-34.599126,-58.373067,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,NA,Argentina,"Balcarce, Buenos Aires",VD_Korea_K1,VD_K_type,-37.8166667,-58.25,exact,Year: Ref:Muntaabski et al. (2020),Litterature
+V. destructor,A. mellifera,2006-2009,Argentina,Buenos Aires,VD_Korea_K1,VD_K_type,-34.59912,-58.37306,approximate,Year:2006-2009 Ref:Maggi et al. (2012),Litterature
+V. destructor,A. mellifera,NA,Argentina,"Castelar, Buenos Aires",VD_Korea_K1,VD_K_type,-34.6666667,-58.66666667,exact,Year: Ref:Muntaabski et al. (2020),Litterature
+V. destructor,A. mellifera,NA,Argentina,"Castelli, Chaco",VD_Korea_K1,VD_K_type,-25.95,-60.61666667,exact,Year: Ref:Muntaabski et al. (2020),Litterature
+V. destructor,A. mellifera,2006-2009,Argentina,Corrientes,VD_Korea_K1,VD_K_type,-27.46921,-58.83063,approximate,Year:2006-2009 Ref:Maggi et al. (2012),Litterature
+V. destructor,A. mellifera,2006-2009,Argentina,Entre Rios,VD_Korea_K1,VD_K_type,-31.77466,-60.49564,approximate,Year:2006-2009 Ref:Maggi et al. (2012),Litterature
+V. destructor,A. mellifera,NA,Argentina,"Famaillá, Tucumán",VD_Korea_K1,VD_K_type,-27.05,-65.4,exact,Year: Ref:Muntaabski et al. (2020),Litterature
+V. destructor,A. mellifera,NA,Argentina,"Formosa, Formosa",VD_Korea_K1,VD_K_type,-26.1847222,-58.17583333,exact,Year: Ref:Muntaabski et al. (2020),Litterature
+V. destructor,A. mellifera,NA,Argentina,"Leales, Tucumán",VD_Korea_K1,VD_K_type,-27.0327778,-65.30722222,exact,Year: Ref:Muntaabski et al. (2020),Litterature
+V. destructor,A. mellifera,2006-2009,Argentina,Neuquen,VD_Korea_K1,VD_K_type,-38.95167,-68.05918,approximate,Year:2006-2009 Ref:Maggi et al. (2012),Litterature
+V. destructor,A. mellifera,NA,Argentina,"Rafaela, Santa Fe",VD_Korea_K1,VD_K_type,-31.2666667,-61.48333333,exact,Year: Ref:Muntaabski et al. (2020),Litterature
+V. destructor,A. mellifera,NA,Argentina,"Reconquista, Santa Fe",VD_Korea_K1,VD_K_type,-29.2333333,-59.93333333,exact,Year: Ref:Muntaabski et al. (2020),Litterature
+V. destructor,A. mellifera,2006-2009,Argentina,Rio Negro,VD_Korea_K1,VD_K_type,-40.82614,-63.02663,approximate,Year:2006-2009 Ref:Maggi et al. (2012),Litterature
+V. destructor,A. mellifera,2006-2009,Argentina,Santa Cruz,VD_Korea_K1,VD_K_type,-51.63528,-69.24743,approximate,Year:2006-2009 Ref:Maggi et al. (2012),Litterature
+V. destructor,A. mellifera,NA,Argentina,"Santa Fe, Santa Fe",VD_Korea_K1,VD_K_type,-31.6333333,-60.7,exact,Year: Ref:Muntaabski et al. (2020),Litterature
+V. destructor,A. mellifera,2017?,Benin,Bante,VD_Korea_K1,VD_K_type,8.409505,1.888336,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Bassila,VD_Korea_K1,VD_K_type,9.00664,1.667825,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Bembereke,VD_Korea_K1,VD_K_type,10.217527,2.662204,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Beroubouay,VD_Korea_K1,VD_K_type,10.533221,2.733461,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Biro,VD_Korea_K1,VD_K_type,9.900797,2.945135,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Boukoumbe,VD_Korea_K1,VD_K_type,10.180224,1.098955,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Dassa,VD_Korea_K1,VD_K_type,7.779256,2.191874,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Dijadja,VD_Korea_K1,VD_K_type,7.34611,1.936351,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Djougou,VD_Korea_K1,VD_K_type,9.705218,1.657904,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Kopargo,VD_Korea_K1,VD_K_type,9.835399,1.548101,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Manigri,VD_Korea_K1,VD_K_type,8.973864,1.72057,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,N'dali,VD_Korea_K1,VD_K_type,9.853805,2.716938,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Nagayile,VD_Korea_K1,VD_K_type,9.264,1.55182,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Nikki,VD_Korea_K1,VD_K_type,9.932666,3.212662,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Ouesse,VD_Korea_K1,VD_K_type,8.487778,2.432132,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Parakou,VD_Korea_K1,VD_K_type,9.339171,2.612582,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Savalou,VD_Korea_K1,VD_K_type,7.928325,1.971694,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Save,VD_Korea_K1,VD_K_type,8.029585,2.482979,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Benin,Sinende,VD_Korea_K1,VD_K_type,10.344114,2.381844,approximate,Year:2017? Ref:Kelomey et al. (2017),Litterature
+V. destructor,A. mellifera,2009?,Brazil,"Blumenau, Santa Catarina",VD_Korea_K1,VD_K_type,-26.91657,-49.07173,approximate,Year:2009? Ref:Strapazzon et al. (2009),Litterature
+V. destructor,A. mellifera,2009?,Brazil,"Cacador, Santa Catarina",VD_Korea_K1,VD_K_type,-26.77616,-51.01249,approximate,Year:2009? Ref:Strapazzon et al. (2009),Litterature
+V. destructor,A. mellifera,2001,Brazil,"Estrela, Rio Grande do Sul State",VD_Korea_K1,VD_K_type,-29.487,-51.95433,approximate,Year:2001 Ref:Garrido et al. (2003),Litterature
+V. destructor,A. mellifera,2013-2015,Brazil,Fernando de Noronha,VD_Japan_J1,VD_Japan_J1,-3.847409,-32.414635,approximate,Year:2013-2015 Ref:Octaviano-Salvade et al. (2017),Litterature
+V. destructor,A. mellifera,2009?,Brazil,Fernando de Noronha Island,VD_Japan_J1,VD_Japan_J1,-3.847409,-32.414635,approximate,Year:2009? Ref:Guerra et al. (2010),Litterature
+V. destructor,A. mellifera,2009?;2013;2015,Brazil,Fernando de Noronha Island,COMBINED,KoreaJapan,-3.847409,-32.414635,approximate,Year:2009?;2013;2015 Ref:Guerra et al. (2010),
+V. destructor,A. mellifera,2009?,Brazil,"Fernando de Noronha,  State of Pernambuco",VD_Japan_J1,VD_Japan_J1,-3.847409,-32.414635,approximate,Year:2009? Ref:Strapazzon et al. (2009),Litterature
+V. destructor,A. mellifera,2001,Brazil,"Florianopolis, Santa Catarina",VD_Korea_K1,VD_K_type,-27.59486,-48.54821,approximate,Year:2001 Ref:Garrido et al. (2003),Litterature
+V. destructor,A. mellifera,2009?,Brazil,"Joinville, Santa Catarina",VD_Korea_K1,VD_K_type,-26.28342,-48.84522,approximate,Year:2009? Ref:Strapazzon et al. (2009),Litterature
+V. destructor,A. mellifera,2009?,Brazil,"Mafra, Santa Catarina",VD_Korea_K1,VD_K_type,-26.11642,-49.8091,approximate,Year:2009? Ref:Strapazzon et al. (2009),Litterature
+V. destructor,A. mellifera,1996,Brazil,"Ribeirão Preto, Sao Paulo State",VD_Japan_J1,VD_Japan_J1,-21.1704,-47.81032,approximate,Year:1996 Ref:Garrido et al. (2003),Litterature
+V. destructor,A. mellifera,1996,Brazil,"Ribeirão Preto, Sao Paulo State",VD_Korea_K1,VD_K_type,-21.1704,-47.81032,approximate,Year:1996 Ref:Garrido et al. (2003),Litterature
+V. destructor,A. mellifera,1996,Brazil,"Ribeirão Preto, Sao Paulo State",COMBINED,KoreaJapan,-21.1704,-47.81032,approximate,Year:1996 Ref:Garrido et al. (2003),
+V. destructor,A. mellifera,2001,Brazil,"Ribeirão Preto, Sao Paulo State",VD_Korea_K1,VD_K_type,-21.1704,-47.81032,approximate,Year:2001 Ref:Garrido et al. (2003),Litterature
+V. destructor,A. mellifera,2009?,Brazil,"Sao Joaquim, Santa Catarina",VD_Korea_K1,VD_K_type,-28.29245,-49.93758,approximate,Year:2009? Ref:Strapazzon et al. (2009),Litterature
+V. destructor,A. mellifera,2009?,Brazil,São Paulo,VD_Korea_K1,VD_K_type,-21.171509,-47.847355,approximate,Year:2009? Ref:Guerra et al. (2010),Litterature
+V. destructor,A. mellifera,1989;1993;1997,Brazil,"Sao, Paulo",VD_Japan_J1,VD_Japan_J1,-23.561864,-46.73233,approximate,Year:1989;1993;1997 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. mellifera,1997,Brazil,"Sao, Paulo",VD_Korea_K1,VD_K_type,-23.561864,-46.73233,approximate,Year:1997 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. mellifera,1989;1993;1997,Brazil,"Sao, Paulo",COMBINED,KoreaJapan,-23.561864,-46.73233,approximate,Year:1989;1993;1997 Ref:Anderson and Trueman (2000),
+V. destructor,A. mellifera,1990;1993,Brazil,several towns in Rio de Janeiro,VD_Japan_J1,VD_Japan_J1,-22.90684,-43.17289,approximate,Year:1990;1993 Ref:de Guzman et al. (1997),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Azom,VD_Korea_K1,VD_K_type,3.67631,11.45515,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Bamenda-Nkwe,VD_Korea_K1,VD_K_type,5.93303,10.2083,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Bamenyam,VD_Korea_K1,VD_K_type,5.77412,10.31653,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Batouri,VD_Korea_K1,VD_K_type,4.42582,14.35288,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Belo,VD_Korea_K1,VD_K_type,6.18002,10.33402,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Bertoua1,VD_Korea_K1,VD_K_type,4.58325,13.68123,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Bertoua2,VD_Korea_K1,VD_K_type,4.56307,13.7018,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Bomaka,VD_Korea_K1,VD_K_type,4.14539,9.31357,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Buea,VD_Korea_K1,VD_K_type,4.15185,9.29668,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Ekuijua,VD_Korea_K1,VD_K_type,6.33059,10.29085,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Kaigama,VD_Korea_K1,VD_K_type,4.4583,13.62112,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Kumbo,VD_Korea_K1,VD_K_type,6.20112,10.69774,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Kumbo1,VD_Korea_K1,VD_K_type,6.2232,10.68106,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Kumbo2,VD_Korea_K1,VD_K_type,6.20772,10.69884,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Laikom,VD_Korea_K1,VD_K_type,6.28586,10.34344,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Meveo,VD_Korea_K1,VD_K_type,4.11218,9.23868,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Ngaoundere,VD_Korea_K1,VD_K_type,7.33814,13.56683,approximate,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Ngolemakon,VD_Korea_K1,VD_K_type,3.08313,11.42539,approximate,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Njinikijim,VD_Korea_K1,VD_K_type,6.1576,10.34155,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Oku,VD_Korea_K1,VD_K_type,6.24181,10.5317,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Tombel1,VD_Korea_K1,VD_K_type,4.74998,9.66188,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Cameroon,Tombel2,VD_Korea_K1,VD_K_type,4.75303,9.67373,exact,Year:2016? Ref:Cham et al. (2017),Litterature
+V. destructor,A. mellifera,1998?,Canada,British Columbia,VD_Korea_K1,VD_K_type,49.260199,-123.245964,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,Canada,Nova Scotia,VD_Japan_J1,VD_Japan_J1,44.68198,-63.74431,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,Canada,Nova Scotia,VD_Korea_K1,VD_K_type,44.68198,-63.74431,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,Canada,Nova Scotia,COMBINED,KoreaJapan,44.68198,-63.74431,approximate,Year:1998? Ref:de Guzman et al. (1999),
+V. destructor,A. mellifera,1998?,Canada,Ontario,VD_Japan_J1,VD_Japan_J1,43.945787,-78.8969,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,Canada,Ontario,VD_Korea_K1,VD_K_type,43.945787,-78.8969,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,Canada,Ontario,COMBINED,KoreaJapan,43.945787,-78.8969,approximate,Year:1998? Ref:de Guzman et al. (1999),
+V. destructor,A. mellifera,2005?,Chile,Futrono 1,VD_Japan_J1,VD_Japan_J1,-40.12454,-72.38084,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,Futrono 1,VD_Korea_K1,VD_K_type,-40.12454,-72.38084,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,Futrono 1,COMBINED,KoreaJapan,-40.12454,-72.38084,approximate,Year:2005? Ref:Solignac et al. (2005),
+V. destructor,A. mellifera,2005?,Chile,Futrono 2,VD_Japan_J1,VD_Japan_J1,-40.12454,-72.38084,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,Futrono 2,VD_Korea_K1,VD_K_type,-40.12454,-72.38084,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,Futrono 3,VD_Japan_J1,VD_Japan_J1,-40.12454,-72.38084,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,Futrono 3,VD_Korea_K1,VD_K_type,-40.12454,-72.38084,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,La Union,COMBINED,KoreaJapan,-40.295596,-73.080017,approximate,Year:2005? Ref:Solignac et al. (2005),
+V. destructor,A. mellifera,2005?,Chile,La Union 1,VD_Korea_K1,VD_K_type,-40.295596,-73.080017,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,La Union 2,VD_Japan_J1,VD_Japan_J1,-40.295596,-73.080017,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,La Union 2,VD_Korea_K1,VD_K_type,-40.295596,-73.080017,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,Santiago 1,VD_Korea_K1,VD_K_type,-33.449608,-70.680169,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,Santiago 2,VD_Korea_K1,VD_K_type,-33.449608,-70.680169,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,Vladivia 1,VD_Korea_K1,VD_K_type,-39.81565,-73.247284,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,Vladivia 2,VD_Japan_J1,VD_Japan_J1,-39.81565,-73.247284,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,Vladivia 2,VD_Korea_K1,VD_K_type,-39.81565,-73.247284,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Chile,Vladivia 2,COMBINED,KoreaJapan,-39.81565,-73.247284,approximate,Year:2005? Ref:Solignac et al. (2005),
+V. destructor,A. mellifera,2005?,Chile,Vladivia 3,VD_Korea_K1,VD_K_type,-39.81565,-73.247284,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,China,Beijing,VD_Korea_K1,VD_K_type,39.871519,116.479476,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2000,China,"Chifeng, Inner Mongolia",VD_Korea_K1,VD_K_type,43.50547,121.64639,approximate,Year:2000 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2000-2001,China,"Fengman, Lishu Co., Changchun, Jilin  Prov.",VD_Korea_K1,VD_K_type,42.89776,128.14283,approximate,Year:2000-2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2001,China,"Fuzhou, Nanjing Co., Fujian Prov.",VD_Korea_K1,VD_K_type,26.65246,118.32837,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2001,China,"Gangu Co., Gansu Prov.",VD_Korea_K1,VD_K_type,38.29259,102.12454,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2001,China,"Guiyang, Guizhou Prov.",VD_Korea_K1,VD_K_type,27.19536,107.46825,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2001,China,"Hangzhou, Yiwu, Dongyang Co.,  Zhejiang Prov.",VD_Korea_K1,VD_K_type,29.54437,120.34273,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2001,China,Heilongjiang Prov.,VD_Korea_K1,VD_K_type,46.46743,131.72395,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2001,China,"Huangshan, Anhui Prov.",VD_Korea_K1,VD_K_type,32.23438,117.09983,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2000,China,"Institute of Apic Res., Beijing",VD_Korea_K1,VD_K_type,40.31239,116.29369,approximate,Year:2000 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2001,China,"Ji’an Co., Jiangxi Prov.",VD_Korea_K1,VD_K_type,28.48153,116.45835,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2001,China,"Mianzhu Co., Sichuan Prov.",VD_Korea_K1,VD_K_type,31.33807,104.22073,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2002,China,"Mongzi Co., Yunnan Prov.",VD_Korea_K1,VD_K_type,23.39207,103.36542,approximate,Year:2002 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2019,China,NA,VD_Korea_K1,VD_K_type,23.13,113.29,exact,Year: 2019 Accession: MN551178,NCBI
+V. destructor,A. mellifera,2004,China,"Nanchang, Jiangxi Prov.",VD_Korea_K1,VD_K_type,28.68289,115.85819,approximate,Year:2004 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. mellifera,2001,China,"Nanjin, Xuzhou, Liuhe Co., Jiangsu  Prov.",VD_Korea_K1,VD_K_type,33.661,119.62975,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2002,China,Xinjiang Autonomous Region.,VD_Korea_K1,VD_K_type,43.78345,87.61304,approximate,Year:2002 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2002,China,"Xishuanbanna, Yunnan Prov.",VD_Korea_K2,VD_K_type,25.1014,102.35185,approximate,Year:2002 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. mellifera,2001,China,"Xishuangbann, Yunnan Prov.",VD_Korea_K1,VD_K_type,23.0652,100.6207,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2002,China,"Yuanjiang, Hunan Prov.",VD_Korea_K1,VD_K_type,27.94781,112.39087,approximate,Year:2002 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2001,China,"Yuci, Shanxi Prov.",VD_Korea_K1,VD_K_type,37.66302,111.65369,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2001,China,"Zhongshan, Guangdong Prov.",VD_Korea_K1,VD_K_type,24.03474,113.07061,approximate,Year:2001 Ref:Zhou et al. (2004),Litterature
+V. destructor,A. mellifera,2019,China ,"apiary of Guangdong Institute of Applied Biological Resources, Guangzhou",VD_Korea_K1,VD_K_type,23.13,113.29,exact,Year:2019 Ref:Li et al. (2019),Litterature
+V. destructor,A. mellifera,2005?,France,Alsace,VD_Korea_K1,VD_K_type,48.31817,7.44162,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,France,Ardeche,VD_Korea_K1,VD_K_type,44.635608,4.259207,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,France,Avignon,VD_Korea_K1,VD_K_type,43.914616,4.87819,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,France,Cevennes,VD_Korea_K1,VD_K_type,44.26415,3.7122,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,France,Charente,VD_Korea_K1,VD_K_type,45.636678,0.140221,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2002,France,INRA Zoology at Avignon,VD_Korea_K1,VD_K_type,43.91532,4.878364,approximate,Year:2002 Ref:Navajas et al. (2002),Litterature
+V. destructor,A. mellifera,2005?,France,Orne,VD_Korea_K1,VD_K_type,48.63885,0.08482,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,France,Sarthe,VD_Korea_K1,VD_K_type,47.9217,0.16558,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,French Guiana,Sinnamary,VD_Japan_J1,VD_Japan_J1,5.37467,-52.95459,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,French Guiana,Sinnamary,VD_Korea_K1,VD_K_type,5.37467,-52.95459,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,French Guiana,Sinnamary,COMBINED,KoreaJapan,5.37467,-52.95459,approximate,Year:2005? Ref:Solignac et al. (2005),
+V. destructor,A. mellifera,2001,Germany,Hohenheim University Campus,VD_Korea_K1,VD_K_type,48.711556,9.21095,approximate,Year:2001 Ref:Garrido et al. (2003),Litterature
+V. destructor,A. mellifera,1996,Germany,Oberursel,VD_Korea_K1,VD_K_type,50.217636,8.548381,approximate,Year:1996 Ref:Anderson and Fuchs (1998),Litterature
+V. destructor,A. mellifera,1996,Germany,Oberursel,VD_Korea_K1,VD_K_type,50.217636,8.548381,approximate,Year:1996 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. mellifera,1996,Germany,Oberusel,VD_Korea_K1,VD_K_type,50.217636,8.548381,approximate,Year:1996 Ref:de Guzman et al. (1997),Litterature
+V. destructor,A. mellifera,1999-2001,Greece,Thessaloniki,VD_Korea_K1,VD_K_type,40.62,22.95333333,exact,Year:1999-2001 Ref:Kokkinis and Liakos (2004),Litterature
+V. destructor,A. mellifera,1995,Indonesia,"Irian Jaya, Biak island",VD_Korea_K1,VD_K_type,-1.175351,136.071908,approximate,Year:1995 Ref:Anderson and Fuchs (1998),Litterature
+V. destructor,A. mellifera,1995,Indonesia,"Irian Jaya, Yapen island",VD_Korea_K1,VD_K_type,-1.87801,136.23666,approximate,Year:1995 Ref:Anderson and Fuchs (1998),Litterature
+V. destructor,A. mellifera,1996,Indonesia,"Java, Bogor",VD_Korea_K1,VD_K_type,-6.59356,106.800858,approximate,Year:1996 Ref:Anderson and Fuchs (1998),Litterature
+V. destructor,A. mellifera,1994,Indonesia,"Java, Pati",VD_Korea_K1,VD_K_type,-6.74496,111.04604,approximate,Year:1994 Ref:Anderson and Fuchs (1998),Litterature
+V. destructor,A. mellifera,1995,Indonesia,"Java, Pekalongan",VD_Korea_K1,VD_K_type,-6.895258,109.673911,approximate,Year:1995 Ref:Anderson and Fuchs (1998),Litterature
+V. destructor,A. mellifera,1993;1997,Indonesia,"Java, Sukabumi",VD_Korea_K1,VD_K_type,-6.92387,106.93156,approximate,Year:1993;1997 Ref:Anderson and Fuchs (1998),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Astara,VD_Korea_K1,VD_K_type,38.42245,48.86871,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Birjand,VD_Korea_K1,VD_K_type,32.8649,59.22624,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Bojnourd,VD_Korea_K1,VD_K_type,37.4702,57.31433,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Chabahar,VD_Korea_K1,VD_K_type,25.29687,60.64592,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Dalgan,VD_Korea_K1,VD_K_type,27.5088,59.333,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Divandarreh,VD_Korea_K1,VD_K_type,35.91365,47.02668,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Eshtehard,VD_Korea_K1,VD_K_type,35.72438,50.36617,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Hashtgerd,VD_Korea_K1,VD_K_type,35.96137,50.68456,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Kelachay,VD_Korea_K1,VD_K_type,37.07745,50.39723,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Khalkhal,VD_Korea_K1,VD_K_type,37.62054,48.53302,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Khansar,VD_Korea_K1,VD_K_type,33.28116,50.31722,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Marivan,VD_Korea_K1,VD_K_type,35.52109,46.17568,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Mashhad,VD_Korea_K1,VD_K_type,36.26046,59.61675,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Najafabad,VD_Korea_K1,VD_K_type,32.63242,51.36799,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Namin,VD_Korea_K1,VD_K_type,38.42445,48.47824,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Neyshabur,VD_Korea_K1,VD_K_type,36.21408,58.79609,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Rudsar,VD_Korea_K1,VD_K_type,37.13784,50.28361,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Sabalan,VD_Korea_K1,VD_K_type,38.266946,47.836808,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Sanandaj,VD_Korea_K1,VD_K_type,35.32187,46.98616,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Sari,VD_Korea_K1,VD_K_type,36.56587,53.05863,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Sepahan,VD_Korea_K1,VD_K_type,32.55282,51.66762,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Shahr-e-rey,VD_Korea_K1,VD_K_type,35.57704,51.46246,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Shahreza,VD_Korea_K1,VD_K_type,32.0081,51.86283,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Shahriar,VD_Korea_K1,VD_K_type,35.67067,51.02275,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Shirvan,VD_Korea_K1,VD_K_type,37.40923,57.92761,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Taleghan,VD_Korea_K1,VD_K_type,36.17482,50.76504,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Talesh,VD_Korea_K1,VD_K_type,37.80165,48.90713,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2015-2016,Iran (Islamic Republic of),Zahedan,VD_Korea_K1,VD_K_type,29.45192,60.88419,approximate,Year:2015-2016 Ref:Farjamfar et al. (2018),Litterature
+V. destructor,A. mellifera,2005?,Israel,Bet Degan,VD_Korea_K1,VD_K_type,32.00178,34.8297,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2018,Japan,Fukushima,VD_Korea_K1,VD_K_type,37.683701,140.453621,approximate,Year:2018 Ref:Ogihara et al. (2020),Litterature
+V. destructor,A. mellifera,2018,Japan,Hokkaido,VD_Korea_K1,VD_K_type,43.07785,141.339214,approximate,Year:2018 Ref:Ogihara et al. (2020),Litterature
+V. destructor,A. mellifera,2005?,Japan,Machida,VD_Japan_J1,VD_Japan_J1,35.54663,139.43861,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Japan,Machida,VD_Korea_K1,VD_K_type,35.54663,139.43861,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Japan,Machida,COMBINED,KoreaJapan,35.54663,139.43861,approximate,Year:2005? Ref:Solignac et al. (2005),
+V. destructor,A. mellifera,2005?,Japan,Noda,VD_Japan_J1,VD_Japan_J1,35.917735,139.90985,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Japan,Noda,VD_Korea_K1,VD_K_type,35.917735,139.90985,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Japan,Noda,COMBINED,KoreaJapan,35.917735,139.90985,approximate,Year:2005? Ref:Solignac et al. (2005),
+V. destructor,A. mellifera,2016,Japan,Okinawa,VD_Korea_K1,VD_K_type,26.477,127.835,exact,Year:2016 Ref:Techer et al. (2019),Litterature
+V. destructor,A. mellifera,2018,Japan,Osaka,VD_Korea_K1,VD_K_type,34.821945,135.523887,approximate,Year:2018 Ref:Ogihara et al. (2020),Litterature
+V. destructor,A. mellifera,1996,Japan,Tokyo,VD_Japan_J1,VD_Japan_J1,35.7197,139.73742,approximate,Year:1996 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. mellifera,2000,Japan,Tokyo,VD_Korea_K1,VD_K_type,35.7197,139.73742,approximate,Year:2000 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. mellifera,2000,Japan,Tokyo,COMBINED,KoreaJapan,35.7197,139.73742,approximate,Year:2000 Ref:Navajas et al. (2010),
+V. destructor,A. mellifera,2005?,Japan,Tokyo,VD_Korea_K1,VD_K_type,35.7197,139.73742,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Japan,Yatsuhiro,VD_Korea_K1,VD_K_type,32.475797,130.607262,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Japan,Yokohama,VD_Korea_K1,VD_K_type,35.474602,139.588154,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2009,Kenya,Isiolo,VD_Korea_K1,VD_K_type,0.346613,37.581592,approximate,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,2009,Kenya,Kakamega,VD_Korea_K1,VD_K_type,0.282766,34.753905,approximate,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,2009,Kenya,Kilifi,VD_Korea_K1,VD_K_type,-3.530112,39.909432,approximate,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,2009,Kenya,Kitui,VD_Korea_K1,VD_K_type,-1.374922,37.989983,approximate,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,2009,Kenya,Machakos,VD_Korea_K1,VD_K_type,-1.520089,37.266162,approximate,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,2009,Kenya,Malindi,VD_Korea_K1,VD_K_type,-3.219989,40.117309,approximate,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,2009,Kenya,Meru,VD_Korea_K1,VD_K_type,0.134882,37.708346,approximate,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,2009,Kenya,Murang'a,VD_Korea_K1,VD_K_type,-0.71719,37.147944,approximate,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,2009,Kenya,Mwingi,VD_Korea_K1,VD_K_type,-0.8150278,38.32688889,exact,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,2009,Kenya,Nairobi,VD_Korea_K1,VD_K_type,-1.2243611,36.89744444,exact,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,2009,Kenya,Nyahururu,VD_Korea_K1,VD_K_type,0.030718,36.364181,approximate,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,1996,"Korea, Republic of",Seoul,VD_Korea_K1,VD_K_type,37.459608,126.948541,approximate,Year:1996 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. mellifera,2011,Madagascar,"D1 Manjakandriana, Betoho/Amby",VD_Korea_K1,VD_K_type,-18.82,47.72,approximate,Year:2011 Ref:Rasolofoarivao et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Madagascar,"D1 Manjakandriana, Betoho/Amby",VD_Korea_K1,VD_K_type,-18.82,47.72,approximate,Year:2011 Ref:Rasolofoarivao et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Madagascar,"D1 Manjakandriana, Betoho/Amby",VD_Korea_K1,VD_K_type,-18.82,47.72,approximate,Year:2011 Ref:Rasolofoarivao et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Madagascar,"D1 Manjakandriana, Betoho/Amby",VD_Korea_K1,VD_K_type,-18.82,47.72,approximate,Year:2011 Ref:Rasolofoarivao et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Madagascar,"D1 Manjakandriana, Betoho/Amby",VD_Korea_K1,VD_K_type,-18.82,47.72,approximate,Year:2011 Ref:Rasolofoarivao et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Madagascar,"D1 Manjakandriana, Betoho/Amby",VD_Korea_K1,VD_K_type,-18.82,47.72,approximate,Year:2011 Ref:Rasolofoarivao et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Madagascar,"D2 Anjozorobe, Masakalina",VD_Korea_K1,VD_K_type,-18.34,47.88,approximate,Year:2011 Ref:Rasolofoarivao et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Madagascar,D24 Rantolava region,VD_Korea_K1,VD_K_type,-17.24,49.44,approximate,Year:2011 Ref:Rasolofoarivao et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Madagascar,D24 Rantolava region,VD_Korea_K1,VD_K_type,-17.24,49.44,approximate,Year:2011 Ref:Rasolofoarivao et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Madagascar,D5 Antananarivo region,VD_Korea_K1,VD_K_type,-18.91,47.55,approximate,Year:2011 Ref:Rasolofoarivao et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Madagascar,D5 Antananarivo region,VD_Korea_K1,VD_K_type,-18.91,47.55,approximate,Year:2011 Ref:Rasolofoarivao et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Madagascar,"D6 Antananarivo R., Cite des Profs",VD_Korea_K1,VD_K_type,-18.91,47.55,approximate,Year:2011 Ref:Rasolofoarivao et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Madagascar,"D6 Antananarivo R., Cite des Profs",VD_Korea_K1,VD_K_type,-18.91,47.55,approximate,Year:2011 Ref:Rasolofoarivao et al. (2013),Litterature
+V. destructor,A. mellifera,2014,Mauritius,Saint Pierre,VD_Korea_K1-like,VD_K_type,-20.219379,57.532718,approximate,Year:2014 Ref:Esnault et al. (2018),Litterature
+V. destructor,A. mellifera,2014,Mauritius,Saint Pierre,VD_Korea_K1-like,VD_K_type,-20.219379,57.532718,approximate,Year:2014 Ref:Esnault et al. (2018),Litterature
+V. destructor,A. mellifera,2005?,Mexico,Mexico A,VD_Korea_K1,VD_K_type,19.320434,-99.185686,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Mexico,Mexico B,VD_Korea_K1,VD_K_type,19.320434,-99.185686,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Mexico,Mexico C,VD_Korea_K1,VD_K_type,19.320434,-99.185686,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2013,Mongolia,9 locations around Ulaanbaatar,VD_Korea_K1,VD_K_type,47.911143,106.94181,approximate,Year:2013 Ref:Tsevegmid et al. (2016),Litterature
+V. destructor,A. mellifera,2005?,New Zealand,Auckland,VD_Korea_K1,VD_K_type,-36.883266,174.849133,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2016,New Zealand,NA,VD_Korea_K1,VD_K_type,-36.883266,174.849133,approximate,Year:2016 Ref:Li et al. (2018),Litterature
+V. destructor,A. mellifera,2009-2010,Nigeria,"Lagos State, Unilag, Akoka",VD_Korea_K1,VD_K_type,6.520563,3.399577,approximate,Year: 2009-2010 Ref: Akinwande et al. (2012;2013),Litterature
+V. destructor,A. mellifera,2009-2010,Nigeria,"Osun, OAU, Ile-Ife",VD_Korea_K1,VD_K_type,7.51615,4.528657,exact,Year:2009-2010 Ref:Akinwande et al. (2012;2013),Litterature
+V. destructor,A. mellifera,2005?,Philippines,Bico Luzon,VD_Korea_K1,VD_K_type,15.657496,121.043474,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,Philippines,Cebu City,VD_Korea_K1,VD_K_type,10.297433,123.896971,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2015,Philippines,Lipa city,VD_Korea_K1,VD_K_type,13.56,121.09,exact,Year:2015 Ref:Beaurepaire et al. (2015),Litterature
+V. destructor,A. mellifera,2015,Philippines,NA,VD_Korea_K1,VD_K_type,13.56,121.09,exact,Year: 2015 Accession: KR528385,NCBI
+V. destructor,A. mellifera,2005?,Poland,Varsovie,VD_Korea_K1,VD_K_type,52.240175,21.01785,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2015,"Korea, Republic of","College of Agriculture and Life Science, Seoul National University",VD_Korea_K1,VD_K_type,37.456681,126.947836,approximate,Year:2015 Ref:Thapa et al. (2015),Litterature
+V. destructor,A. mellifera,2012-2013,"Korea, Republic of","Rural Development Administration, Suwon",VD_Korea_K1,VD_K_type,37.274045,126.984371,approximate,Year:2012-2013 Ref:Thapa et al. (2015),Litterature
+V. destructor,A. mellifera,1995,Russia,Primorsky territory,VD_Korea_K1,VD_K_type,43.1198,131.88692,approximate,Year:1995 Ref:de Guzman et al. (1997),Litterature
+V. destructor,A. mellifera,1995,Russia,Vladivostok,VD_Korea_K1,VD_K_type,43.1198,131.88692,approximate,Year:1995 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. mellifera,1995,Russia,Vladivostok,VD_Korea_K1,VD_K_type,43.1198,131.88692,approximate,Year:1995 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. mellifera,2013,Saudi Arabia,Abha,VD_Korea_K1,VD_K_type,18.2166667,42.5,exact,Year:2013 Ref:Alattal et al. (2015),Litterature
+V. destructor,A. mellifera,2013,Saudi Arabia,Al-Hasa,VD_Korea_K1,VD_K_type,25.4166667,49.61666667,exact,Year:2013 Ref:Alattal et al. (2015),Litterature
+V. destructor,A. mellifera,2013,Saudi Arabia,AlBahah,VD_Korea_K1,VD_K_type,20,41.45,exact,Year:2013 Ref:Alattal et al. (2015),Litterature
+V. destructor,A. mellifera,2013,Saudi Arabia,Jazan,VD_Korea_K1,VD_K_type,16.8833333,42.55,exact,Year:2013 Ref:Alattal et al. (2015),Litterature
+V. destructor,A. mellifera,2013,Saudi Arabia,Najran,VD_Korea_K1,VD_K_type,17.4833333,44.11666667,exact,Year:2013 Ref:Alattal et al. (2015),Litterature
+V. destructor,A. mellifera,2013,Saudi Arabia,Riyadh,VD_Korea_K1,VD_K_type,25.05,47.18333333,exact,Year:2013 Ref:Alattal et al. (2015),Litterature
+V. destructor,A. mellifera,2013,Saudi Arabia,Tabuk,VD_Korea_K1,VD_K_type,28.3833333,36.56666667,exact,Year:2013 Ref:Alattal et al. (2015),Litterature
+V. destructor,A. mellifera,2013,Saudi Arabia,Taif,VD_Korea_K1,VD_K_type,21.2666667,40.41666667,exact,Year:2013 Ref:Alattal et al. (2015),Litterature
+V. destructor,A. mellifera,2012,Serbia,Belgrade,VD_Korea_K1/Serbia1,VD_K_type,44.79361111,20.46388889,exact,Year:2012 Ref:Gajic et al. (2019),Litterature
+V. destructor,A. mellifera,2011,Serbia,Belgrade,VD_Korea_K1,VD_K_type,44.8186111,20.46805556,exact,Year:2011 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Serbia,Belgrade,VD_Serbia_1,VD_K_type,44.8186111,20.46805556,exact,Year:2011 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2012,Serbia,Boljevac,VD_Korea_K1/Serbia1,VD_K_type,43.83027778,21.95305556,exact,Year:2012 Ref:Gajic et al. (2019),Litterature
+V. destructor,A. mellifera,2011,Serbia,Boljevac,VD_Korea_K1,VD_K_type,43.8302778,21.95305556,exact,Year:2011 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Serbia,Boljevac,VD_Serbia_1,VD_K_type,43.8302778,21.95305556,exact,Year:2011 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2000,Serbia,Bor,VD_Korea_K1,VD_K_type,44.0783333,22.09527778,exact,Year:2000 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2012,Serbia,Lapovo,VD_Korea_K1/Serbia1,VD_K_type,44.18611111,21.08305556,exact,Year:2012 Ref:Gajic et al. (2019),Litterature
+V. destructor,A. mellifera,2012,Serbia,Nis,VD_Korea_K1/Serbia1,VD_K_type,43.30916667,21.90861111,exact,Year:2012 Ref:Gajic et al. (2019),Litterature
+V. destructor,A. mellifera,2012,Serbia,Palic,VD_Korea_K1/Serbia1,VD_K_type,46.10888889,19.76722222,exact,Year:2012 Ref:Gajic et al. (2019),Litterature
+V. destructor,A. mellifera,2011,Serbia,Palic,VD_Korea_K1,VD_K_type,46.1088889,19.76722222,exact,Year:2011 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Serbia,Palic,VD_Korea_K1,VD_K_type,46.1088889,19.76722222,exact,Year:2011 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Serbia,Saprance,VD_Korea_K1,VD_K_type,42.3891667,22.00472222,exact,Year:2011 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2012,Serbia,Saprance,VD_Korea_K1/Serbia1,VD_K_type,42.3891667,22.00472222,exact,Year:2012 Ref:Gajic et al. (2019),Litterature
+V. destructor,A. mellifera,2011,Serbia,Saprance,VD_Serbia_1,VD_K_type,42.3891667,22.00472222,exact,Year:2011 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Serbia,Suivi Do,VD_Korea_K1,VD_K_type,43.0452778,20.12083333,exact,Year:2011 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2012,Serbia,Suivi Do,VD_Korea_K1/Serbia1,VD_K_type,43.0452778,20.12083333,exact,Year:2012 Ref:Gajic et al. (2019),Litterature
+V. destructor,A. mellifera,2011,Serbia,Suivi Do,VD_Serbia_1,VD_K_type,43.0452778,20.12083333,exact,Year:2011 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,1992,Serbia,Vrbica,VD_Korea_K1,VD_K_type,44.2877778,20.58388889,exact,Year:1992 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,1992,Serbia,Vrbica,VD_Serbia_1,VD_K_type,44.2877778,20.58388889,exact,Year:1992 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2001,Serbia,Zajecar,VD_Korea_K1,VD_K_type,43.9041667,22.28472222,exact,Year:2001 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2011,Serbia,Zlatibor,VD_Korea_K1,VD_K_type,43.7233333,19.70416667,exact,Year:2011 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2012,Serbia,Zlatibor,VD_Korea_K1/Serbia1,VD_K_type,43.7233333,19.70416667,exact,Year:2012 Ref:Gajic et al. (2019),Litterature
+V. destructor,A. mellifera,2011,Serbia,Zlatibor,VD_Serbia_1,VD_K_type,43.7233333,19.70416667,exact,Year:2011 Ref:Gajic et al. (2013),Litterature
+V. destructor,A. mellifera,2005?,South Africa,Pretoria,VD_Korea_K1,VD_K_type,-25.756353,28.231085,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,1998,South Africa,Stellenbosch,VD_Korea_K1,VD_K_type,-33.933496,18.864089,approximate,Year:1998 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,A Coruña,VD_Korea_K1,VD_K_type,43.36234,-8.41154,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Álava,VD_Korea_K1,VD_K_type,42.90999,-2.69838,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Albacete,VD_Korea_K1,VD_K_type,38.99434,-1.85854,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Almería,VD_Korea_K1,VD_K_type,36.83404,-2.46371,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Asturias,VD_Korea_K1,VD_K_type,43.36139,-5.85932,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Ávila,VD_Korea_K1,VD_K_type,40.65668,-4.6812,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Badajoz,VD_Korea_K1,VD_K_type,38.87944,-6.97065,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Balearic Islands,VD_Korea_K1,VD_K_type,39.61146,2.94016,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Burgos,VD_Korea_K1,VD_K_type,42.34399,-3.6969,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Cáceres,VD_Korea_K1,VD_K_type,39.47527,-6.37242,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Cádiz,VD_Korea_K1,VD_K_type,36.52706,-6.28859,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Cantabria,VD_Korea_K1,VD_K_type,43.18283,-3.98784,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Córdoba,VD_Korea_K1,VD_K_type,37.88817,-4.77938,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Cuenca,VD_Korea_K1,VD_K_type,40.07039,-2.13741,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,"El Hierro, Canary island",VD_Korea_K1,VD_K_type,27.72549,-18.0243,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Granada,VD_Korea_K1,VD_K_type,37.17733,-3.59855,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2001,Spain,Guadalajara,VD_Japan_J1,VD_Japan_J1,40.63248,-3.16016,approximate,Year:2001 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2001,Spain,Guadalajara,VD_Korea_K1,VD_K_type,40.63248,-3.16016,approximate,Year:2001 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2001,Spain,Guadalajara,COMBINED,KoreaJapan,40.63248,-3.16016,approximate,Year:2001 Ref:Munoz et al. (2008),
+V. destructor,A. mellifera,2006-2007,Spain,Huelva,VD_Korea_K1,VD_K_type,37.26142,-6.94472,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Huesca,VD_Korea_K1,VD_K_type,42.13184,-0.4078,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Jaén,VD_Korea_K1,VD_K_type,37.77959,-3.7849,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,La Rioja,VD_Korea_K1,VD_K_type,42.28707,-2.5396,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,León,VD_Korea_K1,VD_K_type,42.59872,-5.56709,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Lugo,VD_Korea_K1,VD_K_type,43.00973,-7.55675,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Madrid,VD_Korea_K1,VD_K_type,40.41677,-3.70379,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Málaga,VD_Korea_K1,VD_K_type,36.72127,-4.42139,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Murcia,VD_Korea_K1,VD_K_type,37.99223,-1.13065,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Navarre,VD_Korea_K1,VD_K_type,42.69539,-1.67606,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Ourense,VD_Korea_K1,VD_K_type,42.33578,-7.86388,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Palencia,VD_Korea_K1,VD_K_type,42.00968,-4.5288,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Pontevedra,VD_Korea_K1,VD_K_type,42.42988,-8.64462,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Salamanca,VD_Korea_K1,VD_K_type,40.9701,-5.66353,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Segovia,VD_Korea_K1,VD_K_type,40.9429,-4.1088,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Seville,VD_Korea_K1,VD_K_type,37.38909,-5.98445,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Soria,VD_Korea_K1,VD_K_type,41.76659,-2.47903,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Toledo,VD_Korea_K1,VD_K_type,39.86283,-4.02732,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,València,VD_Korea_K1,VD_K_type,39.4699,-0.37628,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Valladolid,VD_Korea_K1,VD_K_type,41.65225,-4.72453,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Zamora,VD_Korea_K1,VD_K_type,41.50347,-5.74678,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2006-2007,Spain,Zaragoza,VD_Korea_K1,VD_K_type,41.64882,-0.88908,approximate,Year:2006-2007 Ref:Munoz et al. (2008),Litterature
+V. destructor,A. mellifera,2014,Syrian Arab Republic,Al-Qunaitra,VD_Syria_AlQ5,VD_K_type,33.15,36.01,exact,Year: 2014 Accession: LN873226,NCBI
+V. destructor,A. mellifera,2014,Syrian Arab Republic,Tartous,VD_Korea_K1,VD_K_type,34.898715,35.889217,approximate,Year: 2014 Accession: LN873222,NCBI
+V. destructor,A. mellifera,2014,Syrian Arab Republic,"Al-Qunaitra, Shura",VD_Korea_K1,VD_K_type,33.2604,36.0324,exact,Year:2014 Ref:Elbeaino et al. (2016),Litterature
+V. destructor,A. mellifera,2014,Syrian Arab Republic,"Al-Qunaitra, Shura",VD_Syria_AlQ5,VD_K_type,33.2604,36.0324,exact,Year:2014 Ref:Elbeaino et al. (2016),Litterature
+V. destructor,A. mellifera,2014,Syrian Arab Republic,"Damascus, Abou Jarash",VD_Korea_K1,VD_K_type,33.5412,36.3204,exact,Year:2014 Ref:Elbeaino et al. (2016),Litterature
+V. destructor,A. mellifera,2014,Syrian Arab Republic,"Rural Damascus, Al-Tall",VD_Korea_K1,VD_K_type,33.5916,36.83480278,exact,Year:2014 Ref:Elbeaino et al. (2016),Litterature
+V. destructor,A. mellifera,2014,Syrian Arab Republic,"Tartous, Amrit",VD_Korea_K1,VD_K_type,34.8372,35.911,exact,Year:2014 Ref:Elbeaino et al. (2016),Litterature
+V. destructor,A. mellifera,2014,Syrian Arab Republic,"Tartous, Amrit",VD_Korea_K1,VD_K_type,34.8372,35.911,exact,Year:2014 Ref:Elbeaino et al. (2016),Litterature
+V. destructor,A. mellifera,2002,Taiwan,Taichung,VD_Japan_J1,VD_Japan_J1,24.15222,120.68366,approximate,Year:2002 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. mellifera,2005?,Taiwan,Taichung,VD_Japan_J1,VD_Japan_J1,24.15222,120.68366,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2013-2015,Thailand,Chiang Mai,VD_Korea_K1,VD_K_type,18.7956,98.952287,approximate,Year:2013-2015 Ref:Dietemann et al. (2019),Litterature
+V. destructor,A. mellifera,2016,Thailand,Chiang Mai,VD_Korea_K1,VD_K_type,18.8036111,98.95611111,approximate,Year:2016 Ref:Pakwan et al. (2017),Litterature
+V. destructor,A. mellifera,2016?,Thailand,Chiang Mai,VD_Korea_K1,VD_K_type,18.8036111,98.95611111,exact,Year:2016? Ref:Page et al. (2016),Litterature
+V. destructor,A. mellifera,1997,Thailand,Chiang Mai,VD_Japan_J1,VD_Japan_J1,18.80596,98.95336,approximate,Year:1997 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. mellifera,1997;2016?,Thailand,Chiang Mai,COMBINED,KoreaJapan,18.80596,98.95336,approximate,Year:1997;2016? Ref:Navajas et al. (2010),
+V. destructor,A. mellifera,2004?,Turkey,Anzer-Rize,VD_Korea_K1,VD_K_type,41.02647,40.51556,approximate,Year:2004? Ref:Warrit et al. (2004),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Bozdoğan",VD_Korea_K1,VD_K_type,37.672009,28.317311,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Buharken",VD_Korea_K1,VD_K_type,37.963088,28.742764,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Çine",VD_Korea_K1,VD_K_type,37.615227,28.060304,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Didim",VD_Korea_K1,VD_K_type,37.367115,27.272112,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Germencik",VD_Korea_K1,VD_K_type,37.867832,27.600583,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, İncirliova",VD_Korea_K1,VD_K_type,37.851846,27.723867,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Karacasu",VD_Korea_K1,VD_K_type,37.725959,28.605874,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Karpuzlu",VD_Korea_K1,VD_K_type,37.559496,27.835085,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Köşk",VD_Korea_K1,VD_K_type,37.855161,28.051425,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Kuşadası",VD_Korea_K1,VD_K_type,37.859898,27.251929,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Kuyucak",VD_Korea_K1,VD_K_type,37.912168,28.460436,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Merkez",VD_Korea_K1,VD_K_type,37.824322,27.819965,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Nazilli",VD_Korea_K1,VD_K_type,37.910109,28.335609,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Paşayaylası",VD_Korea_K1,VD_K_type,37.947059,27.89127,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Söke",VD_Korea_K1,VD_K_type,37.749581,27.402066,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Sultanhisar",VD_Korea_K1,VD_K_type,37.88767,28.151353,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2014-2015,Turkey,"Aydin region, Yenipazar",VD_Korea_K1,VD_K_type,37.824305,28.196727,approximate,Year:2014-2015 Ref:Ayan and Aldemir (2018),Litterature
+V. destructor,A. mellifera,2004?,Turkey,Bafra-Samsun,VD_Korea_K1,VD_K_type,41.56195,35.90568,approximate,Year:2004? Ref:Warrit et al. (2004),Litterature
+V. destructor,A. mellifera,2004?,Turkey,Bayburt,VD_Korea_K1,VD_K_type,40.26032,40.22804,approximate,Year:2004? Ref:Warrit et al. (2004),Litterature
+V. destructor,A. mellifera,2004?,Turkey,Eregli,VD_Korea_K1,VD_K_type,41.29153,31.55883,approximate,Year:2004? Ref:Warrit et al. (2004),Litterature
+V. destructor,A. mellifera,2004?,Turkey,Erfelek-Sinop,VD_Korea_K1,VD_K_type,41.87957,34.90854,approximate,Year:2004? Ref:Warrit et al. (2004),Litterature
+V. destructor,A. mellifera,2004?,Turkey,Inebolu-Kastamonu,VD_Korea_K1,VD_K_type,41.37158,33.75966,approximate,Year:2004? Ref:Warrit et al. (2004),Litterature
+V. destructor,A. mellifera,2004?,Turkey,Kurtun-Gumushane,VD_Korea_K1,VD_K_type,40.70199,39.08543,approximate,Year:2004? Ref:Warrit et al. (2004),Litterature
+V. destructor,A. mellifera,2017?,Turkey,Pervari,VD_Korea_K1,VD_K_type,37.93264,42.5476,approximate,Year:2017? Ref:Ayan et al. (2017),Litterature
+V. destructor,A. mellifera,2017?,Turkey,Şirvan,VD_Korea_K1,VD_K_type,38.09677,42.13438,approximate,Year:2017? Ref:Ayan et al. (2017),Litterature
+V. destructor,A. mellifera,2004?,Turkey,Yokusdibi-Ordu,VD_Korea_K1,VD_K_type,40.76574,37.92911,approximate,Year:2004? Ref:Warrit et al. (2004),Litterature
+V. destructor,A. mellifera,2005?,United Kingdom,Lockerbie,VD_Korea_K1,VD_K_type,55.128675,-3.358945,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,United Kingdom,Sheffield,VD_Korea_K1,VD_K_type,53.380768,-1.487421,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,1997,United Kingdom,York,VD_Korea_K1,VD_K_type,53.944947,-1.056106,approximate,Year:1997 Ref:Anderson and Trueman (2000),Litterature
+V. destructor,A. mellifera,2009,United Republic of Tanzania,Dar es Salaam,VD_Korea_K1,VD_K_type,-6.848489,39.273559,approximate,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,2009,United Republic of Tanzania,Pemba,VD_Korea_K1,VD_K_type,-5.418631,39.667797,approximate,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,2009,United Republic of Tanzania,Tanga,VD_Korea_K1,VD_K_type,-5.10174,39.045053,approximate,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,2009,United Republic of Tanzania,Zanzibar,VD_Korea_K1,VD_K_type,-6.190072,39.214282,approximate,Year:2009 Ref:Fazier et al. (2010),Litterature
+V. destructor,A. mellifera,1998?,United States,Arizona,VD_Japan_J1,VD_Japan_J1,32.275281,-110.94209,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Arizona,VD_Korea_K1,VD_K_type,32.275281,-110.94209,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Arizona,COMBINED,KoreaJapan,32.275281,-110.94209,approximate,Year:1998? Ref:de Guzman et al. (1999),
+V. destructor,A. mellifera,2005?,United States,Boulder Creek CA,VD_Japan_J1,VD_Japan_J1,37.12413,-122.12277,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,United States,Boulder Creek CA,VD_Korea_K1,VD_K_type,37.12413,-122.12277,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,United States,Boulder Creek CA,COMBINED,KoreaJapan,37.12413,-122.12277,approximate,Year:2005? Ref:Solignac et al. (2005),
+V. destructor,A. mellifera,1998?,United States,"California, Santa Cruz island",VD_Japan_J1,VD_Japan_J1,34.0232,-119.76576,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Connecticut,VD_Japan_J1,VD_Japan_J1,41.807453,-72.253959,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Connecticut,VD_Korea_K1,VD_K_type,41.807453,-72.253959,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Connecticut,COMBINED,KoreaJapan,41.807453,-72.253959,approximate,Year:1998? Ref:de Guzman et al. (1999),
+V. destructor,A. mellifera,1998?,United States,Florida,VD_Japan_J1,VD_Japan_J1,29.635233,-82.359767,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Florida,VD_Korea_K1,VD_K_type,29.635233,-82.359767,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Florida,COMBINED,KoreaJapan,29.635233,-82.359767,approximate,Year:1998? Ref:de Guzman et al. (1999),
+V. destructor,A. mellifera,1994-1996,United States,"Florida, Gainesville",VD_Korea_K1,VD_K_type,29.635233,-82.359767,approximate,Year:1994-1996 Ref:de Guzman et al. (1997),Litterature
+V. destructor,A. mellifera,1998?,United States,Georgia,VD_Japan_J1,VD_Japan_J1,33.420841,-90.909645,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Georgia,VD_Korea_K1,VD_K_type,33.420841,-90.909645,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Georgia,COMBINED,KoreaJapan,33.420841,-90.909645,approximate,Year:1998? Ref:de Guzman et al. (1999),
+V. destructor,A. mellifera,1998?,United States,Iowa,VD_Japan_J1,VD_Japan_J1,43.369671,-92.126708,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Iowa,VD_Korea_K1,VD_K_type,43.369671,-92.126708,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Iowa,COMBINED,KoreaJapan,43.369671,-92.126708,approximate,Year:1998? Ref:de Guzman et al. (1999),
+V. destructor,A. mellifera,1994-1996,United States,"Iowa, Cresco",VD_Korea_K1,VD_K_type,43.369671,-92.126708,approximate,Year:1994-1996 Ref:de Guzman et al. (1997),Litterature
+V. destructor,A. mellifera,1994-1996,United States,Louisiana,VD_Korea_K1,VD_K_type,30.379489,-91.166622,approximate,Year:1994-1996 Ref:de Guzman et al. (1997),Litterature
+V. destructor,A. mellifera,1998?,United States,Louisiana,VD_Korea_K1,VD_K_type,30.379489,-91.166622,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Maryland,VD_Korea_K1,VD_K_type,39.020201,-76.909299,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,2005?,United States,Michigan,VD_Japan_J1,VD_Japan_J1,42.765521,-84.504608,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,United States,Michigan,VD_Korea_K1,VD_K_type,42.765521,-84.504608,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,2005?,United States,Michigan,COMBINED,KoreaJapan,42.765521,-84.504608,approximate,Year:2005? Ref:Solignac et al. (2005),
+V. destructor,A. mellifera,1998?,United States,Minnesota,VD_Korea_K1,VD_K_type,44.9537,-93.08995,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1994-1996,United States,"Minnesota, St Paul",VD_Korea_K1,VD_K_type,44.9537,-93.08995,approximate,Year:1994-1996 Ref:de Guzman et al. (1997),Litterature
+V. destructor,A. mellifera,1998?,United States,Nebraska,VD_Japan_J1,VD_Japan_J1,40.828769,-96.667154,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Nebraska,VD_Korea_K1,VD_K_type,40.828769,-96.667154,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Nebraska,COMBINED,KoreaJapan,40.828769,-96.667154,approximate,Year:1998? Ref:de Guzman et al. (1999),
+V. destructor,A. mellifera,1998?,United States,Ohio,VD_Japan_J1,VD_Japan_J1,40.005018,-83.025206,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Ohio,VD_Korea_K1,VD_K_type,40.005018,-83.025206,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Ohio,COMBINED,KoreaJapan,40.005018,-83.025206,approximate,Year:1998? Ref:de Guzman et al. (1999),
+V. destructor,A. mellifera,1998?,United States,Oregon,VD_Korea_K1,VD_K_type,44.564678,-123.280267,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,2005?,United States,Pennsylvannia,VD_Korea_K1,VD_K_type,40.077732,-75.187411,approximate,Year:2005? Ref:Solignac et al. (2005),Litterature
+V. destructor,A. mellifera,1998?,United States,Texas,VD_Japan_J1,VD_Japan_J1,31.055935,-97.348384,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Texas,VD_Korea_K1,VD_K_type,31.055935,-97.348384,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Texas,COMBINED,KoreaJapan,31.055935,-97.348384,approximate,Year:1998? Ref:de Guzman et al. (1999),
+V. destructor,A. mellifera,1998?,United States,Virginia,VD_Japan_J1,VD_Japan_J1,37.022965,-76.343705,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Virginia,VD_Korea_K1,VD_K_type,37.022965,-76.343705,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1998?,United States,Virginia,COMBINED,KoreaJapan,37.022965,-76.343705,approximate,Year:1998? Ref:de Guzman et al. (1999),
+V. destructor,A. mellifera,1998?,United States,Wisconsin,VD_Korea_K1,VD_K_type,43.081124,-89.533452,approximate,Year:1998? Ref:de Guzman et al. (1999),Litterature
+V. destructor,A. mellifera,1994-1996,United States,"Wisconsin, Madison",VD_Korea_K1,VD_K_type,43.081124,-89.533452,approximate,Year:1994-1996 Ref:de Guzman et al. (1997),Litterature
+V. destructor,A. mellifera,2013,Viet Nam,Dien Bien,VD_Korea_K1,VD_K_type,21.23,103.01,exact,Year:2013 Ref:Beaurepaire et al. (2015),Litterature
+V. destructor,A. mellifera,1996,Viet Nam,Hanoi,VD_Korea_K1,VD_K_type,21.00555,105.84346,approximate,Year:1996 Ref:Navajas et al. (2010),Litterature
+V. destructor,A. mellifera,1999?,Viet Nam,Hanoi,VD_Korea_K1,VD_K_type,21.00555,105.84346,approximate,Year:1999? Ref:Fuchs et al. (2000) ,Litterature
+V. destructor,A. mellifera,1999?,Viet Nam,"Hanoi, Not reproducing in brood",VD_Viet_Nam_V1,VD_Viet_Nam_V1,21.00555,105.84346,approximate,Year:1999? Ref:Fuchs et al. (2000) ,Litterature
+V. destructor,A. mellifera,1999?,Viet Nam,Moc Chau,VD_Korea_K1,VD_K_type,20.92208,104.75209,approximate,Year:1999? Ref:Fuchs et al. (2000) ,Litterature
+V. destructor,A. mellifera,2013,Viet Nam,NA,VD_Korea_K1,VD_K_type,21.19,103.54,exact,Year: 2013 Accession: KR528384,NCBI
+V. destructor,A. mellifera,2013,Viet Nam,NA,VD_Korea_K1,VD_K_type,21.23,103.01,exact,Year: 2013 Accession: KR528381,NCBI
+V. destructor,A. mellifera,2013,Viet Nam,Son La,VD_Korea_K1,VD_K_type,21.19,103.54,exact,Year:2013 Ref:Beaurepaire et al. (2015),Litterature
+V. destructor,NA,NA,India,Amritsar,VD_Korea_K1,VD_K_type,31.631738,74.869261,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Amritsar,VD_Korea_K1,VD_K_type,31.631738,74.869261,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Faridkot,VD_Faridkot_1,VD_K_type,30.675046,74.742836,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Faridkot,VD_Faridkot_2,VD_K_type,30.675046,74.742836,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Faridkot,VD_Korea_K1,VD_K_type,30.675046,74.742836,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Faridkot,VD_Korea_K1,VD_K_type,30.675046,74.742836,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Faridkot,VD_Korea_K1,VD_K_type,30.675046,74.742836,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Faridkot,VD_Korea_K1,VD_K_type,30.675046,74.742836,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Gurdaspur,VD_Gurdaspur_1,VD_K_type,32.040271,75.397966,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Gurdaspur,VD_Korea_K1,VD_K_type,32.040271,75.397966,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Hisar,VD_Hisar_1,VD_K_type,29.149907,75.717371,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Hisar,VD_Korea_K1,VD_K_type,29.149907,75.717371,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Hoshiarpur,VD_Hoshiarpur_1,VD_K_type,31.512777,75.913191,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Hoshiarpur,VD_Korea_K1,VD_K_type,31.512777,75.913191,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Jammu,VD_Jammu_1,VD_K_type,32.728756,74.844,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Jammu,VD_Korea_K1,VD_K_type,32.728756,74.844,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Ludhiana,VD_Korea_K1,VD_K_type,30.903962,75.848281,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Ludhiana,VD_Korea_K1,VD_K_type,30.903962,75.848281,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Ludhiana,VD_Ludhiana_1,VD_K_type,30.903962,75.848281,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Ludhiana,VD_Ludhiana_2,VD_K_type,30.903962,75.848281,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Nagrota,VD_Korea_K1,VD_K_type,32.798135,74.915237,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Nagrota,VD_Korea_K1,VD_K_type,32.798135,74.915237,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Nagrota,VD_Nagrota_1,VD_K_type,32.798135,74.915237,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Rajasthan,VD_Korea_K1,VD_K_type,26.888307,75.813926,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Rampuraphul,VD_Korea_K1,VD_K_type,30.277044,75.238239,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Ropar,VD_Korea_K1,VD_K_type,30.976029,76.53783,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. destructor,NA,NA,India,Ropar,VD_Korea_K1,VD_K_type,30.976029,76.53783,approximate,"Year:NA Ref:Gupta,V.K., Kaur,R., Kaur,H. and Chhuneja,P.K.",Litterature
+V. jacobsoni,A. cerana,2014,India,Bengaluru,VJ_Bengaluru_1,VJ_Bengaluru_1,13.078379,77.579302,approximate,Year:2014 Ref:Bhatta et al. (2019),Litterature
+V. jacobsoni,A. cerana,1997,Indonesia,"Ambon, Ambon",VJ_Ambon_1,VJ_Ambon_1,-3.63217,128.24983,approximate,Year:1997 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1997,Indonesia,"Ambon, Paso",VJ_Ambon_1,VJ_Ambon_1,-3.62629,128.24701,approximate,Year:1997 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1998,Indonesia,"Bali, Ubud",VJ_Bali_1,VJ_Bali_1,-8.50685,115.26247,approximate,Year:1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1995;1996;1997,Indonesia,"Biak, Biak",VJ_Java_1,VJ_Java_1,-1.175351,136.071908,approximate,Year:1995;1996;1997 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1998,Indonesia,"Flores, Labuhan Bajo",VJ_Flores_1,VJ_Flores_1,-8.49238,119.89017,approximate,Year:1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1995,Indonesia,"Irian Jaya, Biak island",VJ_Java_1,VJ_Java_1,-1.175351,136.071908,approximate,Year:1995 Ref:Anderson and Fuchs (1998),Litterature
+V. jacobsoni,A. cerana,1995,Indonesia,"Irian Jaya, Jayapura",VJ_Java_1,VJ_Java_1,-2.607504,140.67724,approximate,Year:1995 Ref:Anderson and Fuchs (1998),Litterature
+V. jacobsoni,A. cerana,1997,Indonesia,"Irian Jaya, Koya Timur",VJ_Java_1,VJ_Java_1,-2.690969,140.845851,approximate,Year:1997 Ref:Anderson and Fuchs (1998),Litterature
+V. jacobsoni,A. cerana,1991,Indonesia,"Irian Jaya, Wamena",VJ_Java_1,VJ_Java_1,-4.101567,138.944257,approximate,Year:1991 Ref:Anderson and Fuchs (1998),Litterature
+V. jacobsoni,A. cerana,1995,Indonesia,"Irian Jaya, Yapen island",VJ_Java_1,VJ_Java_1,-1.87801,136.23666,approximate,Year:1995 Ref:Anderson and Fuchs (1998),Litterature
+V. jacobsoni,A. cerana,1996;1998,Indonesia,"Java, Malang",VJ_Java_1,VJ_Java_1,-7.96662,112.63263,approximate,Year:1996;1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1991;1995;1996;1998,Indonesia,"Java, Parung  Panjang",VJ_Java_1,VJ_Java_1,-6.3681,106.55338,approximate,Year:1991;1995;1996;1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1991;1995,Indonesia,"Java, Pekalongan",VJ_Java_1,VJ_Java_1,-6.895258,109.673911,approximate,Year:1991;1995 Ref:Anderson and Fuchs (1998),Litterature
+V. jacobsoni,A. cerana,1997,Indonesia,"Java, Sukabumi",VJ_Java_1,VJ_Java_1,-6.92387,106.93156,approximate,Year:1997 Ref:Anderson and Fuchs (1998),Litterature
+V. jacobsoni,A. cerana,1994,Indonesia,"Java, Yogyakarta",VJ_Java_1,VJ_Java_1,-7.811591,110.364121,approximate,Year:1994 Ref:Anderson and Fuchs (1998),Litterature
+V. jacobsoni,A. cerana,1998,Indonesia,"Lombok, Kuta",VJ_Lombok_1,VJ_Lombok_1,-8.88027,116.28361,approximate,Year:1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1998,Indonesia,"Lombok, Mataram",VJ_Lombok_1,VJ_Lombok_1,-8.57699,116.10048,approximate,Year:1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1996,Indonesia,"Sulawesi, Palu",VJ_Java_1,VJ_Java_1,-0.8679,119.90465,approximate,Year:1996 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1997,Indonesia,"Sulawesi, Ujung Pandang",VJ_Java_1,VJ_Java_1,-5.1192,119.43461,approximate,Year:1997 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1997,Indonesia,"Sumatra, Medan",VJ_Sumatra_1,VJ_Sumatra_1,3.59519,98.67222,approximate,Year:1997 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1997,Indonesia,"Sumatra, Padang",VJ_Sumatra_1,VJ_Sumatra_1,-0.85327,100.39471,approximate,Year:1997 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1998,Indonesia,"Sumbawa, Sumbawa",VJ_Sumbawa_1,VJ_Sumbawa_1,-8.73807,118.1171,approximate,Year:1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1998,Indonesia,"Timor, Loli",VJ_Java_1,VJ_Java_1,-9.66056,124.5266,approximate,Year:1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1995;1996;1997;1998,Indonesia,"Yapen, Serui",VJ_Java_1,VJ_Java_1,-1.87801,136.23666,approximate,Year:1995;1996;1997;1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1993,Malaysia,"Borneo, Sabah",VJ_Borneo_1,VJ_Borneo_1,5.95935,116.1158,approximate,Year:1993 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1995,Malaysia,Kluang,VJ_Malaysia_1,VJ_Malaysia_1,2.03006,103.31846,approximate,Year:1995 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1989;1995,Malaysia,"UPM, Serdang",VJ_Malaysia_1,VJ_Malaysia_1,2.99315,101.71587,approximate,Year:1989;1995 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1996,Papua New Guinea,Kainantu,VJ_Java_1,VJ_Java_1,-6.286865,145.863836,approximate,Year:1996 Ref:Anderson and Fuchs (1998),Litterature
+V. jacobsoni,A. cerana,1995,Papua New Guinea,Lae,VJ_Java_1,VJ_Java_1,-6.718396,146.997371,approximate,Year:1995 Ref:Anderson and Fuchs (1998),Litterature
+V. jacobsoni,A. cerana,1992,Papua New Guinea,Oksapmin,VJ_Java_1,VJ_Java_1,-5.225908,142.229391,approximate,Year:1992 Ref:Anderson and Fuchs (1998),Litterature
+V. jacobsoni,A. cerana,1993;1995;1998,Papua New Guinea,PNG + Irian Jaya (Aiyura),VJ_Java_1,VJ_Java_1,-6.34334,145.90809,approximate,Year:1993;1995;1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1993;1995;1998,Papua New Guinea,PNG + Irian Jaya (Goroka),VJ_Java_1,VJ_Java_1,-6.08347,145.38626,approximate,Year:1993;1995;1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1993;1995;1998,Papua New Guinea,PNG + Irian Jaya (Koya Timor),VJ_Java_1,VJ_Java_1,-2.690969,140.845851,approximate,Year:1993;1995;1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1993;1995;1998,Papua New Guinea,PNG + Irian Jaya (Lae),VJ_Java_1,VJ_Java_1,-6.718396,146.997371,approximate,Year:1993;1995;1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1993;1995;1998,Papua New Guinea,PNG + Irian Jaya (Oksapmin),VJ_Java_1,VJ_Java_1,-5.225908,142.229391,approximate,Year:1993;1995;1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1993;1995;1998,Papua New Guinea,PNG + Irian Jaya (Vanimo),VJ_Java_1,VJ_Java_1,-2.697426,141.300805,approximate,Year:1993;1995;1998 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. cerana,1993;1994,Papua New Guinea,Telefomin,VJ_Java_1,VJ_Java_1,-5.12543,141.639362,approximate,Year:1993;1994 Ref:Anderson and Fuchs (1998),Litterature
+V. jacobsoni,A. cerana,1991,Papua New Guinea,Vanimo,VJ_Java_1,VJ_Java_1,-2.697426,141.300805,approximate,Year:1991 Ref:Anderson and Fuchs (1998),Litterature
+V. jacobsoni,A. cerana,2001,Thailand," Kow Sa Ming, Trat",VJ_North_Thailand_1,VJ_North_Thailand_1,12.48,102.5,exact,Year: 2001 Accession: DQ061189,NCBI
+V. jacobsoni,A. cerana,2001,Thailand," San Pa Tong, Chiang Mai",VJ_North_Thailand_2,VJ_North_Thailand_2,18.6,98.8,exact,Year: 2001 Accession: DQ061190,NCBI
+V. jacobsoni,A. cerana,2001,Thailand," Wat Lard Varnon, Samui Island",VJ_Samui_1,VJ_Samui_1,9.48,99.95,exact,Year: 2001 Accession: DQ061188,NCBI
+V. jacobsoni,A. cerana,2001,Thailand,"Amphawa, Samut Songkram",VJ_North_Thailand_1,VJ_North_Thailand_1,13.3666667,99.95,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Ban Lard, Phet Buri",VJ_North_Thailand_1,VJ_North_Thailand_1,13.0166667,99.93333333,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,NA,Thailand,Bang Changtay,VJ_Laos_L1,VJ_Laos_L1,12.731596,101.070472,approximate,Year:NA Ref:Navajas et al. (2010),Litterature
+V. jacobsoni,A. cerana,NA,Thailand,Bang Changtay,VJ_Laos_L1,VJ_Laos_L1,12.731596,101.070472,approximate,Year:NA Ref:Navajas et al. (2010),Litterature
+V. jacobsoni,A. cerana,NA,Thailand,Bang Changtay,VJ_Laos_L1,VJ_Laos_L1,12.731596,101.070472,approximate,Year:NA Ref:Navajas et al. (2010),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Bang Raka, Phitsanulok",VJ_North_Thailand_1,VJ_North_Thailand_1,16.7333333,100.1666667,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Bang Sapan, Prachup Kiri Kan",VJ_Malaysia_1,VJ_Malaysia_1,11.4,99.51666667,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Chang Kein, Chiang Mai",VJ_North_Thailand_2,VJ_North_Thailand_2,18.8333333,98.88333333,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,NA,Thailand,Chiang Mai,VJ_Laos_L1,VJ_Laos_L1,18.795595,98.952067,approximate,Year:NA Ref:Navajas et al. (2010),Litterature
+V. jacobsoni,A. cerana,NA,Thailand,Chiang Mai,VJ_Laos_L1,VJ_Laos_L1,18.795595,98.952067,approximate,Year:NA Ref:Navajas et al. (2010),Litterature
+V. jacobsoni,A. cerana,NA,Thailand,Chiang Mai,VJ_Laos_L1,VJ_Laos_L1,18.795595,98.952067,approximate,Year:NA Ref:Navajas et al. (2010),Litterature
+V. jacobsoni,A. cerana,2013-2015,Thailand,Chiang Mai,VJ_North_Thailand_3,VJ_North_Thailand_3,18.7956,98.952287,approximate,Year:2013-2015 Ref:Dietemann et al. (2019),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Ka Poe, Ranong",VJ_Malaysia_1,VJ_Malaysia_1,9.5833333,98.6,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2013-2015,Thailand,Ko Samui,VJ_Samui_2,VJ_Samui_2,9.510834,100.013844,approximate,Year:2013-2015 Ref:Dietemann et al. (2019),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Kork Pra, Nakorn Sawan",VJ_North_Thailand_2,VJ_North_Thailand_2,15.55,100.0666667,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Kow Sa Ming, Trat",VJ_North_Thailand_1,VJ_North_Thailand_1,12.4666667,102.5,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Kra Tu, Phuket Island",VJ_Malaysia_1,VJ_Malaysia_1,7.9,98.35,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Krasay Sin, Songkla",VJ_Malaysia_1,VJ_Malaysia_1,7.58248,100.28573,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Meung, Prachup Kiri Kahn",VJ_North_Thailand_1,VJ_North_Thailand_1,11.8666667,99.78333333,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2013-2015,Thailand,Phattalung,VJ_Malaysia_2,VJ_Malaysia_2,7.612454,100.087332,approximate,Year:2013-2015 Ref:Dietemann et al. (2019),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Po Thong, Ang Thong",VJ_North_Thailand_1,VJ_North_Thailand_1,14.6666667,100.4166667,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Pran Buri, Prachup Kiri Kan",VJ_North_Thailand_1,VJ_North_Thailand_1,12.45,99.96666667,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Sai Yok, Karnjana Buri",VJ_North_Thailand_1,VJ_North_Thailand_1,14.0333333,99.25,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Sam Roi Yot, Prachup Kiri Kan",VJ_North_Thailand_1,VJ_North_Thailand_1,12.1666667,99.93333333,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"San Pa Tong, Chiang Mai",VJ_North_Thailand_2,VJ_North_Thailand_2,18.6,98.8,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Sawee, Chumphon",VJ_Malaysia_1,VJ_Malaysia_1,10.3333333,99.06666667,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Si Kao, Trang",VJ_Malaysia_1,VJ_Malaysia_1,7.5166667,99.4,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Suan Pheng, Chumphon",VJ_Malaysia_1,VJ_Malaysia_1,10.0166667,99.05,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Tha Sae, Chum Phon",VJ_Malaysia_1,VJ_Malaysia_1,10.5666667,99.1,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Thaling Ngam, Ko Samui, Surat Thani",VJ_Samui_1,VJ_Samui_1,9.4666667,99.95,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Thasala, Nakhonsri Thammarat",VJ_Malaysia_1,VJ_Malaysia_1,8.7666667,99.91666667,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Tup Sa Kae, Prachup Kiri Kan",VJ_Malaysia_1,VJ_Malaysia_1,11.5166667,99.58333333,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Tup Sa Kae, Prachup Kiri Kan",VJ_North_Thailand_1,VJ_North_Thailand_1,11.5166667,99.58333333,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. cerana,2001,Thailand,"Wat Lard Varnon, Ko Samui, Surat Thani",VJ_Samui_1,VJ_Samui_1,9.4833333,99.95,exact,Year:2001 Ref:Warrit et al. (2006),Litterature
+V. jacobsoni,A. dorsata,2000,Malaysia,"Agricultural  Research  Station  at  Tenom, Sabah",VJ_Borneo_2,VJ_Borneo_2,5.171081,115.987989,approximate,Year:2000 Ref:Koeniger et al. (2002),Litterature
+V. jacobsoni,A. mellifera,2008,Indonesia,"Papua, Mulima",VJ_Java_1,VJ_Java_1,-4.002918,138.95723,approximate,Year:2008 Ref:Roberts et al. (2015),Litterature
+V. jacobsoni,A. mellifera,2008,Papua New Guinea,Banz,VJ_Java_1,VJ_Java_1,-5.799346,144.627533,approximate,Year:2008 Ref:Roberts et al. (2015),Litterature
+V. jacobsoni,A. mellifera,2008,Papua New Guinea,Benabena,VJ_Java_1,VJ_Java_1,-6.11391,145.537,approximate,Year:2008 Ref:Roberts et al. (2015),Litterature
+V. jacobsoni,A. mellifera,2008,Papua New Guinea,EHP and Henganofiborder,VJ_Papua_New_Guinea_1,VJ_Papua_New_Guinea_1,-6.26035,145.59681,approximate,Year:2008 Ref:Techer et al. (2019),Litterature
+V. jacobsoni,A. mellifera,2008,Papua New Guinea,Goroka,VJ_Java_1,VJ_Java_1,-6.08347,145.38626,approximate,Year:2008 Ref:Roberts et al. (2015),Litterature
+V. jacobsoni,A. mellifera,2008,Papua New Guinea,Kainantu,VJ_Java_1,VJ_Java_1,-6.290583,145.861533,approximate,Year:2008 Ref:Roberts et al. (2015),Litterature
+V. jacobsoni,A. mellifera,2008,Papua New Guinea,Wabag,VJ_Java_1,VJ_Java_1,-5.48267,143.66373,approximate,Year:2008 Ref:Roberts et al. (2015),Litterature
+V. jacobsoni,A. mellifera,2008,Papua New Guinea,Wau,VJ_Java_1,VJ_Java_1,-7.338868,146.715259,approximate,Year:2008 Ref:Roberts et al. (2015),Litterature
+V. jacobsoni,A. mellifera,2009,Solomon Islands,Kolombangara,VJ_Java_1,VJ_Java_1,-8.114273,157.128636,approximate,Year:2009 Ref:Roberts et al. (2015),Litterature
+V. jacobsoni,A. mellifera,2009,Solomon Islands,Munda,VJ_Java_1,VJ_Java_1,-8.329369,157.270897,approximate,Year:2009 Ref:Roberts et al. (2015),Litterature
+V. jacobsoni,A. mellifera,2013-2015,Thailand,Chiang Mai,VJ_North_Thailand_3,VJ_North_Thailand_3,18.7956,98.952287,approximate,Year:2013-2015 Ref:Dietemann et al. (2019),Litterature
+V. jacobsoni,A. nigrocincta,1996,Indonesia,"Sulawesi, Palu",VJ_Java_1,VJ_Java_1,-0.8679,119.90465,approximate,Year:1996 Ref:Anderson and Trueman (2000),Litterature
+V. jacobsoni,A. nigrocincta,1997,Indonesia,"Sulawesi, Ujung Pandang",VJ_Java_1,VJ_Java_1,-5.1192,119.43461,approximate,Year:1997 Ref:Anderson and Trueman (2000),Litterature
+V. rindereri,A. koschevnikovi,NA,Malaysia,Borneo,VR_Malaysia,VR_Malaysia,0.988418,114.553026,approximate,Year:NA Ref:Anderson and Trueman (2000),Litterature
+Varroa sp.,A. cerana,2013,Philippines,Los Banos,VSP_Los_Banos_1,VSP_Los_Banos_1,14.09,121.14,exact,Year:2013 Ref:Beaurepaire et al. (2015),Litterature
+Varroa sp.,A. cerana,1996,Philippines,"Luzon, Batangas",VSP_Luzon_1,VSP_Luzon_1,13.91529,121.95282,approximate,Year:1996 Ref:Anderson and Trueman (2000),Litterature
+Varroa sp.,A. cerana,1997;1998,Philippines,"Luzon, San Fernando, La Union",VSP_Luzon_2,VSP_Luzon_2,16.75446,120.33783,approximate,Year:1997;1998 Ref:Anderson and Trueman (2000),Litterature
+Varroa sp.,A. cerana,1998,Philippines,"Mindanao, Davao",VSP_Mindanao,VSP_Mindanao,7.45165,125.83431,approximate,Year:1998 Ref:Anderson and Trueman (2000),Litterature
+Varroa sp.,A. cerana,2013,Philippines,NA,VSP_Los_Banos_1,VSP_Los_Banos_1,14.09,121.14,exact,Year: 2013 Accession: KR528386,NCBI
+Varroa sp.,A. mellifera,2013,Philippines,Los Banos,VSP_Los_Banos_1,VSP_Los_Banos_1,14.09,121.14,exact,Year:2013 Ref:Beaurepaire et al. (2015),Litterature
+Varroa sp.,A. mellifera,2013,Philippines,NA,VSP_Los_Banos_1,VSP_Los_Banos_1,14.09,121.14,exact,Year: 2013 Accession: KR528387,NCBI
