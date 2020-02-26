@@ -1,15 +1,17 @@
 ---
 title: "World distribution of Varroa mites mtDNA lineages"
 author: "Maeva A. Techer, Ecology and Evolution OIST"
-date: "2020-02-01"
+date: '2020-02-01'
 output:
+  pdf_document:
+    toc: yes
   html_document:
-    toc: true 
-    toc_float: true # make 
-    depth: 3  
-    number_sections: false 
-    theme: yeti 
-    code_folding: hide #
+    code_folding: hide
+    depth: 3
+    number_sections: no
+    theme: yeti
+    toc: yes
+    toc_float: yes
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -40,6 +42,7 @@ library(kableExtra)
 # Download the country borders layer
 #download.file("http://thematicmapping.org/downloads/TM_WORLD_BORDERS_SIMPL-0.3.zip" , destfile="world_shape_file.zip")
 #system("unzip world_shape_file.zip")
+setwd("~/Documents/GitHub/varroa-mtDNA-world-distrib")
 world_spdf=readOGR(dsn= getwd() , layer="TM_WORLD_BORDERS_SIMPL-0.3")
 ```
 
@@ -49,16 +52,10 @@ In addition, 485 mitochondrial sequences were downloaded from NCBI Genbank (last
 
 ### Data collected from references to create map points
 ``` {r layersmap}
-setwd("~/Documents/GitHub/varroa-mtDNA-world-distrib")
-
 #Data with exact or approximate GPS coordinates obtained from references
 coordvarroa <- read.csv("Data/mappingpoints_Varroareview05022020.csv", header = TRUE)
 coord.vdac <- coordvarroa %>% filter(Species == "V. destructor") %>% filter(Host == "A. cerana") 
 coord.vjac <- coordvarroa %>% filter(Species == "V. jacobsoni") %>% filter(Host == "A. cerana")
-
-kable(cbind(coordvarroa)) %>%
-  kable_styling(bootstrap_options = "striped", font_size = 10) %>%
-  scroll_box(width = "100%", height = "400px")
 ```
   
 In some cases, no other information than the country of sampling was reported. We build here a layer for which all countries in which one haplogroup was reported will be highlighted with the same color.  
@@ -69,9 +66,6 @@ _For example, I found no other mtDNA identification than Solignac et al. (2005) 
 ```{r layercountry}
 #Data with only the country name when no GPS data was available
 paysvarroa <- read.csv("Data/mappingcountry_Varroareview05022020.csv", header = TRUE)
-kable(cbind(paysvarroa)) %>%
-  kable_styling(bootstrap_options = "striped", font_size = 10) %>%
-  scroll_box(width = "100%", height = "400px")
 
 ```
   
@@ -142,48 +136,51 @@ title <- tags$div(
 
 ## Create the interactive map with leaflet
 leaflet(coordvarroa) %>% 
+  setView(lng = 0, lat = 0, zoom = 2) %>% 
   addTiles(group = "OSM (default)") %>%
   ## add the layer other than default we would like to use for background
-  addProviderTiles(providers$CartoDB.PositronNoLabels, group = "Positron NoLabels") %>%
+  addProviderTiles(providers$Esri.WorldGrayCanvas, group = "Esri.WorldGrayCanvas") %>%
+  addProviderTiles(providers$Stamen.TonerLines, group = "Stamen.TonerLines") %>%
   ## add the three layers coloring the countries in which K, J or both were described
   addPolygons(data = map.vdamK, fillColor = "red", stroke=FALSE, group = "Country with K strain") %>%
   addPolygons(data = map.vdamJ, fillColor = "blue", stroke=FALSE, group = "Country with J strain") %>%
-  addPolygons(data = map.vdamKJ, fillColor = "#A04DCD", stroke=FALSE, group = "Country co-infected") %>%
+  addPolygons(data = map.vdamKJ, fillColor = "#d9b7eb", stroke=FALSE, group = "Country co-infected") %>%
   ## adding Varroa jacosboni country layer
-    addPolygons(data = map.vjam, fillColor = "green", stroke=FALSE, group = "Country with V. jacobsoni") %>%
+    addPolygons(data = map.vjam, fillColor = "black", stroke=FALSE, group = "Country with V. jacobsoni") %>%
     ## adding Varroa sp. country layer
     addPolygons(data = map.vspam, fillColor = "black", stroke=FALSE, group = "Country with Varroa sp.") %>%
   ## adding the three layers with GPS points for each jumping parasite strains
   addCircleMarkers(data = coord.vdamK, coord.vdamK$coord.Y, coord.vdamK$coord.X,
                    weight = 0.5,
                    col = "#FB0000", 
-                   radius = 3, 
-                   fillOpacity = 0.9, 
+                   radius = 3.5, 
+                   fillOpacity = 0.8, 
                    stroke = T, 
                    label = ~as.character(Description), 
                    group = 'V. destructor Korean lineage') %>%
   addCircleMarkers(data = coord.vdamJ, coord.vdamJ$coord.Y, coord.vdamJ$coord.X,
                    weight = 0.5,
                    col = "#068FF9", 
-                   radius = 3, 
-                   fillOpacity = 0.9, 
+                   radius = 3.5, 
+                   fillOpacity = 0.8, 
                    stroke = T, 
                    label = ~as.character(Description), 
-                   group = 'V. destructor Japan lineage') %>%
+                   group = 'V. destructor Japan lineage')
+%>%
   addCircleMarkers(data = coord.vdamKJ, coord.vdamKJ$coord.Y, coord.vdamKJ$coord.X,
                    weight = 0.5,
                    col = "#9707E7", 
-                   radius = 3, 
-                   fillOpacity = 0.9, 
+                   radius = 3.5, 
+                   fillOpacity = 0.8, 
                    stroke = T, 
                    label = ~as.character(Description), 
                    group = 'Co-infection by K & J') %>%
   ## adding Varro jacobsoni layer to show parapatry
     addCircleMarkers(data = coord.vjam, coord.vjam$coord.Y, coord.vjam$coord.X,
                    weight = 0.5,
-                   col = "#0F933C", 
-                   radius = 3, 
-                   fillOpacity = 0.9, 
+                   col = "#black", 
+                   radius = 3.5, 
+                   fillOpacity = 0.8, 
                    stroke = T, 
                    label = ~as.character(Description), 
                    group = 'V. jacobsoni Java lineage') %>%
@@ -191,8 +188,8 @@ leaflet(coordvarroa) %>%
     addCircleMarkers(data = coord.vspam, coord.vspam$coord.Y, coord.vspam$coord.X,
                    weight = 0.5,
                    col = "black", 
-                   radius = 3, 
-                   fillOpacity = 0.9, 
+                   radius = 3.5, 
+                   fillOpacity = 0.8, 
                    stroke = T, 
                    label = ~as.character(Description), 
                    group = 'Varroa sp.') %>%
@@ -254,10 +251,20 @@ leaflet(coord.vdac) %>%
   ## add the layer other than default we would like to use for background
   addProviderTiles(providers$CartoDB.PositronNoLabels, group = "Positron NoLabels") %>%
   ## adding each lineage group as a layer for V. destructor on cerana
+    ## adding distribution of V. jacobsoni on original host A. cerana
+  addCircleMarkers(data = coord.vjac, coord.vjac$coord.Y, coord.vjac$coord.X,
+                   weight = 0.5,
+                   col = "black", 
+                   radius = 5, 
+                   fillOpacity = 0.9, 
+                   stroke = T, 
+                   label = ~as.character(Description), 
+                   group = 'V. jacobsoni')%>%
+  
   addCircleMarkers(data = vdac.K1, vdac.K1$coord.Y, vdac.K1$coord.X,
                    weight = 0.5,
                    col = "#FB0000", 
-                   radius = 4, 
+                   radius = 5, 
                    fillOpacity = 0.9, 
                    stroke = T, 
                    label = ~as.character(Description), 
@@ -265,7 +272,7 @@ leaflet(coord.vdac) %>%
   addCircleMarkers(data = vdac.J1, vdac.J1$coord.Y, vdac.J1$coord.X,
                    weight = 0.5,
                    col = "#0066ff", 
-                   radius = 4, 
+                   radius = 5, 
                    fillOpacity = 0.9, 
                    stroke = T, 
                    label = ~as.character(Description), 
@@ -273,7 +280,7 @@ leaflet(coord.vdac) %>%
   addCircleMarkers(data = vdac.C1, vdac.C1$coord.Y, vdac.C1$coord.X,
                    weight = 0.5,
                    col = "#ff9933", 
-                   radius = 4, 
+                   radius = 5, 
                    fillOpacity = 0.9, 
                    stroke = T, 
                    label = ~as.character(Description), 
@@ -281,7 +288,7 @@ leaflet(coord.vdac) %>%
   addCircleMarkers(data = vdac.C2, vdac.C2$coord.Y, vdac.C2$coord.X,
                    weight = 0.5,
                    col = "#b800e6", 
-                   radius = 4, 
+                   radius = 5, 
                    fillOpacity = 0.9, 
                    stroke = T, 
                    label = ~as.character(Description), 
@@ -289,23 +296,15 @@ leaflet(coord.vdac) %>%
   addCircleMarkers(data = vdac.C3, vdac.C3$coord.Y, vdac.C3$coord.X,
                    weight = 0.5,
                    col = "#ff4dff", 
-                   radius = 4, 
+                   radius = 5, 
                    fillOpacity = 0.9, 
                    stroke = T, 
                    label = ~as.character(Description), 
-                   group = 'V. destructor China C3') %>%
-  addCircleMarkers(data = vdac.C4, vdac.C4$coord.Y, vdac.C4$coord.X,
-                   weight = 0.5,
-                   col = "#663300", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. destructor China C4') %>%
+                   group = 'V. destructor China C3')  %>%
   addCircleMarkers(data = vdac.Nep, vdac.Nep$coord.Y, vdac.Nep$coord.X,
                    weight = 0.5,
                    col = "#993300", 
-                   radius = 4, 
+                   radius = 5, 
                    fillOpacity = 0.9, 
                    stroke = T, 
                    label = ~as.character(Description), 
@@ -313,7 +312,7 @@ leaflet(coord.vdac) %>%
   addCircleMarkers(data = vdac.SI, vdac.SI$coord.Y, vdac.SI$coord.X,
                    weight = 0.5,
                    col = "#FFDD00", 
-                   radius = 4, 
+                   radius = 5, 
                    fillOpacity = 0.9, 
                    stroke = T, 
                    label = ~as.character(Description), 
@@ -321,7 +320,7 @@ leaflet(coord.vdac) %>%
     addCircleMarkers(data = vdac.SRI, vdac.SRI$coord.Y, vdac.SRI$coord.X,
                    weight = 0.5,
                    col = "#669999", 
-                   radius = 4, 
+                   radius = 5, 
                    fillOpacity = 0.9, 
                    stroke = T, 
                    label = ~as.character(Description), 
@@ -329,22 +328,23 @@ leaflet(coord.vdac) %>%
       addCircleMarkers(data = vdac.V1, vdac.V1$coord.Y, vdac.V1$coord.X,
                    weight = 0.5,
                    col = "#009900", 
-                   radius = 4, 
+                   radius = 5, 
                    fillOpacity = 0.9, 
                    stroke = T, 
                    label = ~as.character(Description), 
                    group = 'V. destructor Viet Nam V1') %>%
-  
-  
-  ## adding distribution of V. jacobsoni on original host A. cerana
-  addCircleMarkers(data = coord.vjac, coord.vjac$coord.Y, coord.vjac$coord.X,
+  addCircleMarkers(data = vdac.C4, vdac.C4$coord.Y, vdac.C4$coord.X,
                    weight = 0.5,
-                   col = "black", 
-                   radius = 4, 
+                   col = "#663300", 
+                   radius = 5, 
                    fillOpacity = 0.9, 
                    stroke = T, 
                    label = ~as.character(Description), 
-                   group = 'V. jacobsoni') %>%
+                   group = 'V. destructor China C4') %>%
+  
+  
+  
+ %>%
   addLayersControl(position = "topright",
     baseGroups = c("OSM (default)", "Positron NoLabels"),
     overlayGroups = c("V. destructor K1", 
