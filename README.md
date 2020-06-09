@@ -4,10 +4,9 @@ Distribution of the different mtDNA lineages or haplogroups based on _COX1_ mark
 The available maps were initiated by the Ecology and Evolution lab at the Okinawa Institute of Science and Technology to review and track overtime the presence of different haplogroups of Varroa distributed worldwide. Click here to directly visualize theses [Varroa maps](https://mikheyevlab.github.io/varroa-mtDNA-world-distrib) either for the invasive _V. destructor_ or _V. jacobsoni_, both on their novel host Western honey bee (_Apis mellifera_) and their original host the Eastern honey bee (_A. cerana_).
 
 
-This online resource is implemented in the review Traynor et al. available in [preprints](https://www.preprints.org/manuscript/202002.0374/v1), if you would like to use it please cite:
+This online resource is implemented in the review Traynor et al. 2020 available in [Trends in Parasitology](https://www.sciencedirect.com/science/article/pii/S147149222030101X), if you would like to use it please cite:
   
-Varroa destructor: A Complex Parasite, Crippling Honeybees Worldwide. doi: 10.20944/preprints202002.0374.v1  
-Kirsten S. Traynor, Fanny Mondet, Joachim R. de Miranda, Maeva Techer, Vienna Kowallik, Melissa A. Y. Oddie, Panuwan Chantawannakul, and Alison McAfee
+Traynor, K. S., Mondet, F., de Miranda, J. R., Techer, M., Kowallik, V., Oddie, M. A. Y., Chantawannakul, P., & McAfee, A. (2020). Varroa destructor: A Complex Parasite, Crippling Honey Bees Worldwide. Trends in Parasitology. https://doi.org/10.1016/j.pt.2020.04.004
   
 
 ## Description and review of the haplogroups and haplotypes
