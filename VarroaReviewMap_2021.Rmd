@@ -1,7 +1,7 @@
 ---
 title: "World distribution of Varroa mites mtDNA lineages"
-author: "Maeva A. Techer, Ecology and Evolution OIST"
-date: '2020-02-01'
+author: "Maeva A. Techer (OIST-JSPS), maeva.angelique.techer@gmail.com"
+date: "`r Sys.Date()`"
 output:
   pdf_document:
     toc: yes
