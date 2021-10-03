@@ -20,6 +20,7 @@ In the folder Raster_borders:
 
 ## Contact  
 Questions about the maps? Do you want to correct some entries or implement new ones, please contact:  
-Maeva Techer, JSPS Postdoctoral Fellow at the Ecology and Evolution lab at OIST  
-OIST Email: maeva.techer@oist.jp  
-Gmail: maeva.angelique.techer@oist.jp  
+Maeva Techer, Postdoctoral Scholar at the Behavioral Plasticity Research Institute and Texas A&M University
+(ex-JSPS Postdoctoral Fellow at the Ecology and Evolution lab at OIST)
+
+Contact: maeva.angelique.techer@gmail.com
