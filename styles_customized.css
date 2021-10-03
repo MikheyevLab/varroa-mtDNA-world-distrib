@@ -1,0 +1,42 @@
+#sidebar h2{
+    z-index:200;
+    background-color:#663399;
+    text-align:center;
+    padding:0.809em;
+    display:block;
+    color:#fcfcfc;
+    font-size: 100%;
+    margin-top: 0px;
+    margin-bottom:0.809em;
+}
+
+#sidebar h2 a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+#sidebar h2 a:hover,
+#sidebar h2 a:active,
+#sidebar h2 a:focus {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#content {
+    max-width: 100%; 
+}
+
+
+
+h1,h2{
+    font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
+    font-weight:700;
+    color:#663399;
+}
+
+
+h3,h4,h5,h6,legend{
+    font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
+    font-weight:700;
+    color:#000000;
+}

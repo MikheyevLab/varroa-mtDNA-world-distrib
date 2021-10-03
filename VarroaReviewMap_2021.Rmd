@@ -3,15 +3,13 @@ title: "World distribution of Varroa mites mtDNA lineages"
 author: "Maeva A. Techer (OIST-JSPS), maeva.angelique.techer@gmail.com"
 date: "`r Sys.Date()`"
 output:
-  pdf_document:
-    toc: yes
-  html_document:
+  rmdformats::readthedown:
+    highlight: kate
     code_folding: hide
-    depth: 3
-    number_sections: no
-    theme: yeti
-    toc: yes
-    toc_float: yes
+    self_contained: true
+    thumbnails: false
+    lightbox: false
+    css: styles_customized.css
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -43,7 +41,7 @@ library(kableExtra)
 #download.file("http://thematicmapping.org/downloads/TM_WORLD_BORDERS_SIMPL-0.3.zip" , destfile="world_shape_file.zip")
 #system("unzip world_shape_file.zip")
 setwd("~/Documents/GitHub/varroa-mtDNA-world-distrib")
-world_spdf=readOGR(dsn= getwd() , layer="TM_WORLD_BORDERS_SIMPL-0.3")
+world_spdf=readOGR(dsn= "~/Documents/GitHub/varroa-mtDNA-world-distrib/Raster_borders/" , layer="TM_WORLD_BORDERS_SIMPL-0.3")
 ```
 
 We reviewed 68 articles from 1995 to 2020 using either RAPD, mtDNA analysis (PCR-RFLP, sequencing) and/or nuclear microsatellites on Varroa mites or environmental honey DNA29. We collected distribution data about Varroa species identity, mtDNA haplogroup, date of sampling, geographical localization, honey bee host. For geographical localization, three cases occurred: a) exact coordinates were available, b) city or locality was available and c) no localization was available outside of the country level. In the second case, we approximated the geographical position as the center of the city/locality or placed it to the nearest Agricultural Institute or Academic Center/University as some past sampling was known to be carried in experimental research apiaries.. 
@@ -165,8 +163,7 @@ leaflet(coordvarroa) %>%
                    fillOpacity = 0.8, 
                    stroke = T, 
                    label = ~as.character(Description), 
-                   group = 'V. destructor Japan lineage')
-%>%
+                   group = 'V. destructor Japan lineage') %>%
   addCircleMarkers(data = coord.vdamKJ, coord.vdamKJ$coord.Y, coord.vdamKJ$coord.X,
                    weight = 0.5,
                    col = "#9707E7", 
@@ -205,10 +202,9 @@ leaflet(coordvarroa) %>%
                       "V. jacobsoni Java lineage", 
                       "Country with V. jacobsoni", 
                       "Varroa sp.", "Country with Varroa sp."),
-    options = layersControlOptions(collapsed = TRUE)
-  )  %>%
+    options = layersControlOptions(collapsed = TRUE))  %>%
   ## adding a title for the map
-  addControl(title, position = "bottomright", className="map-title") %>% 
+  #addControl(title, position = "bottomright", className="map-title") %>% 
   ## show the positron background prerably to the OSM layer
   showGroup("Positron NoLabels")
 ```
@@ -341,10 +337,7 @@ leaflet(coord.vdac) %>%
                    stroke = T, 
                    label = ~as.character(Description), 
                    group = 'V. destructor China C4') %>%
-  
-  
-  
- %>%
+
   addLayersControl(position = "topright",
     baseGroups = c("OSM (default)", "Positron NoLabels"),
     overlayGroups = c("V. destructor K1", 
