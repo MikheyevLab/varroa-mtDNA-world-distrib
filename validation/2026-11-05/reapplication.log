@@ -1,0 +1,31 @@
+{
+  "baseline_commit": "574d3064534320379bcb43adb410d7cff11ba7d0",
+  "tables": {
+    "P": {
+      "before": 704,
+      "added": 0,
+      "after": 704,
+      "BOM_preserved": true,
+      "baseline_records_preserved": true,
+      "sha256": "4c4d40556b3754333c8f403f9561871e89750d456f24f91753a63e61032af178"
+    },
+    "C": {
+      "before": 429,
+      "added": 0,
+      "after": 429,
+      "BOM_preserved": true,
+      "baseline_records_preserved": true,
+      "sha256": "f2c13af9ef3b363d4f3473dd1bd5d516d717816c5dc8f788a1be6f66ee3a428e"
+    }
+  },
+  "point_additions": {
+    "coordinate_pairs": 85,
+    "precision": {
+      "exact": 48,
+      "approximate": 60
+    },
+    "mt_assigned": 98,
+    "nuclear_only": 10
+  }
+}
+Potential differences retained for review: 0

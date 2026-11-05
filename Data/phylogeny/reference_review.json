@@ -1,0 +1,8 @@
+{
+  "approved": false,
+  "reviewer": "",
+  "reviewed_at": "",
+  "alignment_sha256": "",
+  "metadata_sha256": "",
+  "note": "Select and manually review reference COX1 sequences and naming equivalences before analysis. No reference is approved yet."
+}

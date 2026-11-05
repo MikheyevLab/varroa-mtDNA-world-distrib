@@ -1,0 +1,16 @@
+test_baseline_is_public_but_not_verified (__main__.ReviewTests.test_baseline_is_public_but_not_verified) ... ok
+test_change_invalidates_manual_certification_and_release (__main__.ReviewTests.test_change_invalidates_manual_certification_and_release) ... ok
+test_display_fields_do_not_change_hash (__main__.ReviewTests.test_display_fields_do_not_change_hash) ... ok
+test_import_needs_verification_and_release (__main__.ReviewTests.test_import_needs_verification_and_release) ... ok
+test_revoke_and_withdraw_preserve_history (__main__.ReviewTests.test_revoke_and_withdraw_preserve_history) ... ok
+test_duplicate_fasta_is_rejected (__main__.SequenceTests.test_duplicate_fasta_is_rejected) ... ok
+test_genbank_reverse_strand_and_other_gene (__main__.SequenceTests.test_genbank_reverse_strand_and_other_gene) ... ok
+test_historical_output_cannot_be_replaced (__main__.SequenceTests.test_historical_output_cannot_be_replaced) ... ok
+test_identical_reference_labels_stay_ambiguous (__main__.SequenceTests.test_identical_reference_labels_stay_ambiguous) ... ok
+test_reference_approval_required_and_hash_bound (__main__.SequenceTests.test_reference_approval_required_and_hash_bound) ... ok
+test_sequence_quality_and_mitochondrial_code (__main__.SequenceTests.test_sequence_quality_and_mitochondrial_code) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.017s
+
+OK

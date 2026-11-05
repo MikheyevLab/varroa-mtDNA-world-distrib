@@ -1,0 +1,74 @@
+"""Review-only COX1 analysis. No rule publishes or certifies a record."""
+import re
+from pathlib import Path
+
+required = ["run_id", "intake", "reference_alignment", "reference_metadata", "reference_review"]
+for field in required:
+    if not config.get(field):
+        raise ValueError(f"Set {field} in a copy of workflow/cox1/config.example.yaml")
+if not re.fullmatch(r"[A-Za-z0-9_-]+", config["run_id"]):
+    raise ValueError("Use a simple, unique run_id")
+run = "runs/cox1/" + config["run_id"]
+helper = str(Path(workflow.basedir).parents[1] / "scripts/cox1_analysis.py")
+
+rule all:
+    input:
+        run + "/tree.treefile",
+        run + "/reference_comparisons.tsv",
+        run + "/overlap_qc.tsv"
+
+rule prepare:
+    input:
+        seq=config["intake"] + "/sequences.fasta",
+        records=config["intake"] + "/records.json",
+        qc=config["intake"] + "/qc.tsv",
+        manifest=config["intake"] + "/manifest.json",
+        refs=config["reference_alignment"],
+        meta=config["reference_metadata"],
+        review=config["reference_review"]
+    output:
+        queries=run + "/queries.fasta",
+        refs=run + "/references.fasta",
+        manifest=run + "/inputs.json"
+    conda: "environment.yaml"
+    shell:
+        "python {helper:q} prepare --intake {config[intake]:q} --references {input.refs:q} "
+        "--metadata {input.meta:q} --review {input.review:q} --out {run:q}"
+
+rule align:
+    input:
+        queries=run + "/queries.fasta",
+        refs=run + "/references.fasta"
+    output:
+        alignment=run + "/aligned.fasta",
+        mapping=run + "/queries.fasta.map"
+    threads: config.get("threads", 4)
+    conda: "environment.yaml"
+    shell:
+        "python {helper:q} align --out {run:q} --threads {threads}"
+
+rule compare:
+    input:
+        alignment=run + "/aligned.fasta",
+        manifest=run + "/inputs.json",
+        meta=config["reference_metadata"]
+    output:
+        alignment=run + "/tree_input.fasta",
+        comparisons=run + "/reference_comparisons.tsv",
+        qc=run + "/overlap_qc.tsv"
+    params:
+        overlap=config.get("min_overlap", 300),
+        ambiguity=config.get("max_ambiguity", 0.02)
+    conda: "environment.yaml"
+    shell:
+        "python {helper:q} compare --out {run:q} --metadata {input.meta:q} "
+        "--min-overlap {params.overlap} --max-ambiguity {params.ambiguity}"
+
+rule tree:
+    input: run + "/tree_input.fasta"
+    output: run + "/tree.treefile"
+    threads: config.get("threads", 4)
+    params: seed=config.get("seed", 20261105)
+    conda: "environment.yaml"
+    shell:
+        "python {helper:q} tree --out {run:q} --threads {threads} --seed {params.seed}"

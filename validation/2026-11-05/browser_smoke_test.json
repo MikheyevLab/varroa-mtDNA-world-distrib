@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-05",
+  "browser": "Codex in-app browser",
+  "preview_url": "http://127.0.0.1:8765/index.html",
+  "tested": [
+    "R Markdown rendered successfully with four interactive maps",
+    "New-additions default: 98 mt-assigned point records and five country records; ten unresolved records explicitly hidden",
+    "New-additions genome-wide enabled: 108 points at 85 coordinate pairs and five country records",
+    "All evidence with genome-wide enabled: 704 points and 429 country records",
+    "V. jacobsoni on A. cerana preset: 76 points and 42 country records (display-normalized host aliases)",
+    "Dongshi popup: A. cerana, type T, 24.1832222 latitude / 120.8393056 longitude",
+    "Antu popup: J2-1, 74 mites, approximate locality",
+    "Fuzhou search returns three separate records and shows both Zheng nuclear clades; AcFZ8 year unavailable",
+    "SG2 search: zero mt-colored records with overlay off; one gray-only record when enabled",
+    "Country-only filter: two Chiang Mai records, Gyeongsangnam-do, Ohio and Maryland; polygon popup verified",
+    "Collection-year filter Fuzhou: 2018 matches two dated records; 2019 matches none; unknown-year inclusion recovers AcFZ8",
+    "Filtered CSV downloaded and independently parsed: three Fuzhou rows, IDs P68/P86/P87, collection host A. cerana, AcFZ8 year NA",
+    "Copied filter link reopens the same three Fuzhou records",
+    "Copied citation contains Traynor attribution and the selected Lin/Zheng source DOIs",
+    "No browser JavaScript errors in the tested explorer",
+    "Original HTML and original 2021 workbook are byte-identical to baseline",
+    "Position-aware share link includes latitude, longitude and zoom after locating Dongshi",
+    "Both Excel downloads embedded in HTML decode byte-for-byte to the delivered workbooks",
+    "Original before-page opened in a separate browser tab"
+  ],
+  "known_limits": [
+    "Historical Yugoslavia has no matching bundled polygon; its record remains in the table and download",
+    "Original before-page is preserved unchanged and depends on its historical background tile services",
+    "Updated maps use bundled vector borders by default; optional external map tiles require network access",
+    "Local changes have not been pushed or published"
+  ]
+}

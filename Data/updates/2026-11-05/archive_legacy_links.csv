@@ -1,0 +1,20 @@
+﻿archive_input,s2_row,point_data_row,legacy_description,legacy_region,host,legacy_year,review
+A1,54,19,Year:1994 Ref:Anderson and Trueman (2000),"Honshu, Tamagawa",A. cerana,1994,individual reuse unresolved
+A1,654,27,Year:1994 Ref:Navajas et al. (2010),Tokyo (Tamagawa Uni),A. cerana,1994,individual reuse unresolved
+A2,62,29,Year:1996 Ref:Anderson and Trueman (2000),Kwangju,A. cerana,1996,individual reuse unresolved
+A3,649,14,Year:2001 Ref:Navajas et al. (2010),"Zhuhai, Guangdong Prov",A. cerana,2001,individual reuse unresolved
+A3,927,15,Year:2001 Ref:Zhou et al. (2004),"Zhuhai, Guangdong Prov.",A. cerana,2001,individual reuse unresolved
+A4,650,12,Year:2002 Ref:Navajas et al. (2010),"Zhongshan, Guangdong",A. cerana,2002,georeferences differ; retained without correction
+A4,928,13,Year:2002 Ref:Zhou et al. (2004),"Zhongshan, Guangdong Prov.",A. cerana,2002,individual reuse unresolved
+A5,652,1,Year:2002 Ref:Navajas et al. (2010),Dayao Co. Yunnan Prov.,A. cerana,2002,georeferences differ; retained without correction
+A5,932,2,Year:2002 Ref:Zhou et al. (2004),"Dayao Co., Yunnan Prov.",A. cerana,2002,georeferences differ; retained without correction; lineage calls differ; retained without correction
+A6,646,9,Year:2002 Ref:Navajas et al. (2010),"Xishuanbanna, Yunnan Prov.",A. cerana,2002,georeferences differ; retained without correction
+A6,930,11,Year:2002 Ref:Zhou et al. (2004),"Xishuangbanna, Yunnan Prov.",A. cerana,2002,georeferences differ; retained without correction
+A7,647,37,Year:2003 Ref:Navajas et al. (2010),Chiang Mai,A. cerana,2003,four-gene subtypes differ between sources
+A8,447,46,Year:1999? Ref:Fuchs et al. (2000) ,Moc Chau,A. cerana,1999?,collection years differ or legacy interval is uncertain
+A9,94,52,Year:1996 Ref:Anderson and Trueman (2000),"Phjong, Ninh Binh Prov.",A. cerana,1996,georeferences differ; retained without correction
+A10,920,180,Year:2001 Ref:Zhou et al. (2004),"Yuci, Shanxi Prov.",A. mellifera,2001,georeferences differ; retained without correction
+A11,923,162,Year:2000-2001 Ref:Zhou et al. (2004),"Fengman, Lishu Co., Changchun, Jilin  Prov.",A. mellifera,2000-2001,georeferences differ; retained without correction; collection years differ or legacy interval is uncertain
+A12,917,171,Year:2001 Ref:Zhou et al. (2004),"Mianzhu Co., Sichuan Prov.",A. mellifera,2001,individual reuse unresolved
+A13,911,181,Year:2001 Ref:Zhou et al. (2004),"Zhongshan, Guangdong Prov.",A. mellifera,2001,georeferences differ; retained without correction
+A14,448,468,Year:1999? Ref:Fuchs et al. (2000) ,Moc Chau,A. mellifera,1999?,collection years differ or legacy interval is uncertain

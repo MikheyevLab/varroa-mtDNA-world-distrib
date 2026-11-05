@@ -1,0 +1,9 @@
+{
+  "Data/mappingpoints_Varroareview05022020.csv": "4c4d40556b3754333c8f403f9561871e89750d456f24f91753a63e61032af178",
+  "Data/mappingcountry_Varroareview05022020.csv": "f2c13af9ef3b363d4f3473dd1bd5d516d717816c5dc8f788a1be6f66ee3a428e",
+  "Data/updates/2026-11-05/workbook_crosswalk.csv": "382df5f7c4cb66019de541de88518c4d27b8fd5954f8733378f69556782f9c5b",
+  "Data/updates/2026-11-05/archive_annotations.csv": "d3c8c91fc0afe92e3420f7d95963131555b306a7441d41f38adaeaee3246ee7a",
+  "Data/updates/2026-11-05/archive_legacy_links.csv": "698a2dc074505f2bd7df12ba2aec3c8838601aeb399919093b8ed415c0f5506d",
+  "scripts/map_helpers.R": "1e091cdafc205e21ae5c9385e43f621a864377a6828c741d296bc4097ae139bc",
+  "scripts/build_resource.py": "b153b7552b5d7e015b11fc0aaaf67514236158274c2213f04c85125e9faee4f4"
+}

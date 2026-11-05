@@ -1,0 +1,9 @@
+<section class="page-heading"><h1>Record review</h1><span class="badge">Local workspace</span></section>
+<p class="muted">We check the source together. You make the verification decision.</p>
+<p id="review-message" role="status" aria-live="polite">Connecting…</p>
+<div id="review-workspace" hidden>
+  <div class="review-filters"><label>Find records<input id="review-search" type="search" placeholder="Paper, accession, place or record ID"></label><label>Dataset<select id="review-dataset"><option value="">All datasets</option><option value="map">Map</option><option value="literature">Literature</option><option value="ncbi">NCBI</option><option value="reference">Naming catalogue</option><option value="sequence">Paper sequences</option></select></label><label>Status<select id="review-status"><option value="">All records</option><option value="not_verified">Not verified</option><option value="verified">Verified</option><option value="needs_recheck">Needs recheck</option><option value="pending_review">Pending publication</option><option value="issues">Questions / corrections</option></select></label></div>
+  <div class="review-grid"><aside class="review-queue"><p id="review-count" class="muted"></p><div id="review-list"></div><div class="pagination"><button id="review-prev">Previous</button><span id="review-page"></span><button id="review-next">Next</button></div></aside>
+  <section id="review-record"><p>Select a record.</p></section></div>
+</div>
+<script src="assets/review.js" defer></script>

@@ -1,0 +1,128 @@
+﻿input,reference,region,reported_mt,mt_assay,N,accession
+P1,Hua et al. (2023),Taichung Dongshi (DS),type T,COI (458 bp),5,OK335527–OK335531
+P2,Hua et al. (2023),Kaohsiung Alian (KA),type J,COI (458 bp),18,OK335573–OK335590
+P3,Hua et al. (2023),Miaoli Gongguan (MG),type J,COI (458 bp),18,OK335591–OK335608
+P4,Hua et al. (2023),Chiayi Dalin (CD),type J,COI (458 bp),14,OK335542–OK335555
+P5,Hua et al. (2023),Pingtung Wanluan (PW),type J,COI (458 bp),15,OK335670–OK335684
+P6,Hua et al. (2023),Hualien Fenglin (HF),type J,COI (458 bp),17,OK335556–OK335572
+P7,Hua et al. (2023),Yilan Yuanshan (YY),type J,COI (458 bp),25,OK335685–OK335709
+P8,Hua et al. (2023),New Taipei City Gongliao (NTG),type J,COI (458 bp),14,OK335609–OK335622
+P9,Hua et al. (2023),Pingtung Fangshan (PF),type J,COI (458 bp),14,OK335638–OK335651
+P10,Hua et al. (2023),Pingtung Neipu (PN),type J,COI (458 bp),18,OK335652–OK335669
+P11,Hua et al. (2023),Nantou Yuchi (NY),type J,COI (458 bp),15,OK335623–OK335637
+P12,Hua et al. (2023),Taichung Xinshe (TX),type T,COI (458 bp),10,OK335532–OK335541
+C1,Hua et al. (2023),Thailand Chiang Mai (TCM),type R (Russia/Korea),COI (458 bp),25,OK335713–OK335737
+P13,Hua et al. (2023),China Jilin (CJ),type R (Russia/Korea),COI (458 bp),3,OK335710–OK335712
+P14,Chiu et al. (2023),Tainan (TN),J1,COI,5,"MW599110, MW599111, MW599112, MW599119, MW599118"
+P15,Chiu et al. (2023),Tainan (TN),J1,COI,3,"MW599113, MW599114, MW599115"
+P16,Chiu et al. (2023),Tainan (TN),J1,COI,2,"MW599116, MW599117"
+P17,Chiu et al. (2023),Kaohsiung (KN),J1,COI,3,"MW599109, MW599108, MW599107"
+P18,Chiu et al. (2023),"TT. Lương Sơn, Lương Sơn (LSTT)",K1,COI,2,"MW599140, MW599141"
+P19,Chiu et al. (2023),"Cát Quế, Hoài Đức (HDCQ)",K1,COI,3,"MW599130, MW599129, MW599128"
+P20,Chiu et al. (2023),"Thuỵ Phương, Từ Liêm (TLTP)",K1,COI,3,"MW599145, MW599146, MW599147"
+P21,Chiu et al. (2023),"Ia Ko, Chư Sê (CSIK1)",K1,COI,2,
+P22,Chiu et al. (2023),"Ia Ko, Chư Sê (CSIK2)",K1,COI,1,
+P23,Chiu et al. (2023),"Ia Ko, Chư Sê (CSIK3)",K1,COI,3,
+P24,Chiu et al. (2023),"Yên Bái, Ba Vì (BVYB)",V1,COI,1,MW599127
+P25,Chiu et al. (2023),"Yên Bái, Ba Vì (BVYB)",V1 group (Chiu); no exact 2025 call,COI,1,MW599126
+P26,Chiu et al. (2023),"Vân Hòa, Ba Vì (BVVH1)",V1,COI,3,"MW599122, MW599120, MW599121"
+P27,Chiu et al. (2023),"Vân Hòa, Ba Vì (BVVH2)",V1,COI,3,"MW599124, MW599123, MW599125"
+P28,Chiu et al. (2023),"Mông Hóa, Kỳ Sơn (KSMH1)",V1,COI,3,"MW599132, MW599133, MW599131"
+P29,Chiu et al. (2023),"Mông Hóa, Kỳ Sơn (KSMH2)",V1,COI,2,"MW599135, MW599136"
+P30,Chiu et al. (2023),"Mông Hóa, Kỳ Sơn (KSMH3)",V1,COI,1,MW599137
+P31,Chiu et al. (2023),"Thạch Hòa, Thạch Thất (TTTH1)",V1,COI,3,"MW599152, MW599151, MW599153"
+P32,Chiu et al. (2023),"Thạch Hòa, Thạch Thất (TTTH2)",V1,COI,3,"MW599154, MW599156, MW599155"
+P33,Chiu et al. (2023),"Mỹ Đình, Từ Liêm (TLMD)",Unresolved: Chiu V1 group / 227-bp C1-like,COI,3,"MW599143, MW599142, MW599144"
+P34,Chiu et al. (2023),"Phương Trung, Thanh Oai (TOPT)",V1,COI,3,"MW599150, MW599149, MW599148"
+P35,Nguyen et al. (2025),"Duc Trong Ninh Gia, Lam Dong (LD2)",K1,COI (817-bp alignment),1,PP993932
+P36,Nguyen et al. (2025),"Lam Ha Tan Van, Lam Dong (LD5)",K1,COI (817-bp alignment),1,PP993933
+P37,Nguyen et al. (2025),"Quan, Sai Gon (SG1)",,,,
+P38,Nguyen et al. (2025),"Thong Nhat, Dong Nai (SG5)",K1,COI (817-bp alignment),1,PP993928
+P39,Nguyen et al. (2025),"Cho Gao, Tien Giang (TG1)",,,,
+P40,Nguyen et al. (2025),"Cho Gao, Tien Giang (TG2)",K1,COI (817-bp alignment),1,PP993925
+P41,Nguyen et al. (2025),"Cho Gao, Tien Giang (TG3)",,,,
+P42,Nguyen et al. (2025),"My Tho, Tien Giang (TG4)",,,,
+P43,Nguyen et al. (2025),"Chau Thanh, Tien Giang (TG6)",,,,
+P44,Nguyen et al. (2025),"Hoai Nhon Hoai Duc, Binh Dinh (BD11)",V1,COI (817-bp alignment),1,PP993941
+P45,Nguyen et al. (2025),"Phu My My Chau, Binh Dinh (BD2)",V1,COI (817-bp alignment),1,PP993942
+P46,Nguyen et al. (2025),"Phu My My Chau, Binh Dinh (BD5)",,,,
+P47,Nguyen et al. (2025),"Duc Trong Ninh Gia, Lam Dong (LD3)",,,,
+P48,Nguyen et al. (2025),"Thong Nhat, Dong Nai (SG2)",,,,
+P49,Lin et al. (2021),"Antu, Jilin",J2-1,concatenated partial COX1 and cytb,74,"MN450548, MN450566"
+P50,Lin et al. (2021),"Guangzhou, Guangdong",C1-2,concatenated partial COX1 and cytb,19,"MN450546, MN450564"
+P51,Lin et al. (2021),"Zhanjiang, Guangdong",C1-2,concatenated partial COX1 and cytb,6,
+P52,Lin et al. (2021),"Maoming, Guangdong",C1-2,concatenated partial COX1 and cytb,1,
+P53,Lin et al. (2021),"Guiyang, Guizhou",C4-1,concatenated partial COX1 and cytb,1,"MN450547, MN450565"
+P54,Lin et al. (2021),"Ya’an, Sichuan",K2-1,concatenated partial COX1 and cytb,1,"MN450545, MN450563"
+P55,Lin et al. (2021),"Jingmen, Hubei",K1-14,concatenated partial COX1 and cytb,1,"MN450543, MN450561"
+P56,Lin et al. (2021),"Tai’an, Shandong",K1-1/2,concatenated partial COX1 and cytb,1,
+P57,Lin et al. (2021),"Chun’an, Zhejiang","K1-1/2, K1-5, K1-6",concatenated partial COX1 and cytb,70,"MN450535, MN450553"
+P58,Lin et al. (2021),"Fuyang, Zhejiang","K1-1/2, K1-3, K1-5",concatenated partial COX1 and cytb,13,
+P59,Lin et al. (2021),"Lin’an, Zhejiang","K1-1/2, K1-5",concatenated partial COX1 and cytb,3,
+P60,Lin et al. (2021),"Hangzhou, Zhejiang","K1-1/2, K1-3, K1-5, K1-7, K1-13, K1-15",concatenated partial COX1 and cytb,174,"MN450532, MN450550, MN450533, MN450551, MN450534, MN450552, MN450536, MN450554, MN450542, MN450560, MN450544, MN450562"
+P61,Lin et al. (2021),"Yuanpu, Zhejiang","K1-1/2, K1-3, K1-5, K1-7",concatenated partial COX1 and cytb,12,
+P62,Lin et al. (2021),"Shengzhou, Zhejiang",K1-1/2,concatenated partial COX1 and cytb,2,
+P63,Lin et al. (2021),"Jinhua, Zhejiang","K1-1/2, K1-5, K1-10, K1-12",concatenated partial COX1 and cytb,45,"MN450539, MN450557, MN450541, MN450559"
+P64,Lin et al. (2021),"Wencheng, Zhejiang",K1-1/2,concatenated partial COX1 and cytb,2,
+P65,Lin et al. (2021),"Yongkang, Zhejiang",K1-5,concatenated partial COX1 and cytb,16,
+P66,Lin et al. (2021),"Taishun, Zhejiang","K1-1/2, K1-5",concatenated partial COX1 and cytb,4,
+P67,Lin et al. (2021),"Nanchang, Jiangxi","K1-8, K1-9",concatenated partial COX1 and cytb,15,"MN450537, MN450555, MN450538, MN450556"
+P68,Lin et al. (2021),"Fuzhou, Fujian",K1-11,concatenated partial COX1 and cytb,3,"MN450540, MN450558"
+P69,Lin et al. (2021),"Ya’an, Sichuan",K1-1/2,concatenated partial COX1 and cytb,3,
+P70,Lin et al. (2021),"Kunming, Yunnan",K1-1/2,concatenated partial COX1 and cytb,3,
+P71,Lin et al. (2021),Chongqing,K1-1/2,concatenated partial COX1 and cytb,1,
+P72,Lin et al. (2021),"Tai’an, Shandong",K1-1/2,concatenated partial COX1 and cytb,3,
+P73,Lin et al. (2021),"Siping, Jilin",K1-1/2,concatenated partial COX1 and cytb,17,
+P74,Lin et al. (2021),"Baishan, Jilin",K1-1/2,concatenated partial COX1 and cytb,7,
+P75,Lin et al. (2021),"Nanchang, Jiangxi",K1-1/2,concatenated partial COX1 and cytb,17,
+P76,Lin et al. (2021),"Lanxi, Zhejiang",K1-1/2,concatenated partial COX1 and cytb,10,
+P77,Lin et al. (2021),"Hangzhou, Zhejiang","K1-1/2, K1-5",concatenated partial COX1 and cytb,202,"MN450531, MN450549"
+P78,Lin et al. (2021),"Shaoxing, Zhejiang",K1-1/2,concatenated partial COX1 and cytb,10,
+P79,Lin et al. (2021),"Lishui, Zhejiang",K1-1/2,concatenated partial COX1 and cytb,37,
+P80,Zheng et al. (2023),"Nanchang, Jiangxi",K1-like,partial COX1; WGS mitochondrial SNPs also analysed,1,SRR11497715
+P81,Zheng et al. (2023),"Fuyang, Zhejiang",K1,partial COX1; WGS mitochondrial SNPs also analysed,4,"SRR11497704, SRR11497694, SRR11497693, SRR11497769"
+P82,Zheng et al. (2023),"Lin’an, Zhejiang",K1,partial COX1; WGS mitochondrial SNPs also analysed,2,"SRR11497768, SRR11497767"
+P83,Zheng et al. (2023),"Hangzhou, Zhejiang",K1,partial COX1; WGS mitochondrial SNPs also analysed,9,"SRR11497766, SRR11497765, SRR11497764, SRR11497758, SRR11497763, SRR11497761, SRR11497760, SRR11497756, SRR11497762"
+P84,Zheng et al. (2023),"Hangzhou, Zhejiang",K1-like,partial COX1; WGS mitochondrial SNPs also analysed,1,SRR11497757
+P85,Zheng et al. (2023),"Jinhua, Zhejiang",K1,partial COX1; WGS mitochondrial SNPs also analysed,5,"SRR11497754, SRR11497753, SRR11497752, SRR11497751, SRR11497755"
+P86,Zheng et al. (2023),"Fuzhou, Fujian",K1,partial COX1; WGS mitochondrial SNPs also analysed,7,"SRR11497750, SRR11497749, SRR11497747, SRR11497746, SRR11497745, SRR11497744, SRR11497743"
+P87,Zheng et al. (2023),"Fuzhou, Fujian",K1,partial COX1; WGS mitochondrial SNPs also analysed,1,
+P88,Zheng et al. (2023),"Guangzhou, Guangdong",C1,partial COX1; WGS mitochondrial SNPs also analysed,5,"SRR11497742, SRR11497741, SRR11497740, SRR11497739, SRR11497738"
+P89,Zheng et al. (2023),"Zhanjiang, Guangdong",C1,partial COX1; WGS mitochondrial SNPs also analysed,2,"SRR11497736, SRR11497735"
+P90,Zheng et al. (2023),"Tai’an, Shandong",K1,partial COX1; WGS mitochondrial SNPs also analysed,3,"SRR11497734, SRR11497733, SRR11497732"
+P91,Zheng et al. (2023),Chongqing,K1,partial COX1; WGS mitochondrial SNPs also analysed,1,SRR11497731
+P92,Zheng et al. (2023),"Ya’an, Sichuan",K1,partial COX1; WGS mitochondrial SNPs also analysed,3,"SRR11497730, SRR11497729, SRR11497728"
+P93,Zheng et al. (2023),"Hangzhou, Zhejiang",K1,partial COX1; WGS mitochondrial SNPs also analysed,3,"SRR11497727, SRR11497725, SRR11497724"
+P94,Zheng et al. (2023),"Kunming, Yunnan",K1,partial COX1; WGS mitochondrial SNPs also analysed,3,"SRR11497723, SRR11497722, SRR11497721"
+C2,Zheng et al. (2023),Chiang Mai,K1,partial COX1; WGS mitochondrial SNPs also analysed,2,"SRR11497720, SRR11497719"
+C3,Zheng et al. (2023),Ohio,K1,partial COX1; WGS mitochondrial SNPs also analysed,3,"SRR11497718, SRR11497717, SRR11497716"
+C4,Zheng et al. (2023),Maryland,K1,partial COX1; WGS mitochondrial SNPs also analysed,6,"SRR11497714, SRR11497712, SRR11497710, SRR11497709, SRR11497713, SRR11497711"
+P95,Zheng et al. (2023),Bern,K1,partial COX1; WGS mitochondrial SNPs also analysed,8,"SRR11497708, SRR11497707, SRR11497706, SRR11497705, SRR11497703, SRR11497702, SRR11497701, SRR11497700"
+P96,Zheng et al. (2023),Pretoria,K1,partial COX1; WGS mitochondrial SNPs also analysed,5,"SRR11497699, SRR11497698, SRR11497697, SRR11497696, SRR11497695"
+C5,Kim et al. (2026),"Green Bio Research Institute experimental apiary, Gyeongsangnam-do",K-type,COI and ATP6–COX3 amplicons,15,
+P97,Kim et al. (2026),"National Institute of Agricultural Sciences apiary, Wanju, Jeonbuk",K-type,COI and ATP6–COX3 amplicons,5,
+P98,McFarlane et al. (2024),"Port of Newcastle and surrounding area, New South Wales",Korean haplogroup,Nanopore COI and Cas9-enriched mitochondrial sequence,,
+A1,Techer et al. (2022),JPN02,JapanJ1 (J1-2),"COI and four mt genes from WGS, confirmed COI",2,"DRR293377, DRR293378"
+A2,Techer et al. (2022),"Gwangju, Jeonlabug Province (KOR02)",KoreaK1 (K1-1/K1-2),"COI and four mt genes from WGS, confirmed COI",1,DRR209125
+A3,Techer et al. (2022),"Zhuhai county, Guangdong Province (CHN08)",ChinaC1 (C1-3),"COI and four mt genes from WGS, confirmed COI",1,DRR209124
+A4,Techer et al. (2022),"Zhongshan, Guangdong Province (CHN10)",ChinaC1 (C1-3),"COI and four mt genes from WGS, confirmed COI",1,DRR209123
+A5,Techer et al. (2022),"Dayao county, Yunnan Province (CHN05)",ChinaC3 (C3-2),"COI and four mt genes from WGS, confirmed COI",1,DRR209122
+P99,Techer et al. (2022),"Yunnan Agricultural University, Kunming, Yunnan Province (CHN06)",ChinaC4 (C4-2),"COI and four mt genes from WGS, confirmed COI",1,DRR209121
+A6,Techer et al. (2022),"Xishuangbanna, Yunnan Province (CHN07)","VietNamV1 (V1-5, V1-6)","COI and four mt genes from WGS, confirmed COI",2,"DRR209120, DRR209119"
+A7,Techer et al. (2022),Chiang Mai University (THA03),VietNamV1 (V1-7),"COI and four mt genes from WGS, confirmed COI",1,DRR209118
+A8,Techer et al. (2022),Hoc Chau (VNM02),KoreaK1 (K1-1/K1-2),"COI and four mt genes from WGS, confirmed COI",1,DRR209116
+A9,Techer et al. (2022),"Phjong, Ninh Binh Province (VNM01)",VietNamV1 (V1-8),"COI and four mt genes from WGS, confirmed COI",1,DRR209117
+P100,Techer et al. (2022),MMR01,VietNamV1 (V1-9),"COI and four mt genes from WGS, confirmed COI",1,DRR293381
+P101,Techer et al. (2022),NPL01,Nepal2 (Nepal2-1),"COI and four mt genes from WGS, confirmed COI",1,DRR293384
+P102,Techer et al. (2022),JPN02,KoreaK1 (K1-1/K1-2),"COI and four mt genes from WGS, confirmed COI",1,DRR293379
+P103,Techer et al. (2022),Jungup (KOR01),KoreaK1 (K1-1/K1-2),"COI and four mt genes from WGS, confirmed COI",3,"DRR209115, DRR293380, DRR209114"
+A10,Techer et al. (2022),"Apiary of Jinzhong, Yuci, Shanxi Province (CHN03)",KoreaK1 (K1-1/K1-2),"COI and four mt genes from WGS, confirmed COI",1,DRR209111
+P104,Techer et al. (2022),Heilongjiang Province (CHN01),KoreaK1 (K1-1/K1-2),"COI and four mt genes from WGS, confirmed COI",1,DRR209113
+A11,Techer et al. (2022),"Fengman, Lishu Co., Changchun, Jilin Province (CHN02)",KoreaK1 (K1-6),"COI and four mt genes from WGS, confirmed COI",1,DRR209112
+A12,Techer et al. (2022),"Mianzhu County, Sichuan Province (CHN04)",KoreaK1 (K1-7),"COI and four mt genes from WGS, confirmed COI",1,DRR209110
+A13,Techer et al. (2022),"Zhongshan, Guangdong Province (CHN09)",KoreaK1 (K1-7),"COI and four mt genes from WGS, confirmed COI",1,DRR209109
+P105,Techer et al. (2022),Nho Quan (VNM03),KoreaK1 (K1-1/K1-2),"COI and four mt genes from WGS, confirmed COI",2,"DRR209108, DRR293387"
+A14,Techer et al. (2022),Hoc Chau (VNM02),KoreaK1 (K1-1/K1-2),"COI and four mt genes from WGS, confirmed COI",4,"DRR209107, DRR293388, DRR293389, DRR293390"
+P106,Techer et al. (2022),MMR01,KoreaK1 (K1-1/K1-2),"COI and four mt genes from WGS, confirmed COI",1,DRR293382
+P107,Techer et al. (2022),MMR02,KoreaK1 (K1-1/K1-2),"COI and four mt genes from WGS, confirmed COI",1,DRR293383
+P108,Bai et al. (2021),"Jiangxi Agricultural University apiary, Nanchang, Jiangxi",Korean haplotype,COI sequence from pooled Iso-Seq transcriptomes,,PRJNA726354

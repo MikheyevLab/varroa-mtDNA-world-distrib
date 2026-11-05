@@ -1,0 +1,16 @@
+{
+  "original_sheet_names_preserved": true,
+  "baseline_value_differences": 0,
+  "baseline_style_differences": 0,
+  "freeze_panes_preserved": true,
+  "changed_package_parts": [
+    "xl/worksheets/sheet3.xml",
+    "xl/styles.xml"
+  ],
+  "appended_rows": 127,
+  "appended_range": "A933:S1059",
+  "all_added_cells_match_crosswalk": true,
+  "2021_workbook_byte_identical": true,
+  "before_HTML_byte_identical": true,
+  "workbook_sha256": "17623b4abfcdfa95aa1acaf6e5b024a6e83f7909f58081a4120891fc9d19f897"
+}

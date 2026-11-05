@@ -1,0 +1,2 @@
+# Workflow engine used for the validated DAG; MAFFT/IQ-TREE are in environment.yaml.
+snakemake==8.30.0

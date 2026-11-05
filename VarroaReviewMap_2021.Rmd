@@ -1,572 +1,154 @@
 ---
 title: "World distribution of Varroa mites mtDNA lineages"
-author: "Maeva A. Techer (OIST-JSPS), maeva.angelique.techer@gmail.com"
-date: "`r Sys.Date()`"
+author: "Maeva A. Techer, maeva.angelique.techer@gmail.com"
+date: "Evidence update: 5 November 2026"
 output:
-  rmdformats::readthedown:
+  html_document:
+    theme: null
+    toc: false
     highlight: kate
-    code_folding: hide
     self_contained: true
-    thumbnails: false
-    lightbox: false
+    template: scripts/templates/maps-layout.html
     css: styles_customized.css
 ---
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+# Include the helper code in the rendered Code panel so readers can reproduce each map.
+knitr::read_chunk("scripts/map_helpers.R")
+source("scripts/map_helpers.R")
+map_data <- load_map_data()
 ```
 
-This document was written in R Markdown, and translated into html using the R package `knitr`. Press the buttons labelled **Code** to show the R code used to produce each interactive map created with `leaflet package`.
+<script src="docs/assets/lineage_areas.js"></script>
 
-# Distribution of the honey bee Varroa mites haplogroups
+<section class="page-heading"><h1>Maps</h1></section>
+<div id="explore-the-evidence"></div>
 
-**Background:** Varroa mites are specialist ectoparasites of _Apis_ honey bees and native from Asia. Four species have been described using morphometrics and mitochondrial markers. Besides, three mites had unresolved taxonomical status meaning that Varroa cryptic complex species is more diverse. Among them, _Varroa destructor_ and its sister species _V. jacobsoni_ have repeatedly and independently switch host from the Eastern honey bee _A. cerana_ to the varroa-naive Western honey bee _A. mellifera_. While _V. jacobsoni_ is for now restricted to the Guinean region following its jump in 2008, _V. destructor_ has quickly spread nearly worldwide since the 1960s. Only Australia with high biosecurity standard and remote islands such as Seychelles and Comoros archipelagos remain Varroa-free.
+<span id="new-evidence-locations-only"></span>
 
-Two _V. destructor_ haplogroups based on the mtDNA _COX1_ partial gene, referred as the Korean K1 and the Japanese J1, were able to establish on _A. mellifera_. However, only K1 strain is reported cosmopolite and assumed to be more virulent and displacing the J1 strain in co-introduced areas. Although Varroa presence has been reported in many countries as a notifiable animal disease (OIE), strain or lineage identification is not always available and even more so over time.
-
-To better understand the temporal dynamic of _V. destructor_ populations during the worldwide invasion, we visually reported the distribution of species and haplogroup/strains only confirmed by mtDNA _COX1_ sequencing or PCR-RFLP. Such an approach has previously provided a distribution map emphasizing the supposed parapatry trend between the two sister species _V. destructor_ and _V. jacobsoni_ found on their original host as well as the sympatry with _V. underwoodi_ (Techer et al. 2019). 
-
-
-### Load R libraries 
-```{r message=FALSE, warning=FALSE, results="hide"}
-library(maps)
-library(ggplot2)
-library(tidyverse)
-library(leaflet)
-library(htmltools)
-library(rgdal)
-library(knitr)
-library(kableExtra)
-
-# Download the country borders layer
-#download.file("http://thematicmapping.org/downloads/TM_WORLD_BORDERS_SIMPL-0.3.zip" , destfile="world_shape_file.zip")
-#system("unzip world_shape_file.zip")
-setwd("~/Documents/GitHub/varroa-mtDNA-world-distrib")
-world_spdf=readOGR(dsn= "~/Documents/GitHub/varroa-mtDNA-world-distrib/Raster_borders/" , layer="TM_WORLD_BORDERS_SIMPL-0.3")
+```{r resource-explorer}
+# The explorer filters display copies and exports the matching source fields.
+# The original CSVs and their coordinates are never changed by map interactions.
+resource_map <- build_explorer(map_data)
+resource_map
 ```
 
-We reviewed 68 articles from 1995 to 2020 using either RAPD, mtDNA analysis (PCR-RFLP, sequencing) and/or nuclear microsatellites on Varroa mites or environmental honey DNA29. We collected distribution data about Varroa species identity, mtDNA haplogroup, date of sampling, geographical localization, honey bee host. For geographical localization, three cases occurred: a) exact coordinates were available, b) city or locality was available and c) no localization was available outside of the country level. In the second case, we approximated the geographical position as the center of the city/locality or placed it to the nearest Agricultural Institute or Academic Center/University as some past sampling was known to be carried in experimental research apiaries.. 
- 
-In addition, 485 mitochondrial sequences were downloaded from NCBI Genbank (last update on the 01 February 2020) for which for the same information if not included in the previous papers list. We obtained three mitogenomes, 387 partial _COX1_ sequences (length ranging from 188 to 1088bp), 36 partial _COX3_ sequences (ranging from 323 to 436 bp), 36 partial _ATP6_ sequences (ranging from 287 to 339 bp), 23 partial _CYTB_ sequences (ranging from 899 to 985 bp). All _COX1_ sequences were blasted and aligned to 44 reference mtDNA haplotypes (see Table S3)1,4,6,26,27,30–33. Despite highly variable length and inconsistent sequence overlapping due to the usage of variable primers and high sequences trimming, we expanded the known _COX1_ haplogroups . Following the nomenclature rules we found that _V. destructor_ is the most diverse with 31 haplogroups (including 22 K-like), followed by _V. jacobsoni_ with 19, five for _V. underwoodi_, for undetermined Varroa sp. and one for _V. rindereri_. We use these haplogroups to build an interactive distribution map of the Varroa mites on their honey bee hosts mikheyevlab.github.io/varroa-mtDNA-world-distrib/.
+::: {.map-documentation}
 
-### Data collected from references to create map points
-``` {r layersmap}
-#Data with exact or approximate GPS coordinates obtained from references
-coordvarroa <- read.csv("Data/mappingpoints_Varroareview05022020.csv", header = TRUE)
-coord.vdac <- coordvarroa %>% filter(Species == "V. destructor") %>% filter(Host == "A. cerana") 
-coord.vjac <- coordvarroa %>% filter(Species == "V. jacobsoni") %>% filter(Host == "A. cerana")
-```
-  
-In some cases, no other information than the country of sampling was reported. We build here a layer for which all countries in which one haplogroup was reported will be highlighted with the same color.  
-  
-_For example, I found no other mtDNA identification than Solignac et al. (2005) for Chile, so the country will be highlighted for V. destructor Korea presence._
+## What changed in November 2026?
 
-### Data collected from references to create country polygons
-```{r layercountry}
-#Data with only the country name when no GPS data was available
-paysvarroa <- read.csv("Data/mappingcountry_Varroareview05022020.csv", header = TRUE)
+Varroa mites are ectoparasites of honey bees native to Asia. *V. destructor* and *V. jacobsoni* have independently switched from the Eastern honey bee, *Apis cerana*, to the Western honey bee, *A. mellifera*. The map brings together mitochondrial labels reported for mites collected on these hosts. Collection host does not by itself establish successful reproduction.
 
-```
-  
-  
-The following interactive map allows to plot the destribution of both invasive lineage for V. destructor on its novel host A. mellifera in regards with the recent expansion of its simili, *V. jacobsoni* in Papua New Guinea.  
+Australia's former freedom from *V. destructor* ended with detection in sentinel colonies at the Port of Newcastle in **June 2022**. The Australian addition represents five anonymised sites within 20 km of the port as one approximate regional observation. [McFarlane et al. (2024)](https://doi.org/10.3389/frbee.2024.1334543)
 
-It is possible to zoom in and out, and passing the cursor on one point will give basic information on the year and reporter. On the top right corner of the map, a control button allow to select specific points/country layers.  
+[Open the original map before this update](before-2026-update.html) to compare it with this page. The original HTML is preserved exactly as it appeared in the baseline checkout. The **New additions** button isolates the newly added evidence; the three original host-specific views are also retained below.
 
-Points and country are colored as following:  
-<span style="color:red"> V. destructor **K lineage** </span>  
-<span style="color:blue"> V. destructor **J lineage** </span>  
-<span style="color:purple"> V. destructor **K and J lineages** coexist(ed) </span>  
-<span style="color:green"> V. jacobsoni **Java lineage**</span>  
-<span style="color:black"> Varroa sp. **Luzon lineage**</span>  
+The targeted literature addition focuses on Vietnam, China, Taiwan, Thailand and South Korea, with selected comparative records and the Australian incursion. It adds **108 point evidence records at 85 coordinate pairs** and **five country records**. Of the point additions, **98 have a mitochondrial assignment** and **10 are reserved for the optional gray genome-wide layer**. There are 48 published-site records and 60 approximate-locality records. The full database now holds **704 point records and 429 country records**. These are evidence records, not independent mites, unique samples or prevalence estimates.
+
+**How precise are the locations?** Filled symbols indicate **published site coordinates**. Hollow symbols indicate an **approximate locality**, which may be a town, administrative district or anonymised study area. Numbered rings identify records sharing a coordinate; inspect each record's precision in its popup. Country shading indicates occurrence within the named region, not throughout the country. In the main atlas, circles identify *V. destructor*, diamonds *V. jacobsoni*, squares *V. underwoodi*, triangles *V. rindereri*, and stars unresolved species. Numbered shared markers list their species in the popup. Dotted gold halos mark the 2026 additions; their collection dates may be much older. The bundled borders and locator work offline; OpenStreetMap is optional.
+
+**Can I reuse the figure?** **Export figure** downloads an editable SVG of the current map extent, with its legend, evidence counts, source credit and filter metadata. Exported counts describe all matching records; the current viewport may show only a subset of their locations. Equal segments in shared-coordinate rings show which groups are present, never their sample proportions. The muted atlas palette is a display choice; the original host-specific maps below retain their historical colors. The species view follows the red/blue distinction used in [Techer et al. (2019), Figure 1](https://www.nature.com/articles/s42003-019-0606-0).
+
+**What do the filters mean?** The year filter uses collection years and overlapping collection intervals. Unavailable years can be kept or excluded explicitly. The genome-wide option adds unresolved mitochondrial records in gray and marks WGS/RAD evidence with a gray outline; resolved records retain their mitochondrial color. A study filter can also find separately attributed archive annotations. The results table and CSV contain the same matching records. Country evidence can be hidden from the map while remaining in the table and download.
+
+**What happens when studies share a marker?** A shared popup lists every matching evidence record at that coordinate, including different hosts when both are selected. Expand each study to see its collection year, host, reported mitochondrial label, accession or run IDs and source evidence. Shared coordinates do not establish reuse of the same mite. Broad K colors include study-specific K1-like or mixed-variant calls, which remain explicit in the popup.
 
 ## Distribution of Varroa spp. mtDNA lineages on Apis mellifera
-```{r vdamsubset}
 
-### Subset the data for only Varroa destructor on the Western honey bee
-coord.vdamK <- coordvarroa %>% filter(Species == "V. destructor") %>% filter(Host == "A. mellifera") %>% filter(GROUP == "VD_K_type")
+This full map retains *V. destructor*, *V. jacobsoni* and the unresolved *Varroa* species records on the Western honey bee. Study-specific J-type labels remain available alongside J1 and K-group records.
 
-pays.vdamK <- paysvarroa %>% filter(Species == "V. destructor") %>% filter(Host == "A. mellifera") %>% filter(GROUP == "VD_K_type")
-loc.vdamK <- pays.vdamK$Location
-map.vdamK <- subset(world_spdf,world_spdf@data$NAME %in% loc.vdamK)
-
-coord.vdamJ <- coordvarroa %>% filter(Species == "V. destructor") %>% filter(Host == "A. mellifera") %>% filter(GROUP == "VD_Japan_J1")
-
-pays.vdamJ <- paysvarroa %>% filter(Species == "V. destructor") %>% filter(Host == "A. mellifera") %>% filter(GROUP == "VD_Japan_J1")
-loc.vdamJ <- pays.vdamJ$Location
-map.vdamJ <- subset(world_spdf,world_spdf@data$NAME %in% loc.vdamJ)
-
-coord.vdamKJ <- coordvarroa %>% filter(Species == "V. destructor") %>% filter(Host == "A. mellifera") %>% filter(GROUP == "KoreaJapan")
-
-pays.vdamKJ <- paysvarroa %>% filter(Species == "V. destructor") %>% filter(Host == "A. mellifera") %>% filter(GROUP == "KoreaJapan")
-loc.vdamKJ <- pays.vdamKJ$Location
-map.vdamKJ <- subset(world_spdf,world_spdf@data$NAME %in% loc.vdamKJ)
-
-### Subset the data for only Varroa jacobsoni on the Western honey bee
-coord.vjam <- coordvarroa %>% filter(Species == "V. jacobsoni") %>% filter(Host == "A. mellifera")
-
-pays.vjam <- paysvarroa %>% filter(Species == "V. jacobsoni") %>% filter(Host == "A. mellifera")
-loc.vjam <- pays.vjam$Location
-map.vjam <- subset(world_spdf,world_spdf@data$NAME %in% loc.vjam)
-
-### Subset the data for only Varroa sp. on the Western honey bee
-coord.vspam <- coordvarroa %>% filter(Species == "Varroa sp.") %>% filter(Host == "A. mellifera")
-
-pays.vspam <- paysvarroa %>% filter(Species == "Varroa sp.") %>% filter(Host == "A. mellifera")
-loc.vspam <- pays.vspam$Location
-map.vspam <- subset(world_spdf,world_spdf@data$NAME %in% loc.vspam)
-
-# Prepare the map title
-tag.map.title <- tags$style(HTML("
-  .leaflet-control.map-title { 
-    transform: translate(-50%,20%);
-    text-align: center;
-    padding-left: 10px; 
-    padding-right: 10px; 
-    background: rgba(255,255,255,0.75);
-    font-weight: bold;
-    font-size: 20px;
-  }
-"))
-
-title <- tags$div(
-  tag.map.title, HTML("Reported distribution of Varroa mite strains on A. mellifera")
-)  
-
-## Create the interactive map with leaflet
-leaflet(coordvarroa) %>% 
-  setView(lng = 0, lat = 0, zoom = 2) %>% 
-  addTiles(group = "OSM (default)") %>%
-  ## add the layer other than default we would like to use for background
-  addProviderTiles(providers$Esri.WorldGrayCanvas, group = "Esri.WorldGrayCanvas") %>%
-  addProviderTiles(providers$Stamen.TonerLines, group = "Stamen.TonerLines") %>%
-  ## add the three layers coloring the countries in which K, J or both were described
-  addPolygons(data = map.vdamK, fillColor = "red", stroke=FALSE, group = "Country with K strain") %>%
-  addPolygons(data = map.vdamJ, fillColor = "blue", stroke=FALSE, group = "Country with J strain") %>%
-  addPolygons(data = map.vdamKJ, fillColor = "#d9b7eb", stroke=FALSE, group = "Country co-infected") %>%
-  ## adding Varroa jacosboni country layer
-    addPolygons(data = map.vjam, fillColor = "black", stroke=FALSE, group = "Country with V. jacobsoni") %>%
-    ## adding Varroa sp. country layer
-    addPolygons(data = map.vspam, fillColor = "black", stroke=FALSE, group = "Country with Varroa sp.") %>%
-  ## adding the three layers with GPS points for each jumping parasite strains
-  addCircleMarkers(data = coord.vdamK, coord.vdamK$coord.Y, coord.vdamK$coord.X,
-                   weight = 0.5,
-                   col = "#FB0000", 
-                   radius = 3.5, 
-                   fillOpacity = 0.8, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. destructor Korean lineage') %>%
-  addCircleMarkers(data = coord.vdamJ, coord.vdamJ$coord.Y, coord.vdamJ$coord.X,
-                   weight = 0.5,
-                   col = "#068FF9", 
-                   radius = 3.5, 
-                   fillOpacity = 0.8, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. destructor Japan lineage') %>%
-  addCircleMarkers(data = coord.vdamKJ, coord.vdamKJ$coord.Y, coord.vdamKJ$coord.X,
-                   weight = 0.5,
-                   col = "#9707E7", 
-                   radius = 3.5, 
-                   fillOpacity = 0.8, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'Co-infection by K & J') %>%
-  ## adding Varro jacobsoni layer to show parapatry
-    addCircleMarkers(data = coord.vjam, coord.vjam$coord.Y, coord.vjam$coord.X,
-                   weight = 0.5,
-                   col = "#black", 
-                   radius = 3.5, 
-                   fillOpacity = 0.8, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Java lineage') %>%
-    ## adding Varroa sp. layer to show allopatry
-    addCircleMarkers(data = coord.vspam, coord.vspam$coord.Y, coord.vspam$coord.X,
-                   weight = 0.5,
-                   col = "black", 
-                   radius = 3.5, 
-                   fillOpacity = 0.8, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'Varroa sp.') %>%
-  ## adding the control button to remove or add layers of points or country
-  addLayersControl(position = "topright",
-    baseGroups = c("OSM (default)", "Positron NoLabels"),
-    overlayGroups = c("V. destructor Korean lineage", 
-                      "Country with K strain", 
-                      "V. destructor Japan lineage", 
-                      "Country with J strain", 
-                      "Co-infection by K & J", 
-                      "Country co-infected", 
-                      "V. jacobsoni Java lineage", 
-                      "Country with V. jacobsoni", 
-                      "Varroa sp.", "Country with Varroa sp."),
-    options = layersControlOptions(collapsed = TRUE))  %>%
-  ## adding a title for the map
-  #addControl(title, position = "bottomright", className="map-title") %>% 
-  ## show the positron background prerably to the OSM layer
-  showGroup("Positron NoLabels")
+```{r mellifera-map}
+mellifera_map <- build_map(map_data, "A. mellifera",
+  c("V. destructor", "V. jacobsoni", "Varroa sp."))
+mellifera_map
 ```
-  
-This map now focus on the diversity within *V. destructor* on its native host *A. cerana*.  
-  
+
 ## Distribution of Varroa destructor mtDNA lineages on Apis cerana
-```{r destructor}
 
-vdac.K1 <- coord.vdac[coord.vdac$GROUP =="VD_K_type",]
-vdac.J1 <- coord.vdac[coord.vdac$GROUP =="VD_Japan_J1",]
-vdac.C1 <- coord.vdac[coord.vdac$GROUP =="VD_China_C1",]
-vdac.C2 <- coord.vdac[coord.vdac$GROUP =="VD_China_C2",]
-vdac.C3 <- coord.vdac[coord.vdac$GROUP =="VD_China_C3",]
-vdac.C4 <- coord.vdac[coord.vdac$GROUP =="VD_China_C4",]
-vdac.Nep <- coord.vdac[coord.vdac$GROUP =="VD_Nepal_1",]
-vdac.SI <- coord.vdac[coord.vdac$GROUP =="VD_South_India_1",]
-vdac.SRI <- coord.vdac[coord.vdac$GROUP =="VD_Sri_Lanka_1",]
-vdac.V1 <- coord.vdac[coord.vdac$GROUP =="VD_Viet_Nam_V1",]
+The Eastern honey bee map includes Taiwan T, Lin's J2-1 and C4-1 labels, and the archived Nepal2 record. The two Fuzhou WGS records both have *A. cerana* as their collection host. AcFZ8 grouped with the *A. mellifera*-associated nuclear clade, whereas the other seven family pools grouped with the *A. cerana*-associated clade. Their mitochondrial colors remain K-group colors. Thong Nhat SG2 has no resolved mitochondrial call and appears only in the gray genome-wide layer.
 
-# Prepare the map title
-tag.map.title2 <- tags$style(HTML("
-  .leaflet-control.map-title2 { 
-    transform: translate(-50%,20%);
-    text-align: center;
-    padding-left: 10px; 
-    padding-right: 10px; 
-    background: rgba(255,255,255,0.75);
-    font-weight: bold;
-    font-size: 20px;
-  }
-"))
-
-title <- tags$div(
-  tag.map.title2, HTML("Reported distribution of V. destructor strains on A. cerana")
-)  
-
-leaflet(coord.vdac) %>% 
-  addTiles(group = "OSM (default)") %>%
-  ## add the layer other than default we would like to use for background
-  addProviderTiles(providers$CartoDB.PositronNoLabels, group = "Positron NoLabels") %>%
-  ## adding each lineage group as a layer for V. destructor on cerana
-    ## adding distribution of V. jacobsoni on original host A. cerana
-  addCircleMarkers(data = coord.vjac, coord.vjac$coord.Y, coord.vjac$coord.X,
-                   weight = 0.5,
-                   col = "black", 
-                   radius = 5, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni')%>%
-  
-  addCircleMarkers(data = vdac.K1, vdac.K1$coord.Y, vdac.K1$coord.X,
-                   weight = 0.5,
-                   col = "#FB0000", 
-                   radius = 5, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. destructor K1') %>%
-  addCircleMarkers(data = vdac.J1, vdac.J1$coord.Y, vdac.J1$coord.X,
-                   weight = 0.5,
-                   col = "#0066ff", 
-                   radius = 5, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. destructor J1') %>%
-  addCircleMarkers(data = vdac.C1, vdac.C1$coord.Y, vdac.C1$coord.X,
-                   weight = 0.5,
-                   col = "#ff9933", 
-                   radius = 5, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. destructor China C1') %>%
-  addCircleMarkers(data = vdac.C2, vdac.C2$coord.Y, vdac.C2$coord.X,
-                   weight = 0.5,
-                   col = "#b800e6", 
-                   radius = 5, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. destructor China C2') %>%
-  addCircleMarkers(data = vdac.C3, vdac.C3$coord.Y, vdac.C3$coord.X,
-                   weight = 0.5,
-                   col = "#ff4dff", 
-                   radius = 5, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. destructor China C3')  %>%
-  addCircleMarkers(data = vdac.Nep, vdac.Nep$coord.Y, vdac.Nep$coord.X,
-                   weight = 0.5,
-                   col = "#993300", 
-                   radius = 5, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. destructor Nepal') %>%
-  addCircleMarkers(data = vdac.SI, vdac.SI$coord.Y, vdac.SI$coord.X,
-                   weight = 0.5,
-                   col = "#FFDD00", 
-                   radius = 5, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. destructor South India 1') %>%
-    addCircleMarkers(data = vdac.SRI, vdac.SRI$coord.Y, vdac.SRI$coord.X,
-                   weight = 0.5,
-                   col = "#669999", 
-                   radius = 5, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. destructor Sri Lanka 1') %>%
-      addCircleMarkers(data = vdac.V1, vdac.V1$coord.Y, vdac.V1$coord.X,
-                   weight = 0.5,
-                   col = "#009900", 
-                   radius = 5, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. destructor Viet Nam V1') %>%
-  addCircleMarkers(data = vdac.C4, vdac.C4$coord.Y, vdac.C4$coord.X,
-                   weight = 0.5,
-                   col = "#663300", 
-                   radius = 5, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. destructor China C4') %>%
-
-  addLayersControl(position = "topright",
-    baseGroups = c("OSM (default)", "Positron NoLabels"),
-    overlayGroups = c("V. destructor K1", 
-                      "V. destructor J1", 
-                      "V. destructor China C1", 
-                      "V. destructor China C2", 
-                      "V. destructor China C3", 
-                      "V. destructor China C4", 
-                      "V. destructor Nepal", 
-                      "V. destructor South India 1", 
-                      "V. destructor Sri Lanka 1", 
-                      "V. destructor Viet Nam V1",
-                      "V. jacobsoni"),
-    options = layersControlOptions(collapsed = TRUE))  %>%
-  ## adding a title for the map
-  addControl(title, position = "bottomright", className="map-title2") %>% 
-  ## show the positron background prerably to the OSM layer
-  showGroup("Positron NoLabels") %>% 
-  hideGroup("V. jacobsoni")
-
+```{r cerana-destructor-map}
+cerana_destructor_map <- build_map(map_data, "A. cerana", "V. destructor", center = c(105, 23, 4))
+cerana_destructor_map
 ```
-
-This third map now focus on the diversity within *V. jacobsoni* on its native host *A. cerana*. Although, *V. jacobsoni* has only jumped ~10 years ago, concerns arise on its invasion potential as it could follow the steps of its sister species.
 
 ## Distribution of Varroa jacobsoni mtDNA lineages on Apis cerana
-```{r jacobsoni, warning=FALSE}
 
-vjac.Mal1 <- coord.vjac[coord.vjac$GROUP =="VJ_Malaysia_1",]
-vjac.Mal2 <- coord.vjac[coord.vjac$GROUP =="VJ_Malaysia_2",]
-vjac.Jav <- coord.vjac[coord.vjac$GROUP =="VJ_Java_1",]
-vjac.Amb <- coord.vjac[coord.vjac$GROUP =="VJ_Ambon_1",]
-vjac.Lom <- coord.vjac[coord.vjac$GROUP =="VJ_Lombok_1",]
-vjac.Bal <- coord.vjac[coord.vjac$GROUP =="VJ_Bali_1",]
-vjac.Beng <- coord.vjac[coord.vjac$GROUP =="VJ_Bengaluru_1",]
-vjac.Sbw <- coord.vjac[coord.vjac$GROUP =="VJ_Sumbawa_1",]
-vjac.Sum <- coord.vjac[coord.vjac$GROUP =="VJ_Sumatra_1",]
-vjac.Flo <- coord.vjac[coord.vjac$GROUP =="VJ_Flores_1",]
-vjac.Sam1 <- coord.vjac[coord.vjac$GROUP =="VJ_Samui_1",]
-vjac.Sam2 <- coord.vjac[coord.vjac$GROUP =="VJ_Samui_2",]
-vjac.Bor1 <- coord.vjac[coord.vjac$GROUP =="VJ_Borneo_1",]
-vjac.NT1 <- coord.vjac[coord.vjac$GROUP =="VJ_North_Thailand_1",]
-vjac.NT2 <- coord.vjac[coord.vjac$GROUP =="VJ_North_Thailand_2",]
-vjac.NT3 <- coord.vjac[coord.vjac$GROUP =="VJ_North_Thailand_3",]
-vjac.Laos <- coord.vjac[coord.vjac$GROUP =="VJ_Laos_L1",]
+The existing *V. jacobsoni* records and lineage views are retained. This targeted update does not add the reclassified Vietnamese accessions to the *V. destructor* layers.
 
-# Prepare the map title
-tag.map.title3 <- tags$style(HTML("
-  .leaflet-control.map-title3 { 
-    transform: translate(-50%,20%);
-    text-align: center;
-    padding-left: 10px; 
-    padding-right: 10px; 
-    background: rgba(255,255,255,0.75);
-    font-weight: bold;
-    font-size: 20px;
-  }
-"))
-
-title <- tags$div(
-  tag.map.title3, HTML("Reported distribution of V. jacobsoni strains on A. cerana")
-)  
-
-leaflet(coord.vjac) %>% 
-  addTiles(group = "OSM (default)") %>%
-  ## add the layer other than default we would like to use for background
-  addProviderTiles(providers$CartoDB.PositronNoLabels, group = "Positron NoLabels") %>%  
-  ## adding each lineage of V. jacobsoni as a layer
-  addCircleMarkers(data = vjac.Mal1, vjac.Mal1$coord.Y, vjac.Mal1$coord.X,
-                   weight = 0.5,
-                   col = "#4dffff", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Malaysia_1') %>%
-addCircleMarkers(data = vjac.Mal2, vjac.Mal2$coord.Y, vjac.Mal2$coord.X,
-                   weight = 0.5,
-                   col = "#0099ff", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Malaysia_2') %>%
-addCircleMarkers(data = vjac.Jav, vjac.Jav$coord.Y, vjac.Jav$coord.X,
-                   weight = 0.5,
-                   col = "#0000e6", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Java_1') %>%
-addCircleMarkers(data = vjac.Amb, vjac.Amb$coord.Y, vjac.Amb$coord.X,
-                   weight = 0.5,
-                   col = "#000000", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Ambon_1') %>%
-addCircleMarkers(data = vjac.Lom, vjac.Lom$coord.Y, vjac.Lom$coord.X,
-                   weight = 0.5,
-                   col = "#00ff00", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Lombok_1') %>%
-addCircleMarkers(data = vjac.Bal, vjac.Bal$coord.Y, vjac.Bal$coord.X,
-                   weight = 0.5,
-                   col = "#006600", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Bali_1') %>%
-addCircleMarkers(data = vjac.Beng, vjac.Beng$coord.Y, vjac.Beng$coord.X,
-                   weight = 0.5,
-                   col = "#006666", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Bengaluru_1') %>%
-addCircleMarkers(data = vjac.Sbw, vjac.Sbw$coord.Y, vjac.Sbw$coord.X,
-                   weight = 0.5,
-                   col = "#ff8000", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Sumbawa_1') %>%
-addCircleMarkers(data = vjac.Sum, vjac.Sum$coord.Y, vjac.Sum$coord.X,
-                   weight = 0.5,
-                   col = "#ffd9b3", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Sumatra_1') %>%
-addCircleMarkers(data = vjac.Flo, vjac.Flo$coord.Y, vjac.Flo$coord.X,
-                   weight = 0.5,
-                   col = "#ffff00", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Flores_1') %>%
-  addCircleMarkers(data = vjac.Sam1, vjac.Sam1$coord.Y, vjac.Sam1$coord.X,
-                   weight = 0.5,
-                   col = "#a64dff", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Samui_1') %>%
-addCircleMarkers(data = vjac.Sam2, vjac.Sam2$coord.Y, vjac.Sam2$coord.X,
-                   weight = 0.5,
-                   col = "#e6ccff", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Samui_2') %>%
-addCircleMarkers(data = vjac.Bor1, vjac.Bor1$coord.Y, vjac.Bor1$coord.X,
-                   weight = 0.5,
-                   col = "#663300", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Borneo_1') %>%
-addCircleMarkers(data = vjac.NT1, vjac.NT1$coord.Y, vjac.NT1$coord.X,
-                   weight = 0.5,
-                   col = "#f2f2f2", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni North_Thailand_1') %>%
-addCircleMarkers(data = vjac.NT2, vjac.NT2$coord.Y, vjac.NT2$coord.X,
-                   weight = 0.5,
-                   col = "#bfbfbf", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni North_Thailand_2') %>%
-addCircleMarkers(data = vjac.NT3, vjac.NT3$coord.Y, vjac.NT3$coord.X,
-                   weight = 0.5,
-                   col = "#4d4d4d", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni North_Thailand_3') %>%
-  addCircleMarkers(data = vjac.Laos, vjac.Laos$coord.Y, vjac.Laos$coord.X,
-                   weight = 0.5,
-                   col = "#cc0066", 
-                   radius = 4, 
-                   fillOpacity = 0.9, 
-                   stroke = T, 
-                   label = ~as.character(Description), 
-                   group = 'V. jacobsoni Laos_1') %>%
-  addLayersControl(position = "topright",
-    baseGroups = c("OSM (default)", "Positron NoLabels"),
-    overlayGroups = c("V. jacobsoni Malaysia_1", 
-                      "V. jacobsoni Malaysia_2", 
-                      "V. jacobsoni Java_1",
-                      "V. jacobsoni Ambon_1", 
-                      "V. jacobsoni Lombok_1",
-                      "V. jacobsoni Bali_1",
-                      "V. jacobsoni Bengaluru_1",  
-                      "V. jacobsoni Sumbawa_1", 
-                      "V. jacobsoni Sumatra_1",  
-                      "V. jacobsoni Flores_1",  
-                      "V. jacobsoni Samui_1", 
-                      "V. jacobsoni Samui_2", 
-                      "V. jacobsoni Borneo_1", 
-                      "V. jacobsoni North_Thailand_1", 
-                      "V. jacobsoni North_Thailand_2", 
-                      "V. jacobsoni North_Thailand_3",
-                      "V. jacobsoni Laos_1"),
-    options = layersControlOptions(collapsed = TRUE))  %>%
-  ## adding a title for the map
-  addControl(title, position = "bottomright", className="map-title3") %>% 
-  ## show the positron background prerably to the OSM layer
-  showGroup("Positron NoLabels")
+```{r cerana-jacobsoni-map}
+cerana_jacobsoni_map <- build_map(map_data, "A. cerana", "V. jacobsoni", center = c(108, 12, 4))
+cerana_jacobsoni_map
 ```
 
-This interactive map aims to reach the greatest audience and to initiate participative science among researchers, bee and mites experts, beekeepers and amateur entomologists. If you are interested in improving this current database (adding on missing data and new records) or even noticed some errors, please contact *Maeva Techer*, Postdoctoral JSPS Fellow at the Okinawa Institute of Science and Technology, Japan: maeva.techer@oist.jp or maeva-angelique.techer@gmail.com
+## What can these records tell us?
+
+The additions support occurrence at the reported sites. They do not support comparisons of prevalence between countries: surveys differ in their dates, sampling units, sequencing methods and coverage. Lin's mixed-variant counts describe whole site–host groups. Zheng's WGS libraries are brood-cell family pools, not individual mites. COI and RAD counts in Nguyen's study can refer to different individuals. Wang et al. (2020) provides [complementary brood-cell evidence at overlapping Chinese sites](https://doi.org/10.1002/ece3.7038).
+
+Vietnamese accessions MW599134, MW599138 and MW599139 are excluded from the *V. destructor* additions following Nguyen's reassignment to *V. jacobsoni*. The short COI alignment does not resolve MW599142–MW599144 unambiguously, and MW599126 also lacks an unambiguous named call in the reanalysis. Those records retain the original report and nuclear evidence in the gray layer. At Ia Ko, the Chiu records carry the later Nguyen accessions with possible specimen overlap explicitly unresolved. Chiu's Taiwan and Gia Lai years remain unavailable.
+
+Taiwan's two surveys remain distinct: Hua reported 168 J calls on *A. mellifera* and 15 T calls on *A. cerana*, while Chiu's 13 RAD-sequenced Taiwanese mites were all collected on *A. mellifera*. Antu's 74 *A. cerana* mites carry Lin's J2-1 call. AcFZ8's collection year remains unavailable because its alias lacks a matching public ENA run.
+
+Fourteen archived Techer site–host–COI records are retained in the workbook and separately attributed in matching legacy-locality popups. They do not create new point rows. Nine other archived records are among the 108 additions. These 1994–2003 collections do not imply recent spread. VNV475_1 and JPV025_1 retain *A. cerana* as the collection host; *A. mellifera* host reads indicate recent feeding, not a change to the collection record. Disagreement in coordinates, dates or lineage calls remains visible for review, and specimen reuse is not inferred from a shared locality.
+
+The bundled borders have no polygon named “Yugoslavia”. That historical country-only record remains in the database without being reassigned to a present-day country. Korean spelling variants and trailing whitespace are matched only for display.
+
+## Data and original review
+
+The updated workbook contains 127 literature-sheet additions. Both workbooks are included in this page, so these downloads also work from a saved local copy.
+
+```{r workbook-downloads, echo=FALSE}
+# Embed the actual workbooks, keeping downloads usable before publication and offline.
+mime <- "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+htmltools::tags$p(
+  htmltools::tags$a("Download the 2026 workbook", download = "Database_mtDNA_updated_2026.xlsx",
+    href = base64enc::dataURI(file = "Data/Database_mtDNA_updated_2026.xlsx", mime = mime)),
+  " · ",
+  htmltools::tags$a("Download the archival 2021 workbook", download = "Database_mtDNA_updated_2021.xlsx",
+    href = base64enc::dataURI(file = "Data/Database_mtDNA_updated_2021.xlsx", mime = mime))
+)
+```
+
+The original four sheets and the dated GenBank snapshot are retained. Subsequent assignments are recorded in the literature sheet rather than rewriting the original sequence entries. The repository also contains the [curated handoff and accession crosswalk](https://github.com/MikheyevLab/varroa-mtDNA-world-distrib/tree/master/Data/updates/2026-11-05).
+
+The following description documents the **original review**, not the extent of the targeted 2026 literature pass.
+
+The original review covered 68 articles from 1995 to 2020 using either RAPD, mtDNA analysis (PCR-RFLP, sequencing) and/or nuclear microsatellites on Varroa mites or environmental honey DNA29. We collected distribution data about Varroa species identity, mtDNA haplogroup, date of sampling, geographical localization, honey bee host. For geographical localization, three cases occurred: a) exact coordinates were available, b) city or locality was available and c) no localization was available outside of the country level. In the second case, the original review approximated the geographical position as the center of the city/locality or placed it to the nearest Agricultural Institute or Academic Center/University as some past sampling was known to be carried in experimental research apiaries..
+
+In addition, 485 mitochondrial sequences were downloaded from NCBI Genbank (last update on the 01 February 2020) for which for the same information if not included in the previous papers list. That snapshot contained three mitogenomes, 387 partial _COX1_ sequences (length ranging from 188 to 1088bp), 36 partial _COX3_ sequences (ranging from 323 to 436 bp), 36 partial _ATP6_ sequences (ranging from 287 to 339 bp), 23 partial _CYTB_ sequences (ranging from 899 to 985 bp). All _COX1_ sequences were blasted and aligned to 44 reference mtDNA haplotypes (see Table S3)1,4,6,26,27,30–33. Despite highly variable length and inconsistent sequence overlapping due to the usage of variable primers and high sequences trimming, we expanded the known _COX1_ haplogroups . Following the nomenclature rules we found that _V. destructor_ is the most diverse with 31 haplogroups (including 22 K-like), followed by _V. jacobsoni_ with 19, five for _V. underwoodi_, for undetermined Varroa sp. and one for _V. rindereri_. The original review used these haplogroups to build an interactive distribution map of the Varroa mites on their honey bee hosts mikheyevlab.github.io/varroa-mtDNA-world-distrib/.
 
 
+## Reproduce this page
+
+### Map preparation code
+
+```{r libraries, eval=FALSE}
+library(leaflet)
+library(htmltools)
+library(sf)
+```
+
+```{r map-functions, eval=FALSE}
+```
+
+```{r resource-explorer-function, eval=FALSE}
+```
+
+```{r load-data, eval=FALSE}
+# Load tables, display labels and separately attributed archive notes.
+map_data <- load_map_data()
+```
+
+
+Run the following from the repository root after installing `rmarkdown`, `rmdformats`, `knitr`, `leaflet`, `htmltools`, `htmlwidgets`, `jsonlite`, `base64enc` and `sf`, with Pandoc available. The map preparation code is shown in the Code panels above and stored in `scripts/map_helpers.R`. The searchable explorer is implemented in `scripts/resource_explorer.js`. Source data retain `coord.Y` as longitude and `coord.X` as latitude.
+
+```bash
+# Append only exact full rows that have not already been applied.
+python3 scripts/apply_curated_update.py
+# Build the interactive page from project-relative data and country borders.
+PYTHON=.venv-resource/bin/python bash scripts/build_site.sh
+```
+
+Questions, corrections or new records are welcome: [Maeva Techer](mailto:maeva.angelique.techer@gmail.com).
+
+:::

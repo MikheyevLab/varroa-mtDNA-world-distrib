@@ -1,0 +1,19 @@
+{
+  "point_records": 704,
+  "country_records": 429,
+  "new_points": 108,
+  "new_countries": 5,
+  "coordinate_pairs": 85,
+  "exact": 48,
+  "approximate": 60,
+  "resolved_mt": 98,
+  "nuclear_only": 10,
+  "archive_groups": 14,
+  "archive_links": 19,
+  "country_only_additions_have_polygons": true,
+  "no_country_centroid_markers": true,
+  "SG2_neutral_only": true,
+  "required_labels_and_popups": true,
+  "explorer_payload_records": 1133,
+  "retained_host_maps": ["mellifera", "destructor", "jacobsoni"]
+}

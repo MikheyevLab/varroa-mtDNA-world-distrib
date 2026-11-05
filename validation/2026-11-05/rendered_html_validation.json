@@ -1,0 +1,10 @@
+{
+  "interactive_maps": 4,
+  "embedded_records": 1133,
+  "country_records_have_no_coordinates": true,
+  "embedded_workbooks_identical_to_deliverables": [
+    2021,
+    2026
+  ],
+  "render_completed": true
+}

@@ -1,0 +1,14 @@
+<section class="page-heading"><h1>Missing a record?</h1></section>
+<section class="submission">
+  <form id="submission-form">
+    <label>Paper, DOI, URL or accession <span class="muted">Required</span><input name="source" required maxlength="500" placeholder="Where can we find the record?"></label>
+    <div class="submission-row"><label>Species<input name="species" maxlength="120" list="varroa-species" placeholder="If known"><datalist id="varroa-species"><option>Varroa destructor</option><option>Varroa jacobsoni</option><option>Varroa rindereri</option><option>Varroa underwoodi</option></datalist></label><label>Country / locality<input name="place" maxlength="250" placeholder="If known"></label></div>
+    <label>Notes<textarea name="notes" rows="4" maxlength="1500" placeholder="What should we add or correct?"></textarea></label>
+    <label>Your name <span class="muted">Optional</span><input name="contributor" maxlength="120" autocomplete="name"></label>
+    <div class="submission-actions"><button class="button primary" type="submit">Prepare email</button><button class="button" type="button" id="copy-submission">Copy details</button></div>
+    <p class="muted">Opens your email app. Send the message to Maeva A. Techer for review before publication.</p>
+    <p id="submission-status" role="status" aria-live="polite"></p>
+    <details id="submission-fallback" hidden><summary>Email details</summary><p>To: <a href="mailto:maeva.angelique.techer@gmail.com">maeva.angelique.techer@gmail.com</a></p><textarea id="submission-preview" readonly rows="10" aria-label="Email text to copy"></textarea></details>
+  </form>
+</section>
+<script src="assets/submit.js" defer></script>

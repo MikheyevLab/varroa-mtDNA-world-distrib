@@ -1,0 +1,20 @@
+__pycache__/
+.venv-resource/
+.venv-cox1/
+.snakemake/
+# Review workspaces are not public website data.
+Data/intake/
+Data/curation/registry.json
+Data/curation/map_records.json
+Data/curation/review_notes.jsonl
+Data/curation/.review.lock
+runs/
+docs/data/phylogeny-review/
+# Local QA can contain pending records and draft-tree screenshots.
+validation/**/resource-preview/
+validation/**/phylogeny-*.log
+validation/**/phylogeny-*.json
+validation/**/exploratory-*.log
+validation/**/cox1-dryrun.log
+# Verbose workbook inspection is retained locally; concise checks are tracked.
+validation/**/workbook_inspect.ndjson

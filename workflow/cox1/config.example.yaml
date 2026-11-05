@@ -1,0 +1,10 @@
+# Copy this file and use a NEW run_id for every changed input/reference set.
+run_id: first_review
+intake: Data/intake/YOUR_INTAKE_ID
+reference_alignment: Data/phylogeny/references.fasta
+reference_metadata: Data/phylogeny/references.tsv
+reference_review: Data/phylogeny/reference_review.json
+min_overlap: 300
+max_ambiguity: 0.02
+threads: 4
+seed: 20261105

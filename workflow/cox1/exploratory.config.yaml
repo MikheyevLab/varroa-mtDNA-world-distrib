@@ -1,0 +1,7 @@
+# Use a new run ID to reproduce this analysis without replacing its results.
+run_id: exploratory_reproduction_20261105
+intake: Data/intake/ncbi_cox1_20261105_full_v2
+catalogue: docs/data/records.json
+min_overlap: 400
+threads: 4
+seed: 20261105

@@ -1,0 +1,16 @@
+{
+  "checked_date": "2026-11-06",
+  "python_tests_passed": 19,
+  "review_http_tests": "passed with localhost socket permission",
+  "javascript_syntax_files": 9,
+  "lineage_geometry_checks": "passed",
+  "map_validation": "passed",
+  "workbook_validation": "passed; 127 additions; archival baseline retained",
+  "public_register_rows": 3019,
+  "manually_verified": 0,
+  "pending_intake_in_public_register": 0,
+  "map_input_checksums_match": true,
+  "draft_phylogeny_in_commit": false,
+  "local_review_notes_in_commit": false,
+  "local_qa_previews_in_commit": false
+}

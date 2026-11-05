@@ -1,0 +1,26 @@
+<section class="page-heading"><h1>COX1 phylogeny</h1><span id="tree-status" class="badge pending">Loading…</span></section>
+<p id="tree-summary" class="muted" role="status"></p>
+<section id="tree-explorer" hidden aria-label="Interactive COX1 tree">
+  <div class="tree-controls">
+    <label>Find a sequence<input id="tree-search" type="search" placeholder="Accession, country, reported name…"></label>
+    <label>Species<select id="tree-species" title="Reported GenBank species; historical taxonomy may differ"><option value="">All species</option></select></label>
+    <label>View<select id="tree-layout"><option value="radial">Circular tree</option><option value="rectangular">Detailed tree</option></select></label>
+    <button class="button" id="tree-taiwan">Taiwan type T</button>
+    <button class="button" id="tree-reset">Reset</button>
+  </div>
+  <div id="tree-legend" class="tree-legend" aria-label="Colours represent reported species"></div>
+  <div class="tree-workspace">
+    <div class="tree-figure"><div class="tree-zoom"><button id="tree-minus" aria-label="Zoom out">−</button><button id="tree-plus" aria-label="Zoom in">+</button><button id="tree-fit">Fit</button><label><input id="tree-support" type="checkbox"> Branch support</label></div>
+      <div id="tree-canvas" tabindex="0" aria-label="Phylogenetic tree; select a tip to inspect its sequences"></div>
+      <p id="tree-caption" class="tree-caption">Branch length = substitutions per site. Unrooted tree; the drawing centre is arbitrary. Select a tip to inspect its accessions.</p>
+    </div>
+    <aside id="tree-detail" aria-live="polite"><h2>Sequences</h2><p class="muted">Select a tip or search for an accession.</p></aside>
+  </div>
+  <div class="tree-downloads"><a id="tree-newick" class="button" download>Full Newick</a><button id="tree-svg" class="button">Download view SVG</button><a id="tree-fasta" class="button" download>Full alignment</a><a id="tree-qc" class="button" download>Sequence QC</a></div>
+  <details class="tree-methods"><summary>Methods &amp; analysis files</summary><div id="tree-methods"></div>
+    <p>Reported names are source annotations. They do not certify a lineage assignment. Identical COX1 sequences may have different names; COX1 may not distinguish lineages defined with several mitochondrial genes.</p>
+    <p><a href="https://mafft.cbrc.jp/alignment/software/addsequences.html">MAFFT methods</a> · <a href="https://iqtree.github.io/doc/Command-Reference">IQ-TREE methods</a> · <a href="records.html?dataset=reference">Naming catalogue</a></p>
+  </details>
+</section>
+<dialog id="tree-record-dialog" aria-labelledby="tree-record-title"><button class="dialog-close" id="tree-record-close" aria-label="Close sample record">×</button><div id="tree-record-content"></div></dialog>
+<script src="assets/phylogeny.js" defer></script>

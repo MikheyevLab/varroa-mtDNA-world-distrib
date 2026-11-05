@@ -1,0 +1,26 @@
+{
+  "published_register_rows": 3019,
+  "map_records": 1133,
+  "literature_rows": 1058,
+  "ncbi_snapshot_rows": 743,
+  "naming_catalogue_rows": 85,
+  "manually_verified": 0,
+  "pending_ncbi_pilot": 1,
+  "pending_excluded_from_public": true,
+  "illustrations_copied_unchanged": true,
+  "unit_tests_passed": 11,
+  "snakemake_dry_run_jobs": 5,
+  "real_phylogeny_run": false,
+  "reference_review_required": true,
+  "inaturalist_browser_validation": {
+    "retrieved": "2026-11-05",
+    "observations": 283,
+    "public_coordinate_pairs": 268,
+    "species": [
+      "Varroa destructor"
+    ],
+    "grade": "research",
+    "overlay_toggle_passed": true,
+    "popup_source_link_and_unverified_tag": true
+  }
+}

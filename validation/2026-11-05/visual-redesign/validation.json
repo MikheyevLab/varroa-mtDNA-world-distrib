@@ -1,0 +1,46 @@
+{
+  "purpose": "Visual redesign; no source data edits",
+  "browser_checks": {
+    "new_mt_view": {
+      "point_records": 98,
+      "coordinate_pairs": 77,
+      "country_records": 5
+    },
+    "all_with_genome_evidence": {
+      "point_records": 704,
+      "coordinate_pairs": 510,
+      "country_records": 429
+    },
+    "cerana_species_view": {
+      "point_records": 182,
+      "coordinate_pairs": 142,
+      "country_records": 120
+    },
+    "jacobsoni_legend_filter": {
+      "point_records": 76,
+      "coordinate_pairs": 64,
+      "country_records": 42
+    },
+    "legend_second_click_clears": true,
+    "fuzhou_shared_popup": 3,
+    "SG2_neutral_in_species_view": true,
+    "shared_display_options_restored": true,
+    "world_and_asia_navigation": true,
+    "expand_map": true,
+    "javascript_errors": []
+  },
+  "figure_export": {
+    "file": "cerana-species-atlas.svg",
+    "xml_valid": true,
+    "unique_record_ids": 302,
+    "metadata_matches_selection": true,
+    "rendered_with": "rsvg",
+    "visually_inspected": true
+  },
+  "limitations": [
+    "Publication style inspired by Communications Biology 2019 Figure 1; not a replica.",
+    "Preview inspected at the available in-app viewport.",
+    "SVG counts describe the complete selection; the geographic view may show only part of it.",
+    "Local changes only."
+  ]
+}
